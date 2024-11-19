@@ -143,13 +143,6 @@ Der Bericht muss zwingend enthalten:
 **Projektaufbauorganisation**
 - Personen/Rollen/Aufgaben/Verantwortung
 
-**Deklaration der benutzten Firmenstandards** (max. 1/2 Seite)
-- Dokumentationsvorlagen
-- Arbeitsmethoden
-- Tools wie IDE, CASE, ...
-- Weitere Firmenstandards
-Firmenstandards müssen den Experten schon bei der Validierung vorliegen, wenn auf sie in der IPA Bezug genommen wird.
-
 **Zeitplan** (max. 2 Seiten, 2- oder 4-Std-Raster)
 - Planung und Realität
 
@@ -245,42 +238,31 @@ Die Präsentation, Protokolle zur Präsentation und alle weiteren erstellten Dok
 
 ## 5. FACHARBEIT: FACHGESPRÄCH
 
-Im Anschluss an die Präsentation und die Demonstration stellt die Hauptexpertin oder der Hauptexperte (HEX) (und fakultativ die VF) Fragen zur Arbeit und deren Umfeld. Wurde eine Nebenexpertin oder ein Nebenexperte (NEX) aufgeboten, protokolliert diese oder dieser das Fachgespräch zusätzlich.
+Im Anschluss an die Präsentation und die Demonstration stellen die Experten (und fakultativ die VF) Fragen zur Arbeit und deren Umfeld. Das Fachgespräch wird durch alle Anwesenden Personen protokoliert. 
 
-Mit diesem Fachgespräch will das Expertenteam (HEX/NEX/VF) herausfinden, wie kompetent die Kandidatin oder der Kandidat (KAND) Auskunft geben kann, ob die Arbeit verstanden wurde, ob Zusammenhänge gesehen werden, ob Varianten geprüft und Entscheidungsgrundlagen richtig gewertet wurden. Kurz: ob die Kandidatin oder der Kandidat (KAND) eine Fachperson ist, mit der man "fachsimpeln" kann.
+Mit diesem Fachgespräch will das Expertenteam herausfinden, wie kompetent die Kandidatin oder der Kandidat (KAND) Auskunft geben kann, ob die Arbeit verstanden wurde, ob Zusammenhänge gesehen werden, ob Varianten geprüft und Entscheidungsgrundlagen richtig gewertet wurden. Kurz: ob die Kandidatin oder der Kandidat eine Fachperson ist, mit der man "fachsimpeln" kann.
 
-Das Fachgespräch darf nicht mit einer Berufskundeprüfung verwechselt werden. Natürlich ist auch Wissen gefragt, aber immer im Zusammenhang mit der Facharbeit. Das Fachwissen und die Produktekenntnis sind die Grundlagen für ein fachlich korrektes Ausführen der Arbeit.
+Das Fachgespräch darf nicht mit einer mündlichen Berufskundeprüfung verwechselt werden. Natürlich ist auch Schulwissen gefragt, aber nur sofern dieses im Zusammenhang mit der Facharbeit steht. Das Fachwissen und die Produktekenntnis sind die Grundlagen für ein fachlich korrektes Ausführen der Arbeit.
 
-Die Hauptexpertin oder der Hauptexperte (HEX) bereitet sechs bis acht Themenbereiche vor. Dabei werden auch die vorgängig von der vorgesetzten Fachkraft (VF) mitgeteilten Fragen berücksichtigt. Das Gespräch soll aber auch spontane Fragen zulassen, z.B. wenn im Vortrag etwas unklar geblieben oder ein neuer Aspekt aufgetaucht ist.
+Die Hauptexpertin oder der Hauptexperte (HEX) führt das Gespräch mit Fokus auf 6 Themenbereiche. Dabei werden auch die vorgängig von der vorgesetzten Fachkraft (VF) mitgeteilten Fragen berücksichtigt. Das Gespräch soll auch spontane Fragen zulassen, z.B. wenn im Vortrag etwas unklar geblieben oder ein neuer Aspekt aufgetaucht ist.
 
-Das Fachgespräch dauert 30 bis maximal 60 Minuten, wobei die Gesamtzeit von Präsentation und Fachgespräch eine Stunde nicht überschreiten darf.
+Das Fachgespräch dauert 30 bis maximal 60 Minuten, wobei die Gesamtzeit von Präsentation und Fachgespräch 90 Minuten nicht überschreiten darf.
 
-## 6. HINWEISE FÜR VF, HEX und NEX
+## 6. HINWEISE FÜR VF
 
 ### 6.1 IPA-Bericht
 
-Die vorgesetzte Fachkraft (VF) prüft den Bericht primär auf fachliche Richtigkeit und auf Vollständigkeit. Sie oder er schreibt seinen ausführlichen Kommentar (auch Positives!) in das Bemerkungsfeld des entsprechenden Kriteriums unter Angabe der Seitennummer oder in ein separates Dokument, ebenfalls unter Angabe der Seitennummer. Die Dokumente müssen alle als PDF abgegeben werden.
+Die vorgesetzte Fachkraft (VF) prüft den Bericht auf fachliche Richtigkeit, systematische Gliederung, verständliche Formulierung, saubere Darstellung, Vollständigkeit, ... (vgl. Bewertungskriterien). Sie oder er schreibt seinen ausführlichen Kommentar (auch Positives!) in das Bemerkungsfeld des entsprechenden Kriteriums unter Angabe der Seitennummer oder in ein separates Dokument, ebenfalls unter Angabe der Seitennummer. Die Dokumente müssen alle als PDF abgegeben werden.
 
-Die Hauptexpertin oder der Hauptexperte (HEX) prüft den Bericht primär auf formale Aspekte wie systematische Gliederung, verständliche Formulierung, saubere Darstellung, Vollständigkeit, ... (vgl. Bewertungskriterien). Bemerkungen und die aufgetretenen Fragen (als Grundlage für das Fachgespräch) werden auf einem separaten Protokollblatt notiert. Dieses muss vor der Präsentation auf PKOrg im Dokumentenpool im PDF-Format elektronisch abgelegt werden.
+Die Hauptexpertin oder der Hauptexperte (HEX) liest die Arbeit mit dem Input der VF-Bewertung. Der/Die HEX notiert sich unterschiedliche Auffassungen der Bewertung. Dabei ist zu berücksichtigen, dass einige Kriterien erst mit der Präsentation und dem Fachgespräch eindeutig beurteilt werden können. Bemerkungen und die aufgetretenen Fragen (als Grundlage für das Fachgespräch) werden auf einem separaten Protokollblatt notiert. Dieses muss vor der Präsentation auf PKOrg im Dokumentenpool im PDF-Format elektronisch abgelegt werden.
 
 ### 6.2 Bewertung der Arbeit
 
-Während der Arbeit, bei der Präsentation und beim Fachgespräch schreiben sowohl die vorgesetzte Fachkraft (VF) wie auch das Expertenteam (HEX/NEX) Beobachtungsprotokolle. Die vorgesetzte Fachkraft (VF) bewertet und kommentiert das Produkt und den Bericht vor der Präsentation.
+Während der Arbeit, bei der Präsentation und beim Fachgespräch schreiben sowohl die vorgesetzte Fachkraft (VF) wie auch das Expertenteam (HEX/NEX) Beobachtungsprotokolle. Die vorgesetzte Fachkraft (VF) bewertet und kommentiert das Produkt und den Bericht vor der Präsentation im PkOrg.
 
-Gemäss der Bildungsverordnung (BiVo) 2021 setzt sich die Gesamtnote wie folgt zusammen:
-- Praktische Arbeit (IPA): 40%
-- Allgemeinbildung: 20%
-- Erfahrungsnote "erweiterte Grundkompetenzen": 10%
-- Erfahrungsnote "Informatikkompetenzen": 30%
+Der/Die HEX validiert die Bewertung der VF und passt diese bei Bedarf an. 
 
-Die IPA gilt als bestanden, wenn:
-1. der Qualifikationsbereich "praktische Arbeit" mindestens mit der Note 4.0 bewertet wird
-2. die Erfahrungsnote "Informatikkompetenzen" mindestens 4.0 beträgt
-3. die Gesamtnote mindestens 4.0 beträgt
-
-Die Erfahrungsnote "Informatikkompetenzen" wird wie folgt berechnet:
-- Berufsfachschulnoten der Module: 80%
-- Überbetriebliche Kurse: 20%
+Unmittelbar nach dem Fachgespräch bewertet das Expertenteam die restlichen Kriterien im Bewertungsformular (Teil C) und besprechen die Teile A & B mit der VF. Wobei vorallem die Angepasten bewertungen besprochen werden. Das Expertenteam achtet dabei auf aussagekräftige, rekursfähige Kommentare.
 
 ### 6.3 Rollen der Expertinnen und Experten
 
@@ -292,12 +274,12 @@ Die Hauptexpertin oder der Hauptexperte (HEX) ist verantwortlich für:
 
 Die Nebenexpertin oder der Nebenexperte (NEX):
 - Ist nur bei Präsentation, Fachgespräch und Bewertung dabei
-- Unterstützt beim Protokollieren
+- Unterstützt beim Fachgespräch und Protokollieren
 - Hilft bei der Bewertung der Arbeit
 
-### 6.4 Noten
+### 6.4 Abschluss, Notenvorschlag
 
-Der nach der Bewertung der Arbeit ermittelte Notenvorschlag darf der Kandidatin oder dem Kandidaten (KAND) nicht bekannt gegeben werden. Die Note wird erst nach der Notenkonferenz und durch die Festlegung in der Prüfungskommission 19 definitiv. Die Kandidatin oder der Kandidat (KAND) erfährt sie mit dem Notenausweis!
+Nach der Bewertung der Arbeit übermittelt der/die HEX den Notenvorschlag an den Chefexperten. Die Note wird erst nach der Notenkonferenz und durch die Festlegung in der Prüfungskommission 19 festgelet. Die Note kann und darf dem oder der KAND nicht mitgeteilt werden. Die oder der KAND erfährt sie mit dem Notenausweis!
 
 Bitte beachten Sie alle weiteren Dokumente zur Facharbeit, insbesondere den Ablaufplan mit den Verantwortlichkeiten und Terminen. Melden Sie Widersprüche dem Aktuariat, damit wir diese korrigieren können.
 
