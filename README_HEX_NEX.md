@@ -2,27 +2,51 @@
 
 ## 1. Grundlegendes
 
-Dieser Leitfaden dient als Ergänzung zum allgemeinen QV-Leitfaden für Informatikerinnen und Informatiker. Er konzentriert sich speziell auf die Aufgaben und Verantwortlichkeiten der Expertinnen und Experten während der IPA. Die hier enthaltenen Informationen sollen helfen, die Prüfungsdurchführung zu standardisieren und die Qualität der Bewertung sicherzustellen.
+Dieser Leitfaden dient als Ergänzung zum allgemeinen QV-Leitfaden für Informatikerinnen und Informatiker. Er konzentriert sich speziell auf Informationen, Aufgaben und Verantwortlichkeiten der Expertinnen und Experten während der IPA. Die hier enthaltenen Informationen sollen helfen, die Prüfungsdurchführung zu standardisieren und die Qualität der Bewertung sicherzustellen.
 
 ## 2. Rollen und Verantwortlichkeiten
 
 ### Hauptexpertinnen und Hauptexperten (HEX)
-Als Hauptexpertin oder Hauptexperte tragen Sie die Gesamtverantwortung für die IPA. Sie sind die primäre Ansprechperson für die Kandidatin oder den Kandidaten sowie die vorgesetzte Fachkraft. In dieser Funktion koordinieren Sie sämtliche Termine und Besuche. Bei auftretenden Problemen treffen Sie die notwendigen Entscheidungen in Rücksprache mit der Chefexpertin oder dem Chefexperten. Während des Fachgesprächs übernehmen Sie die Gesprächsführung und tragen die Hauptverantwortung für die finale Bewertung.
+Als Hauptexpertin oder Hauptexperte tragen Sie die Gesamtverantwortung für die IPA. Sie sind verantwortlich für den Ablauf der IPA bis zum einriechen des Notenvorschalgs, die primäre Ansprechperson für die Kandidatin oder den Kandidaten sowie die vorgesetzte Fachkraft. In dieser Funktion koordinieren Sie sämtliche Termine und Besuche. Bei auftretenden Problemen treffen Sie die notwendigen Entscheidungen in Rücksprache mit der Chefexpertin oder dem Chefexperten. Während des Fachgesprächs übernehmen Sie die Gesprächsführung und tragen die Hauptverantwortung für die finale Bewertung.
 
 ### Nebenexpertinnen und Nebenexperten (NEX)
 Als Nebenexpertin oder Nebenexperte unterstützen Sie den HEX hauptsächlich bei der Präsentation und dem Fachgespräch. Eine Ihrer Hauptaufgaben ist das detaillierte Protokollieren der Prüfung. Sie bringen sich aktiv in die Bewertungsfindung ein und stellen durch Ihre unabhängige Sicht eine ausgewogene Beurteilung sicher. Um verschiedene Bewertungsansätze kennenzulernen, sollten Sie pro QV nur eine IPA mit der gleichen Hauptexpertin oder dem gleichen Hauptexperten übernehmen.
 
+## 2b Aufwand und Vergütung
+Als Hauptexperte kannst du mit folgendem Aufwand rechnen.  
+* 0.5h Einlesen / IPA Auswahl / Validierung
+* 0.5h Vorstellung und Koordination Termine
+* 2h Besuche
+* 2h Lesen des Berichtes
+* 1h Validierung und Anpassung der VF BEwertung
+* 1h Vorbereiten des Fachgespräches
+* 3h Präsentationstag
+* 0.5h Dokumentenbereinigung und Abschluss
+
+Diese werden pauschal mit 11h Vergütet. Abweichungen müssen vorgängig mit dem /der CEX abgesprochen werden.
+
 ## 3. Die zwei Besuchstermine
 
 ### Erster Besuch
-Der erste Besuch findet idealerweise am zweiten oder dritten Tag der IPA online/remote statt. Als HEX prüfen Sie dabei die Arbeitsumgebung und stellen sicher, dass alle Voraussetzungen für die erfolgreiche Durchführung der IPA erfüllt sind. Sie besprechen den Zeitplan mit der Kandidatin oder dem Kandidaten und erläutern die Bewertungskriterien im Detail. Dies ist auch der Moment, um allfällige offene Fragen zu klären. Als NEX können Sie optional und nach Absprache mit der zuständigen Chefexpertin oder dem zuständigen Chefexperten an diesem Besuch teilnehmen, insbesondere wenn Sie noch wenig Erfahrung haben.
+Der erste Besuch findet idealerweise am zweiten oder dritten Tag der IPA online/remote statt. Als HEX prüfen Sie dabei die Arbeitsumgebung und stellen sicher, dass alle Voraussetzungen für die erfolgreiche Durchführung der IPA erfüllt sind. Sie besprechen den Zeitplan mit der Kandidatin oder dem Kandidaten und erläutern die Bewertungskriterien im Detail. Dies ist auch der Moment, um allfällige offene Fragen zu klären. Ziel ist es ein gemeinsames Verständins der Aufgabenstellung zu erhalten und überraschungen zu vermeiden. Als NEX können Sie optional und nach Absprache mit der zuständigen Chefexpertin oder dem zuständigen Chefexperten an diesem Besuch teilnehmen, insbesondere wenn Sie noch wenig Erfahrung haben.
 
 ### Zweiter Besuch
-Der zweite Besuch sollte zwischen dem siebten und achten Tag der IPA online/remote oder vor Ort stattfinden. Als HEX kontrollieren Sie den Fortschritt der Arbeit und den Stand der Dokumentation. Sie klären auch bereits organisatorische Fragen zur Präsentation. Auch hier ist die Teilnahme des NEX optional und muss auch hier mit der zuständigen CEX oder dem zuständigen CEX abgesprochen sein.
+Der zweite Besuch sollte zwischen dem siebten und achten Tag der IPA online/remote oder vor Ort stattfinden. Als HEX kontrollieren Sie den Fortschritt der Arbeit und den Stand der Dokumentation. Sie prüfen die Tagesaktualität des LErnjournals und der Backups und scheauen in einem kurzen Fachgespräch ob allfällige Fremdhife verwendet wurde. Sie klären auch bereits organisatorische Fragen zur Präsentation. Auch hier ist die Teilnahme des NEX optional und muss auch hier mit der zuständigen CEX oder dem zuständigen CEX abgesprochen sein.
+
+### Abgabetag
+Versuchen Sie erreichbar zu sein falls der oder die KAndidatin noch offene Fragen hat. Als HAuptexperte haben Sie weisungsbefugnis um allfällige Probleme zu lösen. (Bsp. Bericht vie Email, etc,)
+
+## Vorbereitung Prüfungstag
+Die Vorbereitung des PRüfungstages bildet die Hauptaufgabe als Hauptexperte. Das Korrigieren des Berichts nicht mehr. Warten Sie bis die VF den Bericht Korrigiert und bewertet hat. Dies sollte spätestens drei Tage vor dem Prüfungstag passiert sein. Lesen Sie erst die bewertung durch, dies gibt Hinwieise auf mögliche Problemstellen und zeigt Ihnen, wo Sie spezielles Augenmerk auf die Arbeit richten sollen. LAesen Sie anschliessend den Bericht mit dem Augenmerk auf allfällige Meinungsverschiedenheiten bzgl. Bewertung und denken Sie auch glecih an das Fachgespräch. 
+
+Validieren Sie die Bewerung des VF und bringen Ihre Änderungen an. BEi unklarheiten, offenen Fragen dürfen diese am Präsentationstag besprochen/ geklärt werden. das Expertenteam hat jedoch das letzte Wort. (Wobei die VF dies natürlich noch mit Uneinigkeit markieren kann.) Versuchen Sie wo immer möglich einen Konsens zu finden. 
+
+Im Anschluss bereiten Sie ein Fachgespräch mit 6 (plus Reserve) Tehemblöcken vor. Diese dürfen nicht die PM Methode hinterfragen und müssen zum Projekt passen. Ein Fragenkomplex hat eine LEitfrage mit n unterfragen, welche je nach GEsprächsverlauf gestellt werden sollen und dem Gespräch eine Struktur geben. Denken Sie an die Zeitbegrenzung und zielen Sie auf 5min. pro Frage. HIer dürfen Sie Inputdes VF einfliessen lassen. 
+
 
 ## 4. Präsentation, Demonstration und Fachgespräch
 
-Die Durchführung der Präsentation, Demonstration und des Fachgesprächs stellt das Finale der IPA dar. Als Expertenteam tragen Sie die Verantwortung für einen professionellen und würdevollen Ablauf dieser wichtigen Prüfungsphase. Der gesamte Anlass darf maximal 90 Minuten dauern und sollte sorgfältig geplant werden.
+Die Durchführung der Präsentation, Demonstration und des Fachgesprächs stellt das Finale der IPA dar. Als Expertenteam tragen Sie die Verantwortung für einen professionellen und würdevollen Ablauf dieser wichtigen Prüfungsphase. Der gesamte Anlass darf maximal 90 Minuten dauern und sollte sorgfältig geplant werden. 
 
 Die Begrüssung erfolgt durch die Hauptexpertin oder den Hauptexperten. Dabei werden alle Anwesenden vorgestellt und der geplante Ablauf erläutert. Es ist wichtig, zu Beginn den Gesundheitszustand der Kandidatin oder des Kandidaten zu erfragen. Bei gesundheitlichen Einschränkungen muss die Prüfung verschoben werden.
 
@@ -74,5 +98,11 @@ Die Entschädigung erfolgt nach den offiziellen Richtlinien der PK19.
 Zusätzlich werden für beide Rollen Reisezeit und ÖV-Kosten gemäss den geltenden Ansätzen vergütet.
 
 ## 7. PKOrg als zentrales Tool
+
+## Abweichungen 
+* Mitwirkung VF beim Gespräch
+* Zeit des PRüfungstages / des Fachgespräches
+
+
 
 Sämtliche administrative Prozesse werden über PKOrg abgewickelt. Hier finden Sie auch detaillierte Checklisten für Ihre Rolle als HEX oder NEX. Stellen Sie sicher, dass Sie mit dem System vertraut sind und alle Dokumentationen fristgerecht hochladen.
