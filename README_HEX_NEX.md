@@ -33,7 +33,7 @@ Im Anschluss bereitest du ein Fachgespräch mit sechs Themenblöcken plus Reserv
 
 ## 5. Präsentation, Demonstration und Fachgespräch
 
-Die Durchführung der Präsentation, Demonstration und des Fachgesprächs bildet den Abschluss der IPA. Als Expertenteam trägst du die Verantwortung für einen professionellen und würdevollen Ablauf dieser wichtigen Prüfungsphase. Der gesamte Anlass sollte sorgfältig geplant werden und darf maximal 90 Minuten dauern.
+Die Durchführung der Präsentation, Demonstration und des Fachgesprächs bildet den Abschluss der IPA. Als Expertenteam trägst du die Verantwortung für einen professionellen und würdevollen Ablauf dieser wichtigen Prüfungsphase. Der gesamte Teil 3 sollte sorgfältig geplant werden und darf rund 60 Minuten dauern.
 
 Die Hauptexpertin oder der Hauptexperte beginnt mit der Begrüssung, stellt alle Anwesenden vor und erläutert den geplanten Ablauf. Zu Beginn muss der Gesundheitszustand der Kandidatin oder des Kandidaten erfragt werden. Bei gesundheitlichen oder psychischen Einschränkungen ist die Prüfung zu verschieben.
 
@@ -77,14 +77,15 @@ Die Entschädigung erfolgt nach den offiziellen Richtlinien der PK19. Aufwand un
 Beispielhafter Zeitaufwand innerhalb der IPA-Pauschale:
 | Tätigkeit | Zeit (Stunden) |
 |-----------|---------------|
-| Einlesen / IPA-Auswahl / Validierung | 0.5 |
-| Vorstellung und Terminkoordination | 0.5 |
-| Besuche | 2.0 |
-| Lesen des Berichts | 2.0 |
-| Validierung und Anpassung der Bewertung der vorgesetzten Fachkraft | 1.0 |
-| Vorbereitung des Fachgesprächs | 1.5 |
-| Präsentationstag | 3.0 |
-| Dokumentenbereinigung und Abschluss | 0.5 |
+| Arbeit aussuchen (Ort, Zeitpunkt, Thematik), Planung im Kalender | 0.5 |
+| Validierung der Arbeit / Einarbeitung Thema, Technologie | 1.5 |
+| Erster Besuch | 1.0 |
+| Zweiter Besuch| 1.0 |
+| Korrektur, Bewertung, Dokumentieren | 2.0 |
+| Vorbereitung Fchgespräch / Austuasch 2-Experten / Abholen VF | 1.0 |
+| Dritter Besuch, Bewertung | 3.0 |
+| Abschluss, Noteneintrag | 0.5 |
+| Korrespondenz, PkOrg Verrechnung, Feedback CEXP | 0.5 |
 | **Total Pauschale** | **11.0** |
 
 ### Abrechenbare Zeiten pro IPA für Nebenexpertinnen und Nebenexperten:
@@ -95,6 +96,6 @@ Beispielhafter Zeitaufwand innerhalb der IPA-Pauschale:
 
 ## 8. PkOrg als zentrales System
 
-Sämtliche administrativen Prozesse werden über PkOrg abgewickelt. Hier finden Sie auch detaillierte Checklisten für Ihre Rolle als Hauptexpertin/Hauptexperte oder Nebenexpertin/Nebenexperte. Stellen Sie sicher, dass Sie mit dem System vertraut sind und alle Dokumentationen fristgerecht hochladen.
+Sämtliche administrativen Prozesse werden über PkOrg abgewickelt. Hier findest du auch detaillierte Checklisten für deine Rolle als Hauptexpertin/Hauptexperte oder Nebenexpertin/Nebenexperte. Stelle sicher, dass du mit dem System vertraut bist und alle Dokumentationen fristgerecht hochlädst.
 
 Bei Abweichungen bezüglich der Mitwirkung der vorgesetzten Fachkraft beim Gespräch oder der Prüfungszeit ist die zuständige Chefexpertin oder der zuständige Chefexperte zu konsultieren.
