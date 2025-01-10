@@ -33,11 +33,11 @@ Im Anschluss bereitest du ein Fachgespräch mit sechs Themenblöcken plus Reserv
 
 ## 5. Präsentation, Demonstration und Fachgespräch
 
-Die Durchführung der Präsentation, Demonstration und des Fachgesprächs bildet den Abschluss der IPA. Als Expertenteam trägst du die Verantwortung für einen professionellen und würdevollen Ablauf dieser wichtigen Prüfungsphase. Der gesamte Teil 3 sollte sorgfältig geplant werden und darf rund 60 Minuten dauern.
+Die Durchführung der Präsentation, Demonstration und des Fachgesprächs bildet den Abschluss der IPA. Als Expertenteam trägst du die Verantwortung für einen professionellen und würdevollen Ablauf dieser wichtigen Prüfungsphase. Der gesamte Teil 3 sollte sorgfältig geplant werden und darf maximal 60 Minuten dauern.
 
 Die Hauptexpertin oder der Hauptexperte beginnt mit der Begrüssung, stellt alle Anwesenden vor und erläutert den geplanten Ablauf. Zu Beginn muss der Gesundheitszustand der Kandidatin oder des Kandidaten erfragt werden. Bei gesundheitlichen oder psychischen Einschränkungen ist die Prüfung zu verschieben.
 
-Die Präsentation als erster fachlicher Teil dauert 15-20 Minuten und muss zwingend in Schriftsprache gehalten werden. Während der Präsentation sind keine Unterbrechungen oder Fragen erlaubt, um den Redefluss nicht zu stören. Die Nebenexpertin oder der Nebenexperte protokolliert die Präsentation anhand der Bewertungskriterien.
+Die Präsentation als erster fachlicher Teil dauert 15 bis 20 Minuten. Während der Präsentation sind keine Unterbrechungen oder Fragen erlaubt, um den Redefluss nicht zu stören. Die Nebenexpertin oder der Nebenexperte protokolliert die Präsentation anhand der Bewertungskriterien.
 
 Im Anschluss folgt die praktische Demonstration der erarbeiteten Lösung. Dieser Teil dauert mindestens 10 Minuten und kann bei Bedarf verlängert werden. Hier sind kurze Verständnisfragen zulässig. Die gezeigte Version muss exakt mit der in der Dokumentation beschriebenen übereinstimmen.
 
