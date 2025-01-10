@@ -225,7 +225,7 @@ Der Bericht muss termingerecht eingereicht werden. Eine verspätete Abgabe von b
 
 Die Arbeit wird 1-3 Wochen nach dem Abschluss dem Expertenteam (HEX, NEX) und der vorgesetzten Fachkraft (VF) mit einem Vortrag präsentiert. Die Berufsbildnerin oder der Berufsbildner (BB) darf – als stille Beobachterin oder stiller Beobachter – bei der Präsentation und der Demonstration der IPA dabei sein. Achtung! Nicht beim Fachgespräch. Maximal eine weitere Person, die massgeblich an der Umsetzung der Facharbeit beteiligt war, darf auf Antrag bei der Chefexpertin oder dem Chefexperten (CEX) ebenfalls an der Präsentation und der Demonstration teilnehmen.
 
-Zusammen mit dem Fachgespräch sind maximal 1.5 Stunden vorgesehen, wobei die Präsentation und das Fachgespräch gemeinsam maximal eine Stunde dauern dürfen. Der Vortrag muss 15 bis 20 Minuten dauern und in Schriftsprache gehalten werden. Für die obligatorische Demonstration ("Resultate zeigen") sollten weitere 10 Minuten eingeplant werden. Diese darf länger dauern bei komplexen Produkten oder wenn die Expertinnen und Experten (HEX/NEX/VF) viele Fragen haben.
+Zusammen mit dem Fachgespräch sind maximal 1.5 Stunden vorgesehen, wobei die Präsentation und das Fachgespräch gemeinsam maximal eine Stunde dauern dürfen. Der Vortrag muss 15 bis 20 Minuten dauern. Für die obligatorische Demonstration ("Resultate zeigen") sollten weitere 10 Minuten eingeplant werden. Diese darf länger dauern bei komplexen Produkten oder wenn die Expertinnen und Experten (HEX/NEX/VF) viele Fragen haben.
 
 Das IPA-Werk muss zwingend in der Version gezeigt werden, die im Bericht dokumentiert und mittels PKOrg abgegeben ist. Die Bewertungskriterien für den Vortrag und die Demonstration sind im Kriterienkatalog ersichtlich.
 
@@ -247,7 +247,7 @@ Das Fachgespräch darf nicht mit einer mündlichen Berufskundeprüfung verwechse
 
 Die Hauptexpertin oder der Hauptexperte (HEX) führt das Gespräch mit Fokus auf 6 Themenbereiche. Dabei werden auch die vorgängig von der vorgesetzten Fachkraft (VF) mitgeteilten Fragen berücksichtigt. Das Gespräch soll auch spontane Fragen zulassen, z.B. wenn im Vortrag etwas unklar geblieben oder ein neuer Aspekt aufgetaucht ist.
 
-Das Fachgespräch dauert 30 bis maximal 60 Minuten, wobei die Gesamtzeit von Präsentation, Demonstration und Fachgespräch 90 Minuten nicht überschreiten darf.
+Das Fachgespräch kann bis zu 30 Minuten dauern, wobei die Gesamtzeit von Präsentation, Demonstration und Fachgespräch 60 Minuten nicht überschreiten darf.
 
 ## 6. HINWEISE FÜR VF
 
