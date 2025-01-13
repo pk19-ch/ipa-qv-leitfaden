@@ -158,6 +158,9 @@ Tägliche (mit Datum) Notizen zu:
 
 Keine Minuten-Abrechnung!
 
+**Persönliches Fazit**
+Das persönliche Fazit ist Bestandteil von Teil 1 des IPA-Berichts und kann im Arbeitsjournal und/oder in einem einzelnen Abschnitt ausgeführt werden.
+
 #### Teil 2 des IPA-Berichtes: Projekt
 
 Der zweite Teil beschreibt die eigentliche Arbeit (ohne Wiederholungen aus dem ersten Teil). Die Gliederung ist stark abhängig von der Art der Facharbeit und wird von der zu prüfenden Person festgelegt. Dokumente, welche vom Projekt her gesehen separat abgegeben würden (zum Beispiel verlangte Anleitungen), müssen entsprechend markiert in einem einzigen zusätzlichen PDF-Dokument oder ZIP-Format zusammengestellt als Anhang abgegeben werden.
