@@ -228,7 +228,7 @@ Der Bericht muss termingerecht eingereicht werden. Eine verspätete Abgabe von b
 
 Die Arbeit wird 1-3 Wochen nach dem Abschluss dem Expertenteam (HEX, NEX) und der vorgesetzten Fachkraft (VF) mit einem Vortrag präsentiert. Die Berufsbildnerin oder der Berufsbildner (BB) darf – als stille Beobachterin oder stiller Beobachter – bei der Präsentation und der Demonstration der IPA dabei sein. Achtung! Nicht beim Fachgespräch. Maximal eine weitere Person, die massgeblich an der Umsetzung der Facharbeit beteiligt war, darf auf Antrag bei der Chefexpertin oder dem Chefexperten (CEX) ebenfalls an der Präsentation und der Demonstration teilnehmen.
 
-Zusammen mit dem Fachgespräch sind maximal 1.5 Stunden vorgesehen, wobei die Präsentation und das Fachgespräch gemeinsam maximal eine Stunde dauern dürfen. Der Vortrag muss 15 bis 20 Minuten dauern. Für die obligatorische Demonstration ("Resultate zeigen") sollten weitere 10 Minuten eingeplant werden. Diese darf länger dauern bei komplexen Produkten oder wenn die Expertinnen und Experten (HEX/NEX/VF) viele Fragen haben.
+Der Vortrag muss 15 bis 20 Minuten dauern. Für die obligatorische Demonstration ("Resultate zeigen") sollten weitere 10 Minuten eingeplant werden. Diese darf länger dauern bei komplexen Produkten oder wenn die Expertinnen und Experten (HEX/NEX/VF) viele Fragen haben.
 
 Das IPA-Werk muss zwingend in der Version gezeigt werden, die im Bericht dokumentiert und mittels PKOrg abgegeben ist. Die Bewertungskriterien für den Vortrag und die Demonstration sind im Kriterienkatalog ersichtlich.
 
