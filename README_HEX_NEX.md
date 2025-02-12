@@ -49,7 +49,7 @@ An Präsentation und Demonstration nehmen teil:
 - Optional: Berufsbildnerin oder Berufsbildner (nur als stille Beobachtende)
 - Optional: Eine weitere Fachperson (nur nach vorheriger Bewilligung durch die Chefexpertin oder den Chefexperten)
 
-Das Fachgespräch bildet den abschliessenden und oft entscheidenden Teil des Prüfungstages. Es dauert zwischen 30 und 60 Minuten und findet im kleineren Kreis statt - ohne Berufsbildnerin oder Berufsbildner oder auch weitere Personen. Die Hauptexpertin oder der Hauptexperte leitet das Gespräch, während die Nebenexpertin oder der Nebenexperte detailliert protokolliert.
+Das Fachgespräch bildet den abschliessenden und oft entscheidenden Teil des Prüfungstages. Es findet im kleineren Kreis statt - ohne Berufsbildnerin oder Berufsbildner oder auch weitere Personen. Die Hauptexpertin oder der Hauptexperte leitet das Gespräch, während die Nebenexpertin oder der Nebenexperte detailliert protokolliert.
 
 Das Fachgespräch dient der Überprüfung:
 - des Verständnisses der durchgeführten Arbeit
