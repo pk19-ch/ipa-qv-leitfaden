@@ -18,11 +18,11 @@ Die vorgesetzte Fachkraft formuliert die Aufgabenstellung und reicht diese frist
 
 Die Aufgabenstellung wird von der Kandidatin oder dem Kandidaten online signiert. Mit der Unterschrift bestätigt sie oder er die Kenntnisnahme der Aufgabenstellung.
 
-### 1.2 Gedanken des Chefexperten dazu
+### 1.2 Gedanken der Chefexperten dazu
 
 Die zu prüfende Person soll zeigen, dass sie Gelerntes aus der täglichen Arbeit umsetzen kann und ihr Handwerk beherrscht. Der Begriff "Projekt" verleitet oft zur Ansicht, die Facharbeit müsse etwas speziell Innovatives sein. Das ist zwar nicht ausgeschlossen, entspricht aber nicht ausschliesslich dem primären Berufsbild der Informatikerin oder des Informatikers.
 
-Das EFZ Informatik ist das Handwerk im IT-Business; es soll Standardaufträge fachgerecht ausgeführt und dabei an alles gedacht werden, was die Kundin oder der Kunde nicht im Detail spezifiziert hat. Training und Vorarbeiten müssen deklariert werden, damit die Bewertung gerecht erfolgen kann.
+Das EFZ Informatik ist das Handwerk im IT-Business; es sollen Standardaufträge fachgerecht ausgeführt werden, wobei an alles gedacht werden muss, was die Kundin oder der Kunde nicht im Detail spezifiziert hat. Training und Vorarbeiten müssen deklariert werden, damit die Bewertung gerecht erfolgen kann.
 
 Gemäss der Bildungsverordnung (BiVo) 2021 sind Informatikerinnen und Informatiker EFZ Spezialistinnen und Spezialisten für die Entwicklung, Einführung, Bewirtschaftung und Überwachung von Lösungen in der Informations- und Kommunikationstechnologie (ICT). Die zwei Fachrichtungen sind:
 
@@ -69,16 +69,16 @@ Eingabefrist für die vorgesetzte Fachkraft (VF).
 Freigabe durch die Validierungsexpertin oder den Validierungsexperten (VEX).
 
 **Februar bis Juni:**
-Durchführung der Facharbeit, Präsentation und Expertenbesuche. Alle Termine während der IPA werden mit dem jeweiligen Expertenteam (HEX/NEX/VF) abgesprochen.
+Durchführung der Facharbeit, Präsentation und Expertenbesuche. Alle Termine während der IPA werden mit dem jeweiligen Expertenteam (HEX/NEX) und der vorgesetzten Fachkraft (VF) abgesprochen.
 
 **März bis Juni:**
-Korrektur und Notengebung durch vorgesetzte Fachkraft (VF), Expertenteam und Prüfungskommission 19.
+Korrektur und Notengebung durch vorgesetzte Fachkraft (VF), Expertenteam (HEX/NEX) und Prüfungskommission 19.
 
 Die konkreten Termine für das jeweilige Qualifikationsverfahren finden Sie auf der Webseite der Prüfungskommission 19.
 
 ### 2.2 Aufgabenstellung
 
-Die IPA wird im Umfang von 70-90 Stunden durchgeführt. Die Prüfungskommission des Kantons Zürich hat festgelegt, dass die Facharbeit in 10 aufeinanderfolgenden Arbeitstagen durchzuführen ist. Nicht zulässige Unterbrechungen müssen selbstständig und frühzeitig verschoben werden (z.B. Militäraufgebot).
+Die IPA wird im Umfang von 70-90 Stunden durchgeführt. Die Prüfungskommission des Kantons Zürich hat festgelegt, dass die Facharbeit in 10 aufeinanderfolgenden Arbeitstagen durchzuführen ist. Nicht zulässige Unterbrechungen müssen frühzeitig mit den zuständigen Stellen (z.B. Militärbehörde bei Militäraufgebot) geklärt und gegebenenfalls verschoben werden. Die zuständige Chefexpertin oder der zuständige Chefexperte (CEX) muss über solche Situationen informiert werden.
 
 Unterbrechungen sind nur zulässig durch:
 - Schulunterricht
@@ -92,9 +92,9 @@ Nicht zulässig sind Unterbrechungen durch:
 - Blockunterricht
 - andere Kurse
 
-Die Arbeit der IPA sollte so geplant werden, dass sie in 6-7 Tagen (netto) fertiggestellt werden kann. Für die Dokumentation sollten weitere 3-4 Tage eingeplant werden. Bei Krankheit gibt es, unter Vorbehalt, ausschliesslich bei Vorliegen eines Arztzeugnisses (ab 1. Tag) und Information an die vorgesetzte Fachkraft (VF), Hauptexperte (HEX) sowie Chefexperte (CEX) eine Fristerstreckung.
+Die Arbeit der IPA sollte so geplant werden, dass sie in 6-7 Tagen (netto) fertiggestellt werden kann. Für die Dokumentation sollten weitere 3-4 Tage eingeplant werden. Bei Krankheit gibt es, unter Vorbehalt, ausschliesslich bei Vorliegen eines Arztzeugnisses (ab 1. Tag) und Information an die vorgesetzte Fachkraft (VF), Hauptexpertin oder Hauptexperten (HEX) sowie Chefexpertin oder Chefexperten (CEX) eine Fristerstreckung.
 
-Andere Verzögerungen, z.B. durch Materialprobleme, müssen umgehend (und nicht erst nachträglich) der Hauptexpertin oder dem Hauptexperten (HEX) gemeldet werden. Die Hauptexpertin oder der Hauptexperte (HEX) entscheidet nach Rücksprache mit der vorgesetzten Fachkraft (VF) sowie Chefexperte (CEX) über Fristerstreckung oder Kürzung der Facharbeit.
+Andere Verzögerungen, z.B. durch Materialprobleme, müssen umgehend (und nicht erst nachträglich) der Hauptexpertin oder dem Hauptexperten (HEX) gemeldet werden. Die Hauptexpertin oder der Hauptexperte (HEX) entscheidet nach Rücksprache mit der vorgesetzten Fachkraft (VF) sowie Chefexpertin oder Chefexperten (CEX) über Fristerstreckung oder Kürzung der Facharbeit.
 
 Zwischen Beginn und Abgabe der IPA (ohne Präsentationstag) dürfen maximal 30 Kalendertage liegen. Die Präsentation und das Fachgespräch sollen nicht später als zwei Wochen nach Abschluss der Arbeit stattfinden.
 
@@ -104,7 +104,7 @@ Die gesamte Organisation der Facharbeit wird mittels Online-Tool namens PKOrg ab
 
 Die Aufgabenstellung muss vollständig und termingerecht im PKOrg eingetragen werden. Sie muss bewertbare Kriterien enthalten und sowohl in Qualität als auch in der Quantität klar definiert sein. Aus der Aufgabenstellung sollen das Umfeld und das konkrete Ziel der Facharbeit ersichtlich sein.
 
-Die Formulierung darf kompakt sein, aber keine externen Verweise wie "gem. Besprechung" enthalten. Die zu prüfende Person kann weitere, notwendige Angaben in ihrem Bericht einfügen. Die Aufgabenstellung ist zusammen mit den Bewertungskriterien die Basis für die Beurteilung durch das Expertenteam (VEX/HEX/NEX/VF).
+Die Formulierung darf kompakt sein, aber keine externen Verweise wie "gem. Besprechung" enthalten. Die zu prüfende Person kann weitere, notwendige Angaben in ihrem Bericht einfügen. Die Aufgabenstellung ist zusammen mit den Bewertungskriterien die Basis für die Beurteilung durch die Validierungsexperten (VEX), das Expertenteam (HEX/NEX) und die vorgesetzte Fachkraft (VF).
 
 Mit der Arbeit darf erst am deklarierten Starttermin und nach der formellen Freigabe (E-Mail) durch die Validexpertin oder den Validexperten (VEX) begonnen werden.
 
@@ -112,23 +112,23 @@ Mit der Arbeit darf erst am deklarierten Starttermin und nach der formellen Frei
 
 Die Hauptexpertin oder der Hauptexperte (HEX) ist für die korrekte Durchführung der IPA zuständig und meldet Unregelmässigkeiten unverzüglich dem Chefexperten (CEX).
 
-Die Kandidatin oder der Kandidat (KAND) oder die vorgesetzte Fachkraft (VF) können Unregelmässigkeiten ebenfalls direkt beim Chefexperten (CEX) im Vertrauen melden. Hierfür wird ein schriftlicher Weg wie zum Beispiel per E-Mail zur Nachvollziehbarkeit empfohlen. Die Chefexpertin oder der Chefexperte (CEX) wird geeignete Massnahmen absprechen und anordnen. Die Meldungen werden vertraulich behandelt und haben somit keinen Einfluss auf die Notengebung.
+Die Kandidatin oder der Kandidat (KAND) oder die vorgesetzte Fachkraft (VF) können Unregelmässigkeiten ebenfalls direkt beim Chefexperten (CEX) im Vertrauen melden. Hierfür wird ein schriftlicher Weg wie zum Beispiel per E-Mail oder über die entsprechende Funktion in PKOrg zur Nachvollziehbarkeit empfohlen. Die Chefexpertin oder der Chefexperte (CEX) wird geeignete Massnahmen absprechen und anordnen. Die Meldungen werden vertraulich behandelt und haben somit keinen Einfluss auf die Notengebung.
 
 ### 2.5 Ausstandsregel
 
-Expertinnen und Experten (VEX/HEX/NEX) sind angehalten, keine Arbeiten von ihnen persönlich bekannten Kandidatinnen oder Kandidaten (KAND) zu begleiten. Solche Konstellationen sind gegeben, wenn unter anderem folgende Bekanntschaften bestehen: Geschäftlich, Schule, Verwandtschaft, Freunde, Nachbarskinder, ...
+Expertinnen und Experten (VEX/HEX/NEX) sind angehalten, keine Arbeiten von ihnen persönlich bekannten Kandidatinnen oder Kandidaten (KAND) zu begleiten. Solche Konstellationen sind gegeben, wenn unter anderem folgende Bekanntschaften bestehen: Geschäftlich, Schule, Verwandtschaft, Freunde, Nachbarskinder, oder wenn die Expertin oder der Experte in Betrieben tätig ist oder mit Betrieben eine kommerzielle Zusammenarbeit hat, in denen die Kandidatin oder der Kandidat die IPA durchführt.
 
 ## 3. FACHARBEIT: IPA-BERICHT
 
-Die folgenden Orientierungen sollen den Kandidatinnen und Kandidaten (KAND) helfen, einen sinnvollen Bericht zu verfassen. Dem Expertenteam (VEX/HEX/NEX/VF) bringen sie vergleichbarere Bewertungsgrundlagen.
+Die folgenden Orientierungen sollen den Kandidatinnen und Kandidaten (KAND) helfen, einen sinnvollen Bericht zu verfassen. Dem Expertenteam (HEX/NEX) und der vorgesetzten Fachkraft (VF) bringen sie vergleichbarere Bewertungsgrundlagen.
 
 Worauf besonders geachtet werden soll: "Was nicht dokumentiert ist, wird nicht bewertet."
 
 ### 3.1 Umfang des Berichtes
 
-Die Dokumentation kostet sehr viel Zeit. Die Erstellung des Berichtes sollte daher in der Projektplanung aufgenommen werden. Es sollte mit 30% - 40% der gesamten Projektzeit gerechnet werden und es empfiehlt sich, möglichst früh damit zu beginnen. Es sollten keine Entwürfe, sondern Resultate erarbeitet werden. Entsprechend könnte das Erstellen eines Gerüstes zu Beginn helfen, um dieses während der Zeit themengerecht abzuarbeiten und auszufüllen.
+Die Dokumentation kostet sehr viel Zeit. Die Erstellung des Berichtes sollte daher in der Projektplanung aufgenommen werden. Es wird empfohlen, mit 30% - 40% der gesamten Projektzeit zu rechnen, und es empfiehlt sich, möglichst früh damit zu beginnen. Es sollten keine Entwürfe, sondern Resultate erarbeitet werden. Entsprechend könnte das Erstellen eines Gerüstes zu Beginn helfen, um dieses während der Zeit themengerecht abzuarbeiten und auszufüllen.
 
-Je nach Schrift- und Bildgrösse kann mit einer halben, besser einer ganzen Stunde pro Seite gerechnet werden. Bei einer Projektzeit von 10 Tagen ergibt das etwa 25 bis 50 Seiten für den 2. Teil des IPA-Berichtes (sollte 100 Seiten nicht überschreiten). Das Expertenteam (HEX/NEX/VF) bewertet den Inhalt und nicht die Menge. Firmenvorlagen sollen/dürfen benutzt werden.
+Der Zeitbedarf für die Dokumentation ist individuell sehr unterschiedlich und hängt von der Schreibkompetenz, der Komplexität des Themas sowie dem Detaillierungsgrad ab. Die Planung sollte realistisch erfolgen und genügend Zeit für Korrekturlesen und überarbeitung einplanen. Als Richtwert kann bei einer Projektzeit von 10 Tagen mit etwa 25 bis 50 Seiten für den 2. Teil des IPA-Berichtes gerechnet werden (sollte 100 Seiten nicht überschreiten). Das Expertenteam (HEX/NEX) und die vorgesetzte Fachkraft (VF) bewerten den Inhalt und nicht die Menge. Firmenvorlagen sollen/dürfen benutzt werden.
 
 ### 3.2 Form und Inhalt
 
@@ -136,7 +136,7 @@ Der IPA-Bericht ist in zwei Teile mit einem gemeinsamen Inhaltsverzeichnis zu gl
 
 #### Teil 1 des IPA-Berichtes: Umfeld und Ablauf
 
-Aus der Information im Teil 1 soll das Expertenteam (HEX/NEX/VF) die Umgebung der Facharbeit und den Schwierigkeitsgrad erkennen können.
+Aus der Information im Teil 1 soll das Expertenteam (HEX/NEX) und die vorgesetzte Fachkraft (VF) die Umgebung der Facharbeit und den Schwierigkeitsgrad erkennen können.
 
 Der Bericht muss zwingend enthalten:
 
@@ -152,7 +152,7 @@ Tägliche (mit Datum) Notizen zu:
 - erreichten Zielen
 - aufgetretenen Problemen
 - erfolgreichen oder erfolglosen Tests
-- beanspruchter Hilfestellung (Wer, was)
+- beanspruchter Hilfestellung (Wer, was, inklusive Unterstützung wie z.B. durch KI-Tools)
 - Nacht- und Wochenendarbeit
 - Vergleich mit Zeitplan
 
@@ -167,7 +167,7 @@ Der zweite Teil beschreibt die eigentliche Arbeit (ohne Wiederholungen aus dem e
 
 Wichtig: Nur was schriftlich dokumentiert und abgegeben wurde, kann am Schluss eindeutig bewertet werden.
 
-Der Teil 2 beginnt mit einer separat bewerteten, in eigenen Worten verfassten Kurzfassung des IPA-Berichtes, welche den Expertinnen und Experten (HEX/NEX) eine erste Übersicht vermitteln soll. Die Formulierung kann helfen, den Rest des Teils 2 gut zu strukturieren.
+Der Teil 2 beginnt mit einer separat bewerteten, in eigenen Worten verfassten Kurzfassung des IPA-Berichtes, welche dem Expertenteam (HEX/NEX) und der vorgesetzten Fachkraft (VF) eine erste Übersicht vermitteln soll. Die Formulierung kann helfen, den Rest des Teils 2 gut zu strukturieren.
 
 Denkbare Abschnitte im Teil 2:
 
@@ -191,10 +191,10 @@ Lösung beschreiben und erklären, z.B. gemäss Projekt-Management:
 - Schlüsselstellen von Scripts und Programmen mit Erklärungen
 - Testmethoden, Testdrehbuch, Testberichte
 - Quellenangabe für Texte und Programme, welche nicht selbst geschrieben wurden
-- Literaturverzeichnis: nur was für die Arbeit relevant ist
+- Literaturverzeichnis: nur was für die Arbeit relevant ist (inklusive interner Betriebsdokumente und Richtlinien, die verwendet wurden)
 - Glossar (nur IPA-spezifische Begriffe erklären, keine allgemein bekannten Informatik-Begriffe)
 
-Die Leserinnen und Leser des Berichtes sollen erkennen, was gemacht wurde und wie das Resultat aussieht. Vergessen Sie nicht, auch Varianten aufzuzeigen und Ihre Entscheide zu begründen. Systemeinstellungen müssen so detailliert beschrieben werden, dass eine Fachperson das gleiche System aufbauen könnte (Nachvollziehbarkeit).
+Die Lesenden des Berichtes sollen erkennen, was gemacht wurde und wie das Resultat aussieht. Es ist wichtig, auch Varianten aufzuzeigen und Entscheide zu begründen. Systemeinstellungen müssen so detailliert beschrieben werden, dass eine Fachperson das gleiche System aufbauen könnte (Nachvollziehbarkeit).
 
 ### 3.3 Quellen / Fremdleistung / Plagiat / Vorarbeiten / KI-Nutzung
 
@@ -228,21 +228,22 @@ Der Bericht muss termingerecht eingereicht werden. Eine verspätete Abgabe von b
 
 Die Arbeit wird 1-3 Wochen nach dem Abschluss dem Expertenteam (HEX, NEX) und der vorgesetzten Fachkraft (VF) mit einem Vortrag präsentiert. Die Berufsbildnerin oder der Berufsbildner (BB) darf – als stille Beobachterin oder stiller Beobachter – bei der Präsentation und der Demonstration der IPA dabei sein. Achtung! Nicht beim Fachgespräch. Maximal eine weitere Person, die massgeblich an der Umsetzung der Facharbeit beteiligt war, darf auf Antrag bei der Chefexpertin oder dem Chefexperten (CEX) ebenfalls an der Präsentation und der Demonstration teilnehmen.
 
-Der Vortrag muss 15 bis 20 Minuten dauern. Für die obligatorische Demonstration ("Resultate zeigen") sollten weitere 10 Minuten eingeplant werden. Diese darf länger dauern bei komplexen Produkten oder wenn die Expertinnen und Experten (HEX/NEX/VF) viele Fragen haben.
+Der Vortrag muss 15 bis 20 Minuten dauern. Für die obligatorische Demonstration ("Resultate zeigen") sollten weitere 10 Minuten eingeplant werden. Diese darf länger dauern bei komplexen Produkten oder wenn das Expertenteam (HEX/NEX) und die vorgesetzte Fachkraft (VF) viele Fragen haben.
 
 Das IPA-Werk muss zwingend in der Version gezeigt werden, die im Bericht dokumentiert und mittels PKOrg abgegeben ist. Die Bewertungskriterien für den Vortrag und die Demonstration sind im Kriterienkatalog ersichtlich.
 
-Wie man eine Präsentation aufbaut und hält, ist aus der Berufsschule bekannt. Hier deshalb nur wenige Hinweise: Bei der Präsentation wird sehr häufig die "Aufwärmphase" vernachlässigt. Es braucht einige wenige Sätze, bis alle Zuhörerinnen und Zuhörer beim Thema sind. Dann wissen alle, "wo man sich befindet" und "wovon die Rede ist". Die Zuhörenden sollen den Rahmen kennen, in den sie die folgenden Details einordnen können. Dieses "Fesseln der Zuhörer" ist auch nötig, wenn alle das Projekt "schon kennen".
+Wie eine Präsentation aufgebaut und gehalten werden soll, ist aus der Berufsschule bekannt. Hier deshalb nur wenige Hinweise: Bei der Präsentation wird sehr häufig die "Aufwärmphase" vernachlässigt. Es braucht einige wenige Sätze, bis alle Zuhörerinnen und Zuhörer beim Thema sind. Dann wissen alle, "wo man sich befindet" und "wovon die Rede ist". Die Zuhörenden sollen den Rahmen kennen, in den sie die folgenden Details einordnen können. Dieses "Fesseln der Zuhörer" ist auch nötig, wenn alle das Projekt "schon kennen".
 
 Während der Präsentation kann, gleich wie im IPA-Bericht, gezeigt werden, wieso, wie und was erarbeitet wurde. Des Weiteren kann eine frühzeitige Überprüfung der Demonstration dazu beitragen, keinen "Demo-Effekt" zu erleiden oder eine Zeitüberschreitung zu riskieren.
 
-Achtung! Ton- und Videoaufnahmen sind explizit verboten.
+**Wichtige Hinweise zu Aufzeichnungen:**
+- Video- und Audioaufzeichnungen sowie automatische Transkriptionsfunktionen (z.B. durch Copilot oder ähnliche Tools) sind nur mit dem gegenseitigen Einverstaendnis aller beteiligten Personen erlaubt. Dieses Einverständnis muss in der PKOrg History von allen Seiten schriftlich bestätigt werden.
 
 Die Präsentation, Protokolle zur Präsentation und alle weiteren erstellten Dokumente müssen im Anschluss im Dokumentenpool des PKOrg elektronisch abgelegt werden.
 
 ## 5. FACHARBEIT: FACHGESPRÄCH
 
-Im Anschluss an die Präsentation und die Demonstration stellen die Expertinnen und Experten (und fakultativ die VF) Fragen zur Arbeit und deren Umfeld. Das Fachgespräch wird durch alle anwesenden Personen protokolliert.
+Im Anschluss an die Präsentation und die Demonstration kann eine kurze Pause eingelegt werden. Danach stellt das Expertenteam (HEX/NEX) und fakultativ die vorgesetzte Fachkraft (VF) Fragen zur Arbeit und deren Umfeld. Das Fachgespräch wird durch das Expertenteam protokolliert.
 
 Mit diesem Fachgespräch will das Expertenteam herausfinden, wie kompetent die Kandidatin oder der Kandidat (KAND) Auskunft geben kann, ob die Arbeit verstanden wurde, ob Zusammenhänge gesehen werden, ob Varianten geprüft und Entscheidungsgrundlagen richtig gewertet wurden. Kurz: ob die Kandidatin oder der Kandidat eine Fachperson ist, mit der man "fachsimpeln" kann.
 
@@ -262,24 +263,28 @@ Die Hauptexpertin oder der Hauptexperte (HEX) liest die Arbeit mit dem Input der
 
 ### 6.2 Bewertung der Arbeit
 
-Während der Arbeit, bei der Präsentation und beim Fachgespräch schreiben sowohl die vorgesetzte Fachkraft (VF) als auch das Expertenteam (HEX/NEX) Beobachtungsprotokolle. Die vorgesetzte Fachkraft (VF) bewertet und kommentiert das Produkt und den Bericht vor der Präsentation im PKOrg.
+**Während der IPA:**
+Sowohl die vorgesetzte Fachkraft (VF) als auch das Expertenteam (HEX/NEX) schreiben während der IPA, bei der Präsentation und beim Fachgespräch Beobachtungsprotokolle.
 
-Die Hauptexpertin oder der Hauptexperte (HEX) validiert die Bewertung der VF und passt diese bei Bedarf an.
+**Vor der Präsentation:**
+Die vorgesetzte Fachkraft (VF) bewertet und kommentiert das Produkt (Teil 1) und den Bericht (Teil 2) vor der Präsentation im PKOrg. Die Hauptexpertin oder der Hauptexperte (HEX) validiert die Bewertung der VF und passt diese bei Bedarf an.
 
-Unmittelbar nach dem Fachgespräch bewertet das Expertenteam die restlichen Kriterien im Bewertungsformular (Teil 3) und bespricht die Teile 1 und 2 mit der VF, wobei vor allem die angepassten Bewertungen besprochen werden. Das Expertenteam achtet dabei auf aussagekräftige, rekursfähige Kommentare.
+**Nach dem Fachgespräch:**
+Unmittelbar nach dem Fachgespräch bewertet das Expertenteam (HEX/NEX) die restlichen Kriterien im Bewertungsformular (Teil 3) und bespricht die Teile 1 und 2 mit der vorgesetzten Fachkraft (VF), wobei vor allem die angepassten Bewertungen besprochen werden. Das Expertenteam achtet dabei auf aussagekräftige, rekursfähige Kommentare.
 
-### 6.3 Rollen der Expertinnen und Experten
+### 6.3 Rollen des Expertenteams
 
-Die Hauptexpertin oder der Hauptexperte (HEX) ist verantwortlich für:
+**Die Hauptexpertin oder der Hauptexperte (HEX) ist verantwortlich für:**
 - Festlegung der Termine
 - Entscheidungen bei auftretenden Problemen
-- Leitung des Fachgesprächs
-- Termingerechte Lieferung der Dokumente an den Chefexperten (CEX)
+- Leitung des Fachgespräches
+- Erarbeitung des finalen Notenvorschlags zusammen mit dem Expertenteam
+- Hochladen der Dokumente auf PKOrg und übermittlung des Notenvorschlags
 
-Die Nebenexpertin oder der Nebenexperte (NEX):
+**Die Nebenexpertin oder der Nebenexperte (NEX):**
 - Ist nur bei Präsentation, Demonstration, Fachgespräch und Bewertung dabei
-- Unterstützt beim Fachgespräch und Protokollieren
-- Hilft bei der Bewertung der Arbeit
+- Unterstützt beim Fachgespräch und detaillierten Protokollieren
+- Bringt sich aktiv in die Erarbeitung des Notenvorschlages ein
 
 ### 6.4 Abschluss und Notenvorschlag
 
