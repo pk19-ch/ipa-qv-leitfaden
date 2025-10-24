@@ -116,7 +116,9 @@ Die Kandidatin oder der Kandidat (KAND) oder die vorgesetzte Fachkraft (VF) kön
 
 ### 2.5 Ausstandsregel
 
-Expertinnen und Experten (VEX/HEX/NEX) sind angehalten, keine Arbeiten von ihnen persönlich bekannten Kandidatinnen oder Kandidaten (KAND) zu begleiten. Solche Konstellationen sind gegeben, wenn unter anderem folgende Bekanntschaften bestehen: Geschäftlich, Schule, Verwandtschaft, Freunde, Nachbarskinder, oder wenn die Expertin oder der Experte in Betrieben tätig ist oder mit Betrieben eine kommerzielle Zusammenarbeit hat, in denen die Kandidatin oder der Kandidat die IPA durchführt.
+Expertinnen und Experten (VEX/HEX/NEX) sind angehalten, keine Arbeiten von ihnen persönlich bekannten Kandidatinnen oder Kandidaten (KAND) zu begleiten. Solche Konstellationen sind gegeben, wenn unter anderem folgende Bekanntschaften bestehen: Geschäftlich, Schule, Verwandtschaft, Freunde, Nachbarskinder.
+
+In Ausnahmefällen und nach Absprache mit der Chefexpertin oder dem Chefexperten (CEX) kann eine Expertin oder ein Experte eine IPA begleiten, wenn sie oder er in Betrieben tätig ist oder mit Betrieben eine kommerzielle Zusammenarbeit hat, in denen die Kandidatin oder der Kandidat die IPA durchführt. Dies gilt insbesondere bei sehr spezifischen Fachgebieten oder Technologien, wo die fachliche Expertise der Expertin oder des Experten von besonderer Bedeutung ist.
 
 ## 3. FACHARBEIT: IPA-BERICHT
 
@@ -128,7 +130,7 @@ Worauf besonders geachtet werden soll: "Was nicht dokumentiert ist, wird nicht b
 
 Die Dokumentation kostet sehr viel Zeit. Die Erstellung des Berichtes sollte daher in der Projektplanung aufgenommen werden. Es wird empfohlen, mit 30% - 40% der gesamten Projektzeit zu rechnen, und es empfiehlt sich, möglichst früh damit zu beginnen. Es sollten keine Entwürfe, sondern Resultate erarbeitet werden. Entsprechend könnte das Erstellen eines Gerüstes zu Beginn helfen, um dieses während der Zeit themengerecht abzuarbeiten und auszufüllen.
 
-Der Zeitbedarf für die Dokumentation ist individuell sehr unterschiedlich und hängt von der Schreibkompetenz, der Komplexität des Themas sowie dem Detaillierungsgrad ab. Die Planung sollte realistisch erfolgen und genügend Zeit für Korrekturlesen und überarbeitung einplanen. Als Richtwert kann bei einer Projektzeit von 10 Tagen mit etwa 25 bis 50 Seiten für den 2. Teil des IPA-Berichtes gerechnet werden (sollte 100 Seiten nicht überschreiten). Das Expertenteam (HEX/NEX) und die vorgesetzte Fachkraft (VF) bewerten den Inhalt und nicht die Menge. Firmenvorlagen sollen/dürfen benutzt werden.
+Der Zeitbedarf für die Dokumentation ist individuell sehr unterschiedlich und hängt von der Schreibkompetenz, der Komplexität des Themas sowie dem Detaillierungsgrad ab. Die Planung sollte realistisch erfolgen und genügend Zeit für Korrekturlesen und Überarbeitung einplanen. Als Richtwert kann bei einer Projektzeit von 10 Tagen mit etwa 25 bis 50 Seiten für den 2. Teil des IPA-Berichtes gerechnet werden (sollte 100 Seiten nicht überschreiten). Das Expertenteam (HEX/NEX) und die vorgesetzte Fachkraft (VF) bewerten den Inhalt und nicht die Menge. Firmenvorlagen sollen/dürfen benutzt werden.
 
 ### 3.2 Form und Inhalt
 
@@ -226,18 +228,18 @@ Der Bericht muss termingerecht eingereicht werden. Eine verspätete Abgabe von b
 
 ## 4. FACHARBEIT: PRÄSENTATION UND DEMONSTRATION
 
-Die Arbeit wird 1-3 Wochen nach dem Abschluss dem Expertenteam (HEX, NEX) und der vorgesetzten Fachkraft (VF) mit einem Vortrag präsentiert. Die Berufsbildnerin oder der Berufsbildner (BB) darf – als stille Beobachterin oder stiller Beobachter – bei der Präsentation und der Demonstration der IPA dabei sein. Achtung! Nicht beim Fachgespräch. Maximal eine weitere Person, die massgeblich an der Umsetzung der Facharbeit beteiligt war, darf auf Antrag bei der Chefexpertin oder dem Chefexperten (CEX) ebenfalls an der Präsentation und der Demonstration teilnehmen.
+Die Arbeit wird 1-3 Wochen nach dem Abschluss dem Expertenteam (HEX, NEX) und der vorgesetzten Fachkraft (VF) mit einer Präsentation vorgestellt. Die Berufsbildnerin oder der Berufsbildner (BB) darf – als stille Beobachterin oder stiller Beobachter – bei der Präsentation und der Demonstration der IPA dabei sein. Achtung! Nicht beim Fachgespräch. Maximal eine weitere Person, die massgeblich an der Umsetzung der Facharbeit beteiligt war, darf auf Antrag bei der Chefexpertin oder dem Chefexperten (CEX) ebenfalls an der Präsentation und der Demonstration teilnehmen.
 
-Der Vortrag muss 15 bis 20 Minuten dauern. Für die obligatorische Demonstration ("Resultate zeigen") sollten weitere 10 Minuten eingeplant werden. Diese darf länger dauern bei komplexen Produkten oder wenn das Expertenteam (HEX/NEX) und die vorgesetzte Fachkraft (VF) viele Fragen haben.
+Die Präsentation muss 15 bis 20 Minuten dauern. Für die obligatorische Demonstration ("Resultate zeigen") sollten 5 bis 10 Minuten eingeplant werden, damit genügend Zeit für das Fachgespräch bleibt. Die Demonstration darf bei komplexen Produkten oder wenn das Expertenteam (HEX/NEX) und die vorgesetzte Fachkraft (VF) viele Fragen haben, auch länger dauern.
 
-Das IPA-Werk muss zwingend in der Version gezeigt werden, die im Bericht dokumentiert und mittels PKOrg abgegeben ist. Die Bewertungskriterien für den Vortrag und die Demonstration sind im Kriterienkatalog ersichtlich.
+Das IPA-Werk muss zwingend in der Version gezeigt werden, die im Bericht dokumentiert und mittels PKOrg abgegeben ist. Die Bewertungskriterien für die Präsentation und die Demonstration sind im Kriterienkatalog ersichtlich.
 
 Wie eine Präsentation aufgebaut und gehalten werden soll, ist aus der Berufsschule bekannt. Hier deshalb nur wenige Hinweise: Bei der Präsentation wird sehr häufig die "Aufwärmphase" vernachlässigt. Es braucht einige wenige Sätze, bis alle Zuhörerinnen und Zuhörer beim Thema sind. Dann wissen alle, "wo man sich befindet" und "wovon die Rede ist". Die Zuhörenden sollen den Rahmen kennen, in den sie die folgenden Details einordnen können. Dieses "Fesseln der Zuhörer" ist auch nötig, wenn alle das Projekt "schon kennen".
 
 Während der Präsentation kann, gleich wie im IPA-Bericht, gezeigt werden, wieso, wie und was erarbeitet wurde. Des Weiteren kann eine frühzeitige Überprüfung der Demonstration dazu beitragen, keinen "Demo-Effekt" zu erleiden oder eine Zeitüberschreitung zu riskieren.
 
 **Wichtige Hinweise zu Aufzeichnungen:**
-- Video- und Audioaufzeichnungen sowie automatische Transkriptionsfunktionen (z.B. durch Copilot oder ähnliche Tools) sind nur mit dem gegenseitigen Einverstaendnis aller beteiligten Personen erlaubt. Dieses Einverständnis muss in der PKOrg History von allen Seiten schriftlich bestätigt werden.
+- Video- und Audioaufzeichnungen sowie automatische Transkriptionsfunktionen (z.B. durch Copilot oder ähnliche Tools) sind nur mit dem gegenseitigen Einverständnis aller beteiligten Personen erlaubt. Dieses Einverständnis muss in der PKOrg History von allen Seiten schriftlich bestätigt werden.
 
 Die Präsentation, Protokolle zur Präsentation und alle weiteren erstellten Dokumente müssen im Anschluss im Dokumentenpool des PKOrg elektronisch abgelegt werden.
 
@@ -249,9 +251,9 @@ Mit diesem Fachgespräch will das Expertenteam herausfinden, wie kompetent die K
 
 Das Fachgespräch darf nicht mit einer mündlichen Berufskundeprüfung verwechselt werden. Natürlich ist auch Schulwissen gefragt, aber nur sofern dieses im Zusammenhang mit der Facharbeit steht. Das Fachwissen und die Produktkenntnis sind die Grundlagen für ein fachlich korrektes Ausführen der Arbeit.
 
-Die Hauptexpertin oder der Hauptexperte (HEX) führt das Gespräch mit Fokus auf 6 Themenbereiche. Dabei werden auch die vorgängig von der vorgesetzten Fachkraft (VF) mitgeteilten Fragen berücksichtigt. Das Gespräch soll auch spontane Fragen zulassen, z.B. wenn im Vortrag etwas unklar geblieben oder ein neuer Aspekt aufgetaucht ist.
+Die Hauptexpertin oder der Hauptexperte (HEX) führt das Gespräch mit Fokus auf 6 Themenbereiche. Dabei werden auch die vorgängig von der vorgesetzten Fachkraft (VF) mitgeteilten Fragen berücksichtigt. Das Gespräch soll auch spontane Fragen zulassen, z.B. wenn in der Präsentation etwas unklar geblieben oder ein neuer Aspekt aufgetaucht ist.
 
-Das Fachgespräch kann bis zu 30 Minuten dauern, wobei die Gesamtzeit von Präsentation, Demonstration und Fachgespräch 60 Minuten nicht überschreiten darf.
+Die Gesamtzeit von Präsentation, Demonstration und Fachgespräch darf 60 Minuten nicht überschreiten.
 
 ## 6. HINWEISE FÜR VF
 
@@ -264,10 +266,13 @@ Die Hauptexpertin oder der Hauptexperte (HEX) liest die Arbeit mit dem Input der
 ### 6.2 Bewertung der Arbeit
 
 **Während der IPA:**
-Sowohl die vorgesetzte Fachkraft (VF) als auch das Expertenteam (HEX/NEX) schreiben während der IPA, bei der Präsentation und beim Fachgespräch Beobachtungsprotokolle.
+Sowohl die vorgesetzte Fachkraft (VF) als auch das Expertenteam (HEX/NEX) schreiben während der IPA Beobachtungsprotokolle.
 
 **Vor der Präsentation:**
-Die vorgesetzte Fachkraft (VF) bewertet und kommentiert das Produkt (Teil 1) und den Bericht (Teil 2) vor der Präsentation im PKOrg. Die Hauptexpertin oder der Hauptexperte (HEX) validiert die Bewertung der VF und passt diese bei Bedarf an.
+Die vorgesetzte Fachkraft (VF) bewertet und kommentiert das Produkt (Teil 1) und den Bericht (Teil 2) vor der Präsentation im PKOrg. Die Hauptexpertin oder der Hauptexperte (HEX) plausibilisiert die Bewertung der VF und passt diese bei Bedarf an.
+
+**Am dritten Besuch (Präsentation, Demonstration und Fachgespräch):**
+Alle drei Beteiligten - die vorgesetzte Fachkraft (VF) sowie das Expertenteam (HEX/NEX) - notieren ihre Beobachtungen während der Präsentation, der Demonstration und des Fachgesprächs. Die Nebenexpertin oder der Nebenexperte führt dabei eine besonders detaillierte Protokollierung durch.
 
 **Nach dem Fachgespräch:**
 Unmittelbar nach dem Fachgespräch bewertet das Expertenteam (HEX/NEX) die restlichen Kriterien im Bewertungsformular (Teil 3) und bespricht die Teile 1 und 2 mit der vorgesetzten Fachkraft (VF), wobei vor allem die angepassten Bewertungen besprochen werden. Das Expertenteam achtet dabei auf aussagekräftige, rekursfähige Kommentare.
@@ -288,7 +293,7 @@ Unmittelbar nach dem Fachgespräch bewertet das Expertenteam (HEX/NEX) die restl
 
 ### 6.4 Abschluss und Notenvorschlag
 
-Nach der Bewertung der Arbeit übermittelt die Hauptexpertin oder der Hauptexperte (HEX) den Notenvorschlag in PKOrg. Die Note wird erst nach der Notenkonferenz und durch die Festlegung in der Prüfungskommission 19 bestimmt. Die Note kann und darf der Kandidatin oder dem Kandidaten (KAND) nicht mitgeteilt werden. Die Kandidatin oder der Kandidat erfährt sie mit dem Notenausweis!
+Nach der Bewertung der Arbeit signieren die Hauptexpertin oder der Hauptexperte (HEX), die Nebenexpertin oder der Nebenexperte (NEX) sowie die vorgesetzte Fachkraft (VF) die Bewertung in PKOrg. Die Note wird erst nach der Notenkonferenz und durch die Festlegung in der Prüfungskommission 19 bestimmt. Die Note kann und darf der Kandidatin oder dem Kandidaten (KAND) nicht mitgeteilt werden. Die Kandidatin oder der Kandidat erfährt sie mit dem Notenausweis!
 
 Bitte beachten Sie alle weiteren Dokumente zur Facharbeit, insbesondere den Ablaufplan mit den Verantwortlichkeiten und Terminen. Melden Sie Widersprüche dem Aktuariat, damit wir diese korrigieren können.
 
