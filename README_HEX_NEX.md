@@ -4,14 +4,14 @@
 
 Dieser Leitfaden dient als Ergänzung zum allgemeinen QV-Leitfaden für Informatikerinnen und Informatiker. Er konzentriert sich speziell auf Informationen, Aufgaben und Verantwortlichkeiten der Expertinnen und Experten während der Individuellen Praktischen Arbeit (IPA). Die enthaltenen Informationen sollen die Standardisierung der Prüfungsdurchführung und die Qualitätssicherung der Bewertung gewährleisten.
 
-**Wichtig:** Im Falle von Widerspruchen zwischen diesem Leitfaden und dem allgemeinen QV-Leitfaden hat der allgemeine QV-Leitfaden Priorität.
+**Wichtig:** Im Falle von Widersprüchen zwischen diesem Leitfaden und dem allgemeinen QV-Leitfaden hat der allgemeine QV-Leitfaden Priorität.
 
 ## 2. Rollen und Verantwortlichkeiten
 
 ### Hauptexpertinnen und Hauptexperten (HEX)
 Als Hauptexpertin oder Hauptexperte trägst du die Gesamtverantwortung für die IPA. Du bist verantwortlich für den Ablauf der IPA ab der Freigabe durch die Validierungsexpertin oder den Validierungsexperten bis zum Einreichen des Notenvorschlags. Du bist die primäre Ansprechperson für die Kandidatin oder den Kandidaten sowie für die vorgesetzte Fachkraft. In dieser Funktion koordinierst du sämtliche Termine und Besuche. Bei auftretenden Problemen triffst du die notwendigen Entscheidungen in Rücksprache mit der Chefexpertin oder dem Chefexperten.
 
-Gemäss des allgemeinen QV-Leitfaden ist die Hauptexpertin oder der Hauptexperte verantwortlich für die Festlegung der Termine, entscheidet bei auftretenden Problemen über Massnahmen, studiert den IPA-Bericht, leitet das Fachgespräch und lädst die benötigten Dokumente termingerecht hoch. Während des Fachgesprächs trägst du die Verantwortung für die Gesprächsführung und arbeitest gemeinsam mit dem Expertenteam den finalen Notenvorschlag aus.
+Gemäss des allgemeinen QV-Leitfaden ist die Hauptexpertin oder der Hauptexperte verantwortlich für die Festlegung der Termine, entscheidet bei auftretenden Problemen über Massnahmen, studiert den Bericht, leitet das Fachgespräch und liefert die genannten Dokumente termingerecht hoch. Während des Fachgesprächs trägst du die Verantwortung für die Gesprächsführung und arbeitest gemeinsam mit dem Expertenteam den finalen Notenvorschlag aus.
 
 ### Nebenexpertinnen und Nebenexperten (NEX)
 Als Nebenexpertin oder Nebenexperte unterstützt du die Hauptexpertin oder den Hauptexperten hauptsächlich bei der Präsentation und dem Fachgespräch. Eine deiner Hauptaufgaben ist das detaillierte Protokollieren während des Besuchs sowie die Dokumentation der Beobachtungen und der Auswertung. Du bringst dich aktiv in die Erarbeitung des Notenvorschlages ein und stellst durch deine unabhängige Sicht eine ausgewogene Beurteilung sicher. Um verschiedene Bewertungsansätze kennenzulernen, solltest du pro Qualifikationsverfahren nur eine IPA mit derselben Hauptexpertin oder demselben Hauptexperten übernehmen.
@@ -24,7 +24,7 @@ Der erste Besuch findet idealerweise am zweiten oder dritten Tag der IPA statt u
 **Wichtige Hinweise bei Online-Besuchen:**
 - Video- und Audioaufzeichnungen sind nur mit dem gegenseitigen Einverständnis aller beteiligten Personen erlaubt. Dieses Einverständnis muss in der PkOrg History von allen Seiten schriftlich bestätigt werden.
 - Automatische Transkriptionsfunktionen (z.B. durch Copilot oder aehnliche Tools) dürfen nur mit dem gegenseitigen Einverstaendnis aller beteiligten Personen aktiviert werden. Dieses Einverstädnis muss in der PkOrg History von allen Seiten schriftlich bestätigt werden.
-- Die Prüfung der Infrastruktur und des Umfelds ist online nur eingeschränkt möglich
+- Die Prüfung der Infrastruktur und des Umfelds ("Achte auf die Infrastruktur und das Umfeld" gemäss Hauptexpertencheckliste) ist online nur eingeschränkt möglich
 
 **Besprechung der Evidenzen:**
 Neben den Bewertungskriterien ist es wichtig, mit der Kandidatin oder dem Kandidaten zu besprechen, wie sie oder er die Evidenzen im IPA-Bericht gestalten will:
@@ -43,7 +43,7 @@ Versuch erreichbar zu sein, falls die Kandidatin oder der Kandidat noch offene F
 
 Die Vorbereitung des Prüfungstages bildet eine zentrale Hauptaufgabe als Hauptexpertin oder Hauptexperte. Das Korrigieren des Berichts steht nicht mehr im Vordergrund. Warte, bis die vorgesetzte Fachkraft den Bericht korrigiert und bewertet hat. Dies sollte spätestens drei Tage vor dem Prüfungstag geschehen sein. Lese zunächst die Bewertung durch, da diese Hinweise auf mögliche Problemstellen gibt und zeigt, wo du ein besonderes Augenmerk auf die Arbeit richten solltest. Lese anschliessend den Bericht mit Fokus auf mögliche Meinungsverschiedenheiten bezüglich der Bewertung und denke dabei bereits an das Fachgespräch.
 
-Validiere die Bewertung der vorgesetzten Fachkraft und bringe deine Änderungen an. Bei Unklarheiten oder offenen Fragen können diese am Präsentationstag besprochen und geklärt werden. Das Expertenteam hat jedoch das letzte Wort, wobei die vorgesetzte Fachkraft dies natürlich noch mit einem Vermerk zur Uneinigkeit kennzeichnen kann. Versuche, wo immer nötig einen Konsens zu finden.
+Plausibilisiere die Bewertung der vorgesetzten Fachkraft und bringe deine Änderungen an. Bei Unklarheiten oder offenen Fragen können diese am Präsentationstag besprochen und geklärt werden. Das Expertenteam hat jedoch das letzte Wort, wobei die vorgesetzte Fachkraft dies natürlich noch mit einem Vermerk zur Uneinigkeit kennzeichnen kann. Versuche, wo immer nötig einen Konsens zu finden.
 
 Im Anschluss bereitest du ein Fachgespräch mit sechs Themenblöcken plus Reserve vor. Diese dürfen nicht die Projektmethode hinterfragen und müssen zum Projekt passen. Ein Themenblock beinhaltet mehrere Unterfragen, die je nach Gesprächsverlauf gestellt werden und dem Gespräch Struktur geben. Berücksichtige die Zeitbegrenzung und plane etwa fünf Minuten pro Frage ein. Hier kannst du auch Vorschläge der vorgesetzten Fachkraft einbeziehen.
 
@@ -67,7 +67,7 @@ An Präsentation und Demonstration nehmen teil:
 - Optional: Berufsbildnerin oder Berufsbildner (nur als stille Beobachtende)
 - Optional: Eine weitere Fachperson (nur nach vorheriger Bewilligung durch die Chefexpertin oder den Chefexperten)
 
-Das Fachgespräch bildet den abschliessenden und oft entscheidenden Teil des Prüfungstages. Es findet im kleineren Kreis statt - ohne Berufsbildnerin oder Berufsbildner oder auch weitere Personen. Die Hauptexpertin oder der Hauptexperte leitet das Gespräch, während die Nebenexpertin oder der Nebenexperte detailliert protokolliert.
+Das Fachgespräch bildet den abschliessenden und oft entscheidenden Teil des Prüfungstages. Es findet im kleineren Kreis statt - ohne Berufsbildnerin oder Berufsbildner oder weitere Personen. Die Hauptexpertin oder der Hauptexperte leitet das Gespräch, während die Nebenexpertin oder der Nebenexperte detailliert protokolliert.
 
 Das Fachgespräch dient der Überprüfung:
 - des Verständnisses der durchgeführten Arbeit
