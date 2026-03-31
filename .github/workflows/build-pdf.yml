@@ -25,6 +25,7 @@ concurrency:
 
 permissions:
   contents: read
+  pull-requests: write
 
 jobs:
   typst:
@@ -55,3 +56,11 @@ jobs:
           name: qv-leitfaden-pdf
           path: dist/*.pdf
           retention-days: 30
+
+      - name: Comment PDF link on PR
+        if: github.event_name == 'pull_request'
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          header: pdf-artifacts
+          message: |
+            **PDF preview ready** — [download artifacts](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}#artifacts) (scroll to bottom of the linked page)
