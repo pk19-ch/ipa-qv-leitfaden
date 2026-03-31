@@ -19,5 +19,9 @@
   running_header: [Prüfungskommission 19 · Informatikberufe Kanton Zürich],
 )[
   #outline(title: [Inhaltsverzeichnis], depth: 3)
+
+  #include "changelog.typ"
+  #pagebreak()
+
   #include "body-hex-nex.typ"
 ]

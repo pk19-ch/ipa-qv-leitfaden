@@ -18,6 +18,9 @@
 )[
   #outline(title: [Inhaltsverzeichnis], depth: 3)
 
+  #include "changelog.typ"
+  #pagebreak()
+
   #include "chapters/ch01.typ"
   #include "chapters/ch02.typ"
   #include "chapters/ch03.typ"
