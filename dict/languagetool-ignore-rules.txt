@@ -1,0 +1,9 @@
+# Rule ids to skip (extracted text is flattened from Typst/Markdown; casing/list rules are noisy).
+# For a stricter grammar pass on clean prose, run locally with an empty ignore file:
+#   LANGUAGETOOL_IGNORE_FILE=/dev/null python3 scripts/check_text.py  (not supported — copy file aside)
+# Or remove lines below temporarily.
+
+DE_CASE
+GERMAN_WORD_REPEAT_BEGINNING_RULE
+GERMAN_WORD_REPEAT_RULE
+EINHEIT_LEERZEICHEN
