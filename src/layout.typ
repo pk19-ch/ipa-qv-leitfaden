@@ -1,4 +1,4 @@
-#import "../theme/zh-mba.typ": *
+#import "../theme/zh-mba.typ": zh_blau, zh_dunkelblau, zh_cyan, zh_blaugrau, zh_black_100, zh_black_80, zh_black_60, zh_black_40, zh_black_20, zh_black_5, body_font, heading_font
 
 // ═══════════════════════════════════════════════════════════════════════════
 // Cover page

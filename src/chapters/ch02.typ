@@ -1,4 +1,4 @@
-#import "../../theme/zh-mba.typ": term_block, timeline_entry
+#import "../../theme/zh-mba.typ": timeline_entry
 
 = Zeitplan und Organisatorisches
 

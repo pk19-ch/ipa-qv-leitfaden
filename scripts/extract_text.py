@@ -23,7 +23,7 @@ from pathlib import Path
 # does not leak into the spell-check corpus.
 _TYP_DIRECTIVE = re.compile(
     r"^\s*#(?:import|include|let|set|show|outline|pagebreak|counter|image|"
-    r"table|rect|line|block|align|v|matter|cover_page|chapter_opener)\b.*$",
+    r"table|rect|line|block|align|v|matter|cover_page)\b.*$",
     re.MULTILINE,
 )
 
@@ -45,9 +45,7 @@ def _skip_bracket_chunk(chunk: str) -> bool:
         return True
     if "rgb(" in c or "cmyk(" in c:
         return True
-    if c.startswith("#") and len(c) < 30 and "/" not in c and "[" not in c:
-        return True
-    return False
+    return c.startswith("#") and len(c) < 30 and "/" not in c and "[" not in c
 
 
 def _clean_chunk(chunk: str) -> str:
@@ -175,6 +173,7 @@ def extract_typst(path: Path) -> str:
 # Corpus assembly
 # ---------------------------------------------------------------------------
 
+
 def corpus_files(root: Path) -> list[Path]:
     """Collect only prose-bearing source files."""
     paths: list[Path] = []
@@ -187,6 +186,10 @@ def corpus_files(root: Path) -> list[Path]:
     changelog = root / "src" / "changelog.typ"
     if changelog.is_file():
         paths.append(changelog)
+    for entry in ("leitfaden.typ", "leitfaden-hex-nex.typ"):
+        entry_path = root / "src" / entry
+        if entry_path.is_file():
+            paths.append(entry_path)
     return paths
 
 

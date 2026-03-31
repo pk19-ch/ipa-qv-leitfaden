@@ -42,14 +42,15 @@ class LTMatch(TypedDict, total=False):
     rule: _LTRule
 
 
-LT_URL        = os.environ.get("LANGUAGETOOL_URL", "https://api.languagetool.org/v2/check")
-LT_LANG       = os.environ.get("LANGUAGETOOL_LANG", "de-CH")
-CHUNK_CHARS   = int(os.environ.get("LANGUAGETOOL_CHUNK", "12000"))
-CHUNK_PAUSE   = float(os.environ.get("LANGUAGETOOL_PAUSE", "1.25"))
+LT_URL = os.environ.get("LANGUAGETOOL_URL", "https://api.languagetool.org/v2/check")
+LT_LANG = os.environ.get("LANGUAGETOOL_LANG", "de-CH")
+CHUNK_CHARS = int(os.environ.get("LANGUAGETOOL_CHUNK", "12000"))
+CHUNK_PAUSE = float(os.environ.get("LANGUAGETOOL_PAUSE", "1.25"))
 
 # ---------------------------------------------------------------------------
 # LanguageTool ignore-list
 # ---------------------------------------------------------------------------
+
 
 def load_lt_ignore_rules(path: Path) -> set[str]:
     if not path.is_file():
@@ -65,6 +66,7 @@ def load_lt_ignore_rules(path: Path) -> set[str]:
 # ---------------------------------------------------------------------------
 # Hunspell
 # ---------------------------------------------------------------------------
+
 
 def hunspell_check(corpus: str, lang: str, personal: Path) -> list[str]:
     hunspell = shutil.which("hunspell")
@@ -82,15 +84,13 @@ def hunspell_check(corpus: str, lang: str, personal: Path) -> list[str]:
         sys.exit(2)
 
     words = [w.strip() for w in proc.stdout.splitlines() if w.strip()]
-    return sorted({
-        w for w in words
-        if not re.fullmatch(r"[\d./:-]+", w) and len(w) > 1
-    })
+    return sorted({w for w in words if not re.fullmatch(r"[\d./:-]+", w) and len(w) > 1})
 
 
 # ---------------------------------------------------------------------------
 # LanguageTool (HTTP API)
 # ---------------------------------------------------------------------------
+
 
 def lt_chunks(text: str, max_len: int) -> list[str]:
     """Split text into paragraph-aligned chunks that fit the API size limit."""
@@ -121,11 +121,13 @@ def lt_check_chunk(
     ignore_rules: set[str],
     disabled_categories: str | None,
 ) -> list[LTMatch]:
-    data = urllib.parse.urlencode({
-        "text": text,
-        "language": LT_LANG,
-        **({"disabledCategories": disabled_categories} if disabled_categories else {}),
-    }).encode("utf-8")
+    data = urllib.parse.urlencode(
+        {
+            "text": text,
+            "language": LT_LANG,
+            **({"disabledCategories": disabled_categories} if disabled_categories else {}),
+        }
+    ).encode("utf-8")
 
     req = urllib.request.Request(
         LT_URL,
@@ -136,17 +138,35 @@ def lt_check_chunk(
             "Accept": "application/json",
         },
     )
-    try:
-        with urllib.request.urlopen(req, timeout=60) as resp:
-            payload = json.loads(resp.read().decode("utf-8"))
-    except urllib.error.HTTPError as exc:
-        body = exc.read().decode("utf-8", errors="replace")
-        print(f"LanguageTool HTTP {exc.code}: {body}", file=sys.stderr)
-        sys.exit(2)
-    except urllib.error.URLError as exc:
-        print(f"LanguageTool request failed: {exc}", file=sys.stderr)
-        sys.exit(2)
-
+    max_retries = 2
+    for attempt in range(max_retries + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                payload = json.loads(resp.read().decode("utf-8"))
+            break
+        except urllib.error.HTTPError as exc:
+            if exc.code in (429, 500, 502, 503, 504) and attempt < max_retries:
+                wait = 2**attempt
+                print(
+                    f"LanguageTool HTTP {exc.code} — retrying in {wait}s …",
+                    file=sys.stderr,
+                )
+                time.sleep(wait)
+                continue
+            body = exc.read().decode("utf-8", errors="replace")
+            print(f"warning: LanguageTool HTTP {exc.code}: {body}", file=sys.stderr)
+            return []
+        except urllib.error.URLError as exc:
+            if attempt < max_retries:
+                wait = 2**attempt
+                print(
+                    f"LanguageTool request failed — retrying in {wait}s …",
+                    file=sys.stderr,
+                )
+                time.sleep(wait)
+                continue
+            print(f"warning: LanguageTool unreachable: {exc}", file=sys.stderr)
+            return []
     out: list[LTMatch] = []
     for m in payload.get("matches") or []:
         rid = str(m.get("rule", {}).get("id") or "")
@@ -173,6 +193,7 @@ def format_lt_match(m: LTMatch, chunk: str) -> str:
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
+
 
 def main() -> None:
     ap = argparse.ArgumentParser(
@@ -201,7 +222,6 @@ def main() -> None:
     if os.environ.get("SKIP_LANGUAGETOOL", "").strip() in ("1", "true", "yes"):
         args.skip_lt = True
 
-    sys.path.insert(0, str(ROOT / "scripts"))
     from extract_text import build_corpus
 
     corpus = build_corpus(ROOT)

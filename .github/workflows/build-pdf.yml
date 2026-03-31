@@ -41,11 +41,7 @@ jobs:
 
       - name: Check changelog contains current version
         run: |
-          ver=$(sed -n 's/.*version[[:space:]]*=[[:space:]]*"\([^"]*\)".*/\1/p' src/meta.typ)
-          if [ -z "$ver" ]; then
-            echo "::error file=src/meta.typ::Could not extract version — check format"
-            exit 1
-          fi
+          ver=$(bash scripts/get_version.sh --full)
           if ! grep -qF "[$ver]" src/changelog.typ; then
             echo "::error file=src/changelog.typ::Version $ver missing from Änderungshistorie — add a row before merging"
             exit 1
