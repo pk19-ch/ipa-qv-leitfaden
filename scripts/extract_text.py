@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Extract plain text from Typst files for spelling/grammar checks.
 
-Only prose-bearing files are processed (chapter sources, body content).
-Layout, theme, and entry-point `.typ` wrappers are excluded so that Typst
-syntax does not pollute the corpus.
+Only prose-bearing files are processed (chapter sources, body content,
+changelog).  Layout, theme, and entry-point ``.typ`` wrappers are excluded
+so that Typst syntax does not pollute the corpus.
 """
 
 from __future__ import annotations
@@ -16,12 +16,23 @@ from pathlib import Path
 # Typst helpers
 # ---------------------------------------------------------------------------
 
+# Full-line directives: layout/meta commands that never contain prose.
+# ── CONTRACT ──
+# When adding new layout helpers to src/layout.typ or theme/*.typ that
+# start lines with ``#name(...)``, add the name here so Typst syntax
+# does not leak into the spell-check corpus.
 _TYP_DIRECTIVE = re.compile(
     r"^\s*#(?:import|include|let|set|show|outline|pagebreak|counter|image|"
     r"table|rect|line|block|align|v|matter|cover_page|chapter_opener)\b.*$",
     re.MULTILINE,
 )
-_TYP_HEADING = re.compile(r"(?m)^=+\s+(.+)$")
+
+_HEADING_MARKER = re.compile(r"(?m)^=+\s+")
+_LIST_MARKER = re.compile(r"(?m)^\s*-\s+")
+_TYPST_LINE_BREAK = re.compile(r"\\\s*$", re.MULTILINE)
+_INLINE_FUNC = re.compile(r"#\w+")
+
+_HAS_LETTERS = re.compile(r"[A-Za-zÀ-ÿ]{2,}")
 
 
 def _skip_bracket_chunk(chunk: str) -> bool:
@@ -34,34 +45,128 @@ def _skip_bracket_chunk(chunk: str) -> bool:
         return True
     if "rgb(" in c or "cmyk(" in c:
         return True
-    if c.startswith("#") and len(c) < 30 and "/" not in c:
+    if c.startswith("#") and len(c) < 30 and "/" not in c and "[" not in c:
         return True
     return False
 
 
+def _clean_chunk(chunk: str) -> str:
+    """Strip inline Typst function names and stray brackets from bracket content."""
+    text = _INLINE_FUNC.sub("", chunk)
+    text = text.replace("[", "").replace("]", "")
+    return text.strip()
+
+
+def _clean_prose(text: str) -> str:
+    """Strip remaining Typst syntax from depth-0 text, keeping readable prose."""
+    text = _HEADING_MARKER.sub("", text)
+    text = _LIST_MARKER.sub("", text)
+    text = _TYPST_LINE_BREAK.sub("", text)
+    lines: list[str] = []
+    for raw_line in text.splitlines():
+        stripped = raw_line.strip()
+        if not stripped:
+            continue
+        if not _HAS_LETTERS.search(stripped):
+            continue
+        lines.append(stripped)
+    return "\n".join(lines)
+
+
+def _emit_bracket(chunk: str, parts: list[str]) -> None:
+    """Clean and append a bracket chunk if it contains meaningful prose."""
+    if _skip_bracket_chunk(chunk):
+        return
+    cleaned = _clean_chunk(chunk)
+    if cleaned and _HAS_LETTERS.search(cleaned):
+        parts.append(cleaned)
+
+
+def _emit_prose(prose_buf: list[str], parts: list[str]) -> None:
+    prose = "".join(prose_buf)
+    cleaned = _clean_prose(prose)
+    if cleaned:
+        parts.append(cleaned)
+
+
 def extract_typst(path: Path) -> str:
+    """Extract prose from a Typst file using a state machine.
+
+    Walks character-by-character, tracking three states:
+    - **depth-0 prose** (bracket_depth == 0, paren_depth == 0): paragraph text
+    - **inside function args** (paren_depth > 0): skipped, but brackets
+      inside args are still extracted as prose
+    - **inside brackets** (bracket_depth > 0): content extracted as-is
+    """
     raw = path.read_text(encoding="utf-8")
     raw = _TYP_DIRECTIVE.sub("\n", raw)
 
     parts: list[str] = []
+    bracket_depth = 0
+    paren_depth = 0
+    bracket_start: int | None = None
+    prose_buf: list[str] = []
+    i = 0
+    n = len(raw)
 
-    for m in _TYP_HEADING.finditer(raw):
-        parts.append(m.group(1).strip())
+    while i < n:
+        ch = raw[i]
 
-    depth = 0
-    start: int | None = None
-    for i, ch in enumerate(raw):
-        if ch == "[":
-            if depth == 0:
-                start = i + 1
-            depth += 1
-        elif ch == "]":
-            depth -= 1
-            if depth == 0 and start is not None:
-                chunk = raw[start:i]
-                if not _skip_bracket_chunk(chunk):
-                    parts.append(chunk.strip())
-                start = None
+        if bracket_depth > 0:
+            if ch == "[":
+                bracket_depth += 1
+            elif ch == "]":
+                bracket_depth -= 1
+                if bracket_depth == 0 and bracket_start is not None:
+                    _emit_bracket(raw[bracket_start:i], parts)
+                    bracket_start = None
+            i += 1
+
+        elif paren_depth > 0:
+            if ch == "(":
+                paren_depth += 1
+                i += 1
+            elif ch == ")":
+                paren_depth -= 1
+                i += 1
+            elif ch == "[":
+                bracket_depth = 1
+                bracket_start = i + 1
+                i += 1
+            else:
+                i += 1
+
+        elif ch == "#" and i + 1 < n and (raw[i + 1].isalpha() or raw[i + 1] == "_"):
+            _emit_prose(prose_buf, parts)
+            prose_buf = []
+            j = i + 1
+            while j < n and (raw[j].isalnum() or raw[j] == "_"):
+                j += 1
+            k = j
+            while k < n and raw[k] in " \t":
+                k += 1
+            if k < n and raw[k] == "(":
+                paren_depth = 1
+                i = k + 1
+            elif k < n and raw[k] == "[":
+                bracket_depth = 1
+                bracket_start = k + 1
+                i = k + 1
+            else:
+                i = j
+
+        elif ch == "[":
+            _emit_prose(prose_buf, parts)
+            prose_buf = []
+            bracket_depth = 1
+            bracket_start = i + 1
+            i += 1
+
+        else:
+            prose_buf.append(ch)
+            i += 1
+
+    _emit_prose(prose_buf, parts)
 
     return "\n".join(p for p in parts if p)
 
@@ -79,6 +184,9 @@ def corpus_files(root: Path) -> list[Path]:
     hex_body = root / "src" / "body-hex-nex.typ"
     if hex_body.is_file():
         paths.append(hex_body)
+    changelog = root / "src" / "changelog.typ"
+    if changelog.is_file():
+        paths.append(changelog)
     return paths
 
 

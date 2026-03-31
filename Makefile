@@ -1,6 +1,6 @@
 TYPST           ?= typst
 PODMAN          ?= podman
-IMAGE           ?= ghcr.io/typst/typst:latest
+IMAGE           ?= ghcr.io/typst/typst:v0.14.2
 CHECK_IMAGE     ?= docker.io/library/ubuntu:24.04
 OUT             := dist
 FONT_DIR        := assets/fonts/inter
@@ -12,12 +12,13 @@ SRC             := $(wildcard src/*.typ) $(wildcard src/chapters/*.typ)
 THEME           := $(wildcard theme/*.typ)
 
 YEAR            := $(shell sed -n 's/.*version[[:space:]]*=[[:space:]]*"\([0-9]*\)\..*/\1/p' src/meta.typ)
+$(if $(YEAR),,$(error Could not extract year from src/meta.typ — check version format))
 
 TYPST_FLAGS     := --root . --font-path $(FONT_DIR)
 
 .DEFAULT_GOAL := pdf
 
-.PHONY: pdf clean podman-pdf check-text podman-check-text
+.PHONY: pdf clean podman-pdf check-text podman-check-text test podman-test
 
 # ── Native builds (requires `typst` on PATH) ─────────────────────────────────
 
@@ -47,7 +48,17 @@ podman-pdf:
 # ── Text quality (spelling + grammar) ────────────────────────────────────────
 
 check-text:
-	python3 scripts/check_text.py
+	SKIP_LANGUAGETOOL="$(SKIP_LANGUAGETOOL)" python3 scripts/check_text.py
+
+test:
+	python3 -m pytest scripts/test_extract_text.py -v
+
+podman-test:
+	$(PODMAN) run --rm \
+		-v "$$(pwd):/work:Z" -w /work $(CHECK_IMAGE) bash -lc '\
+		export DEBIAN_FRONTEND=noninteractive && \
+		apt-get update -qq && apt-get install -y -qq python3-pytest >/dev/null && \
+		python3 -m pytest scripts/test_extract_text.py -v'
 
 podman-check-text:
 	$(PODMAN) run --rm \

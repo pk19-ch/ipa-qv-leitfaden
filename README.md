@@ -10,6 +10,8 @@ The printable PDFs are generated from [Typst](https://typst.app/) sources in [`s
 | PDFs (native) | `make pdf` | [Typst](https://typst.app/) ≥ 0.14.2 |
 | Spell/grammar (container) | `make podman-check-text` | Podman |
 | Spell/grammar (native) | `make check-text` | Python 3, hunspell, hunspell-de-ch |
+| Unit tests (container) | `make podman-test` | Podman |
+| Unit tests (native) | `make test` | Python 3, pytest |
 
 Set `SKIP_LANGUAGETOOL=1` to skip the LanguageTool API call (offline). Override the container runtime with `PODMAN=docker`.
 
@@ -19,7 +21,7 @@ All workflows run on pushes and PRs to `main` (path-filtered):
 
 - [build-pdf.yml](.github/workflows/build-pdf.yml) -- compiles PDFs, uploads as `qv-leitfaden-pdf` artifact
 - [text-check.yml](.github/workflows/text-check.yml) -- hunspell + LanguageTool on prose changes
-- [release.yml](.github/workflows/release.yml) -- on `main` only: auto-tags, changelog, GitHub Release with PDFs (triggered by `version` change in [`src/meta.typ`](src/meta.typ))
+- [release.yml](.github/workflows/release.yml) -- on `main` only: auto-tags, changelog, GitHub Release with PDFs (triggered by `version` change in [`src/meta.typ`](src/meta.typ)). **Note:** the release workflow pushes a changelog commit to `main` — if branch protection blocks the bot, configure a bypass for `github-actions[bot]`
 
 ### Versioning
 

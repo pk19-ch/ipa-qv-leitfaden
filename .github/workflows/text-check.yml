@@ -35,10 +35,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install hunspell (Swiss German dictionary)
+      - name: Install hunspell and pytest
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y -qq hunspell hunspell-de-ch
+          sudo apt-get install -y -qq hunspell hunspell-de-ch python3-pytest
+
+      - name: Run extract_text tests
+        run: python3 -m pytest scripts/test_extract_text.py -v
 
       - name: Check spelling & grammar
         env:
