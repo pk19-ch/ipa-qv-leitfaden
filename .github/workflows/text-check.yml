@@ -1,0 +1,60 @@
+name: Text (spelling & grammar)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "theme/**"
+      - "scripts/**"
+      - "dict/**"
+      - "Makefile"
+      - "pyproject.toml"
+      - "requirements.txt"
+      - ".github/workflows/text-check.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "theme/**"
+      - "scripts/**"
+      - "dict/**"
+      - "Makefile"
+      - "pyproject.toml"
+      - "requirements.txt"
+      - ".github/workflows/text-check.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  lint-text:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install hunspell and pytest
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq hunspell hunspell-de-ch python3-pytest
+
+      - uses: astral-sh/ruff-action@v3
+        with:
+          src: "./scripts"
+          version: "0.15.8"
+
+      - name: Run Python tests
+        run: python3 -m pytest scripts/ -v
+
+      - name: Check spelling & grammar
+        env:
+          LANGUAGETOOL_LANG: de-CH
+          HUNSPELL_LANG: de_CH
+          LANGUAGETOOL_PAUSE: "1.5"
+        run: python3 scripts/check_text.py
