@@ -26,6 +26,7 @@ make test
 | Spell/grammar (native) | `make check-text` | `.venv` with `requirements.txt`, hunspell, hunspell-de-ch |
 | Unit tests (container) | `make podman-test` | Podman |
 | Unit tests (native) | `make test` | `.venv` with `requirements.txt` |
+| Python linter (native) | `make lint` | `.venv` with `requirements.txt` |
 | Full CI suite (container) | `make podman-ci` | Podman |
 | Show all targets | `make help` | — |
 

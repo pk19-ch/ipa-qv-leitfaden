@@ -34,7 +34,7 @@ Die Hauptexpertin oder der Hauptexperte (HEX) liest die Arbeit mit dem Input der
 - Entscheidungen bei auftretenden Problemen
 - Leitung des Fachgespräches
 - Erarbeitung des finalen Notenvorschlags zusammen mit dem Expertenteam
-- Hochladen der Dokumente auf PKOrg und übermittlung des Notenvorschlags
+- Hochladen der Dokumente auf PKOrg und Übermittlung des Notenvorschlags
 
 #strong[Die Nebenexpertin oder der Nebenexperte (NEX):]
 
