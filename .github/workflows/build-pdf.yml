@@ -40,8 +40,10 @@ jobs:
           typst-version: "0.14.2"
 
       - name: Check changelog contains current version
+        id: meta
         run: |
           ver=$(bash scripts/get_version.sh --full)
+          echo "version=$ver" >> "$GITHUB_OUTPUT"
           if ! grep -qF "[$ver]" src/changelog.typ; then
             echo "::error file=src/changelog.typ::Version $ver missing from Änderungshistorie — add a row before merging"
             exit 1
@@ -53,7 +55,7 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: qv-leitfaden-pdf
+          name: qv-leitfaden-pdf-${{ steps.meta.outputs.version }}
           path: dist/*.pdf
           retention-days: 30
 

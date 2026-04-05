@@ -8,7 +8,7 @@ The printable PDFs are generated from [Typst](https://typst.app/) sources in [`s
 # Prerequisites: Typst ≥ 0.14.2, Python 3, hunspell + hunspell-de-ch
 # Optional: Podman for container builds (make podman-pdf, make podman-ci)
 git clone <repo-url> && cd ipa-qv-leitfaden
-make pdf                    # → dist/qv-leitfaden-2026.pdf + HEX/NEX variant
+make pdf                    # → dist/qv-leitfaden-2026.1.pdf + HEX/NEX variant (CalVer from meta.typ)
 
 # For tests and linting (uses project-local venv)
 python3 -m venv .venv
@@ -35,7 +35,7 @@ Set `SKIP_LANGUAGETOOL=1` to skip the LanguageTool API call (offline). Override 
 
 All workflows run on pushes and PRs to `main` (path-filtered):
 
-- [build-pdf.yml](.github/workflows/build-pdf.yml) -- compiles PDFs, uploads as `qv-leitfaden-pdf` artifact
+- [build-pdf.yml](.github/workflows/build-pdf.yml) -- compiles PDFs, uploads a zip artifact named `qv-leitfaden-pdf-YYYY.N` containing the two CalVer PDFs (same basenames as in `dist/` locally)
 - [text-check.yml](.github/workflows/text-check.yml) -- ruff lint, pytest, hunspell + LanguageTool on prose changes
 - [release.yml](.github/workflows/release.yml) -- on `main` only: auto-tags, changelog, GitHub Release with PDFs (triggered by `version` change in [`src/meta.typ`](src/meta.typ)). **Note:** the release workflow pushes a changelog commit to `main` — if branch protection blocks the bot, configure a bypass for `github-actions[bot]`
 
@@ -61,7 +61,13 @@ Other standard types are grouped per [`cliff.toml`](cliff.toml).
 
 ### Output
 
-- `dist/qv-leitfaden-YYYY.pdf` -- main (KAND/VF)
-- `dist/qv-leitfaden-hex-nex-YYYY.pdf` -- experts (HEX/NEX)
+- `dist/qv-leitfaden-YYYY.N.pdf` -- main (KAND/VF)
+- `dist/qv-leitfaden-hex-nex-YYYY.N.pdf` -- experts (HEX/NEX)
 
-The year is derived automatically from `version` in [`src/meta.typ`](src/meta.typ).
+The `YYYY.N` segment matches `version` in [`src/meta.typ`](src/meta.typ) (CalVer), so multiple editions per year get distinct filenames.
+
+**Where you see those names**
+
+- **On your computer:** after `make pdf`, e.g. `dist/qv-leitfaden-2026.1.pdf` and `dist/qv-leitfaden-hex-nex-2026.1.pdf` (exact numbers follow `meta.typ`).
+- **On GitHub Actions:** the downloadable zip is `qv-leitfaden-pdf-2026.1.zip` (artifact name + `.zip`); inside it are the same two PDF basenames.
+- **On GitHub Releases:** release assets use the same two filenames (no zip), attached by [release.yml](.github/workflows/release.yml) when `version` in `meta.typ` changes on `main`.
