@@ -18,7 +18,7 @@ TYPST_FLAGS     := --root . --font-path $(FONT_DIR)
 
 .DEFAULT_GOAL := pdf
 
-.PHONY: pdf clean podman-pdf check-text podman-check-text test podman-test podman-ci help
+.PHONY: pdf clean podman-pdf check-text podman-check-text test lint podman-test podman-ci help
 
 # ── Native builds (requires `typst` on PATH) ─────────────────────────────────
 
@@ -52,6 +52,9 @@ check-text: ## Run spelling + grammar checks (requires .venv)
 
 test: ## Run Python tests (requires .venv)
 	.venv/bin/python3 -m pytest scripts/ -v
+
+lint: ## Run Python linter (requires .venv)
+	.venv/bin/python3 -m ruff check scripts/
 
 podman-test: ## Run Python tests in container
 	$(PODMAN) run --rm \

@@ -1,6 +1,5 @@
 #import "../../theme/zh-mba.typ": callout
 
-
 = Grundsätzliche Idee der IPA
 
 == Wegleitung SBFI

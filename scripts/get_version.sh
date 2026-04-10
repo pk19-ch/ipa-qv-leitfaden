@@ -7,7 +7,7 @@ set -euo pipefail
 META="$(dirname "$0")/../src/meta.typ"
 
 full=$(sed -n 's/.*version[[:space:]]*=[[:space:]]*"\([^"]*\)".*/\1/p' "$META")
-if [ -z "$full" ]; then
+if [[ -z "$full" ]]; then
   echo "error: could not extract version from $META — check format" >&2
   exit 1
 fi

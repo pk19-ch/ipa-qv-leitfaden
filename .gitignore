@@ -1,11 +1,15 @@
 dist/*.pdf
+
 *.DS_Store
 .Spotlight-V100
 .Trashes
+
 __pycache__/
 *.pyc
-.cursor/
+.pytest_cache/
+.ruff_cache/
 .venv/
 
+.cursor/
 .superpowers/
 docs/superpowers/
