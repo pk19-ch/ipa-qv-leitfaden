@@ -101,4 +101,6 @@ jobs:
           tag_name: ${{ steps.version.outputs.tag }}
           name: QV-Leitfaden ${{ steps.version.outputs.version }}
           body: ${{ steps.release_notes.outputs.content }}
-          files: dist/*.pdf
+          files: |
+            dist/qv-leitfaden-${{ steps.version.outputs.version }}.pdf
+            dist/qv-leitfaden-hex-nex-${{ steps.version.outputs.version }}.pdf

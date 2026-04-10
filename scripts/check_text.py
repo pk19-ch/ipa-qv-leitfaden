@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """Spell-check (hunspell) and grammar/style check (LanguageTool public API).
 
-Exit codes:
+Exit codes (from ``main()``):
   0 — no issues
   1 — spelling or grammar issues found
-  2 — tool/infrastructure error (hunspell missing, empty corpus, etc.)
+  2 — tool/infrastructure error (see ``InfrastructureError``)
+
+Hunspell helpers raise ``InfrastructureError``; ``main()`` prints it and exits 2.
 """
 
 from __future__ import annotations
@@ -24,6 +26,10 @@ from pathlib import Path
 from typing import TypedDict
 
 ROOT = Path(__file__).resolve().parent.parent
+
+
+class InfrastructureError(Exception):
+    """Missing tool or broken setup; ``main()`` maps this to exit code 2."""
 
 
 class _LTRuleCategory(TypedDict, total=False):
@@ -68,20 +74,60 @@ def load_lt_ignore_rules(path: Path) -> set[str]:
 # ---------------------------------------------------------------------------
 
 
-def hunspell_check(corpus: str, lang: str, personal: Path) -> list[str]:
-    hunspell = shutil.which("hunspell")
-    if not hunspell:
-        print("error: hunspell not found; install hunspell + hunspell-de-ch", file=sys.stderr)
-        sys.exit(2)
+def resolve_hunspell_lang(cli_value: str | None) -> str:
+    """CLI ``--hunspell-lang`` overrides ``HUNSPELL_LANG``; empty values use ``de_CH``."""
+    if cli_value is not None:
+        s = cli_value.strip()
+        if s:
+            return s
+    env = (os.environ.get("HUNSPELL_LANG") or "").strip()
+    return env or "de_CH"
 
+
+def hunspell_executable() -> str:
+    found = shutil.which("hunspell")
+    if not found:
+        raise InfrastructureError(
+            "hunspell not found; install hunspell and a dictionary for your language",
+        )
+    return found
+
+
+def ensure_hunspell_dictionary(hunspell: str, lang: str) -> None:
+    """Confirm ``hunspell -d lang`` can load before spelling the corpus.
+
+    Runs ``hunspell`` on empty stdin. Exit code ``0`` means the affix/dictionary
+    for ``lang`` loaded; a non-zero code usually means missing or broken dict
+    files (hunspell also uses ``1`` for that case, which would be ambiguous on
+    real text).
+    """
+    proc = subprocess.run(
+        [hunspell, "-d", lang, "-i", "utf-8", "-l"],
+        input="",
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    if proc.returncode != 0:
+        detail = (proc.stderr or proc.stdout or "").strip()
+        msg = (
+            f"hunspell cannot load dictionary -d {lang!r} "
+            "(install the matching hunspell / dictionary package)"
+        )
+        if detail:
+            msg = f"{msg}\n{detail}"
+        raise InfrastructureError(msg)
+
+
+def hunspell_check(hunspell: str, corpus: str, lang: str, personal: Path) -> list[str]:
     cmd = [hunspell, "-d", lang, "-i", "utf-8", "-l"]
     if personal.is_file():
         cmd.extend(["-p", str(personal)])
 
     proc = subprocess.run(cmd, input=corpus, capture_output=True, text=True, check=False)
     if proc.returncode not in (0, 1):
-        print(proc.stderr or proc.stdout, file=sys.stderr)
-        sys.exit(2)
+        detail = (proc.stderr or proc.stdout or "").strip()
+        raise InfrastructureError(detail or f"hunspell exited with code {proc.returncode}")
 
     words = [w.strip() for w in proc.stdout.splitlines() if w.strip()]
     return sorted({w for w in words if not re.fullmatch(r"[\d./:-]+", w) and len(w) > 1})
@@ -201,7 +247,8 @@ def main() -> None:
     )
     ap.add_argument(
         "--hunspell-lang",
-        default=os.environ.get("HUNSPELL_LANG", "de_CH"),
+        default=None,
+        help="Overrides HUNSPELL_LANG; default is de_CH when unset or empty.",
     )
     ap.add_argument(
         "--personal-dict",
@@ -218,47 +265,57 @@ def main() -> None:
         help="Skip LanguageTool (offline / no network).",
     )
     args = ap.parse_args()
+    args.hunspell_lang = resolve_hunspell_lang(args.hunspell_lang)
 
     if os.environ.get("SKIP_LANGUAGETOOL", "").strip() in ("1", "true", "yes"):
         args.skip_lt = True
 
     from extract_text import build_corpus
 
-    corpus = build_corpus(ROOT)
-    if not corpus.strip():
-        print("error: empty corpus — no prose files found", file=sys.stderr)
+    try:
+        corpus = build_corpus(ROOT)
+        if not corpus.strip():
+            raise InfrastructureError("empty corpus — no prose files found")
+
+        hunspell = hunspell_executable()
+        ensure_hunspell_dictionary(hunspell, args.hunspell_lang)
+        bad_words = hunspell_check(hunspell, corpus, args.hunspell_lang, args.personal_dict)
+        if bad_words:
+            print(f"Spelling — {len(bad_words)} unknown word(s):", file=sys.stderr)
+            for w in bad_words:
+                print(f"  {w}", file=sys.stderr)
+            print("  (add to dict/ipa-personal.pws if correct)", file=sys.stderr)
+
+        lt_issues: list[str] = []
+        if not args.skip_lt:
+            ignore_rules = load_lt_ignore_rules(ROOT / "dict" / "languagetool-ignore-rules.txt")
+            disabled = args.lt_disable_categories.strip() or None
+            chunks = lt_chunks(corpus, CHUNK_CHARS)
+            for i, chunk in enumerate(chunks):
+                if i:
+                    time.sleep(CHUNK_PAUSE)
+                for m in lt_check_chunk(
+                    chunk,
+                    ignore_rules=ignore_rules,
+                    disabled_categories=disabled,
+                ):
+                    lt_issues.append(format_lt_match(m, chunk))
+
+        if lt_issues:
+            print(f"\nLanguageTool — {len(lt_issues)} issue(s):", file=sys.stderr)
+            for line in lt_issues:
+                print(line, file=sys.stderr)
+
+        if bad_words or lt_issues:
+            sys.exit(1)
+
+        checks = "hunspell"
+        if not args.skip_lt:
+            checks += " + LanguageTool"
+        print(f"OK ({checks})")
+    except InfrastructureError as exc:
+        print(f"error: {exc}", file=sys.stderr)
         sys.exit(2)
-
-    bad_words = hunspell_check(corpus, args.hunspell_lang, args.personal_dict)
-    if bad_words:
-        print(f"Spelling — {len(bad_words)} unknown word(s):", file=sys.stderr)
-        for w in bad_words:
-            print(f"  {w}", file=sys.stderr)
-        print("  (add to dict/ipa-personal.pws if correct)", file=sys.stderr)
-
-    lt_issues: list[str] = []
-    if not args.skip_lt:
-        ignore_rules = load_lt_ignore_rules(ROOT / "dict" / "languagetool-ignore-rules.txt")
-        disabled = args.lt_disable_categories.strip() or None
-        chunks = lt_chunks(corpus, CHUNK_CHARS)
-        for i, chunk in enumerate(chunks):
-            if i:
-                time.sleep(CHUNK_PAUSE)
-            for m in lt_check_chunk(chunk, ignore_rules=ignore_rules, disabled_categories=disabled):
-                lt_issues.append(format_lt_match(m, chunk))
-
-    if lt_issues:
-        print(f"\nLanguageTool — {len(lt_issues)} issue(s):", file=sys.stderr)
-        for line in lt_issues:
-            print(line, file=sys.stderr)
-
-    if bad_words or lt_issues:
-        sys.exit(1)
-
-    checks = "hunspell"
-    if not args.skip_lt:
-        checks += " + LanguageTool"
-    print(f"OK ({checks})")
 
 
 if __name__ == "__main__":
