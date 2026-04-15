@@ -142,11 +142,11 @@ def test_ensure_hunspell_dictionary_passes_on_probe_ok(mock_run: MagicMock) -> N
     assert kwargs.get("input") == ""
 
 
-def _mock_lt_response(matches: list[dict]) -> MagicMock:
+def _mock_lt_response(matches: list[dict[str, object]]) -> MagicMock:
     payload = json.dumps({"matches": matches}).encode("utf-8")
     resp = MagicMock()
     resp.read.return_value = payload
-    resp.__enter__ = lambda s: s
+    resp.__enter__ = MagicMock(side_effect=lambda: resp)
     resp.__exit__ = MagicMock(return_value=False)
     return resp
 
@@ -226,5 +226,18 @@ def test_lt_check_chunk_soft_fails_after_retries(
     )
     mock_urlopen.side_effect = [error_resp, error_resp, error_resp]
     result = lt_check_chunk("text", ignore_rules=set(), disabled_categories=None)
-    assert result == []
+    assert result is None
     assert mock_urlopen.call_count == 3
+
+
+@patch("check_text.urllib.request.urlopen")
+def test_lt_check_chunk_returns_none_on_malformed_json(
+    mock_urlopen: MagicMock,
+) -> None:
+    resp = MagicMock()
+    resp.read.return_value = b"not valid json"
+    resp.__enter__ = MagicMock(side_effect=lambda: resp)
+    resp.__exit__ = MagicMock(return_value=False)
+    mock_urlopen.return_value = resp
+    result = lt_check_chunk("text", ignore_rules=set(), disabled_categories=None)
+    assert result is None

@@ -15,6 +15,9 @@
 #let zh_dunkelblau = rgb("#00407C")
 #let zh_cyan       = rgb("#009EE0")
 
+// ── Surface / page colour ─────────────────────────────────────────────────
+#let zh_white      = rgb("#FFFFFF")
+
 // ── Soft / background colours ──────────────────────────────────────────────
 #let zh_soft_blau  = rgb("#EDF5FA")
 #let zh_blaugrau   = rgb("#E0E8EE")
@@ -73,7 +76,7 @@
   width: 100%,
 )[
   #place(left + top, dx: -27pt, dy: 2pt)[
-    #circle(radius: 6pt, fill: white, stroke: 2.5pt + zh_blau)
+    #circle(radius: 6pt, fill: zh_white, stroke: 2.5pt + zh_blau)
   ]
   #block(below: 4pt)[
     #text(11pt, weight: "bold", fill: zh_dunkelblau, font: heading_font)[#period]

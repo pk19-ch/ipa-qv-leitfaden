@@ -6,7 +6,7 @@
 
 Die vorgesetzte Fachkraft (VF) prüft den Bericht auf fachliche Richtigkeit, systematische Gliederung, verständliche Formulierung, saubere Darstellung, Vollständigkeit, ... (vgl. Bewertungskriterien). Sie oder er schreibt einen ausführlichen Kommentar (auch Positives!) in das Bemerkungsfeld des entsprechenden Kriteriums unter Angabe der Seitennummer oder in ein separates Dokument, ebenfalls unter Angabe der Seitennummer. Die Dokumente müssen alle als PDF abgegeben werden.
 
-Die Hauptexpertin oder der Hauptexperte (HEX) liest die Arbeit mit dem Input der VF-Bewertung. Die Hauptexpertin oder der Hauptexperte (HEX) notiert sich unterschiedliche Auffassungen der Bewertung. Dabei ist zu berücksichtigen, dass einige Kriterien erst mit der Präsentation und dem Fachgespräch eindeutig beurteilt werden können. Bemerkungen und die aufgetretenen Fragen (als Grundlage für das Fachgespräch) werden auf einem separaten Protokollblatt notiert. Dieses muss vor der Präsentation auf PKOrg im Dokumentenpool im PDF-Format elektronisch abgelegt werden.
+Die Hauptexpertin oder der Hauptexperte (HEX) liest die Arbeit mit dem Input der VF-Bewertung. Die Hauptexpertin oder der Hauptexperte (HEX) notiert sich unterschiedliche Auffassungen der Bewertung. Dabei ist zu berücksichtigen, dass einige Kriterien erst mit der Präsentation und dem Fachgespräch eindeutig beurteilt werden können. Bemerkungen und die aufgetretenen Fragen (als Grundlage für das Fachgespräch) werden auf einem separaten Protokollblatt notiert. Dieses muss vor der Präsentation auf PkOrg im Dokumentenpool im PDF-Format elektronisch abgelegt werden.
 
 == Bewertung der Arbeit
 
@@ -15,7 +15,7 @@ Die Hauptexpertin oder der Hauptexperte (HEX) liest die Arbeit mit dem Input der
 ]
 
 #term_block([Vor der Präsentation:])[
-  Die vorgesetzte Fachkraft (VF) bewertet und kommentiert das Produkt (Teil 1) und den Bericht (Teil 2) vor der Präsentation im PKOrg. Die Hauptexpertin oder der Hauptexperte (HEX) plausibilisiert die Bewertung der VF und passt diese bei Bedarf an.
+  Die vorgesetzte Fachkraft (VF) bewertet und kommentiert das Produkt (Teil 1) und den Bericht (Teil 2) vor der Präsentation im PkOrg. Die Hauptexpertin oder der Hauptexperte (HEX) plausibilisiert die Bewertung der VF und passt diese bei Bedarf an.
 ]
 
 #term_block([Am dritten Besuch (Präsentation, Demonstration und Fachgespräch):])[
@@ -34,7 +34,7 @@ Die Hauptexpertin oder der Hauptexperte (HEX) liest die Arbeit mit dem Input der
 - Entscheidungen bei auftretenden Problemen
 - Leitung des Fachgespräches
 - Erarbeitung des finalen Notenvorschlags zusammen mit dem Expertenteam
-- Hochladen der Dokumente auf PKOrg und Übermittlung des Notenvorschlags
+- Hochladen der Dokumente auf PkOrg und Übermittlung des Notenvorschlags
 
 #strong[Die Nebenexpertin oder der Nebenexperte (NEX):]
 
@@ -44,6 +44,6 @@ Die Hauptexpertin oder der Hauptexperte (HEX) liest die Arbeit mit dem Input der
 
 == Abschluss und Notenvorschlag
 
-Nach der Bewertung der Arbeit signieren die Hauptexpertin oder der Hauptexperte (HEX), die Nebenexpertin oder der Nebenexperte (NEX) sowie die vorgesetzte Fachkraft (VF) die Bewertung in PKOrg. Die Note wird erst nach der Notenkonferenz und durch die Festlegung in der Prüfungskommission 19 bestimmt. Die Note kann und darf der Kandidatin oder dem Kandidaten (KAND) nicht mitgeteilt werden. Die Kandidatin oder der Kandidat erfährt sie mit dem Notenausweis!
+Nach der Bewertung der Arbeit signieren die Hauptexpertin oder der Hauptexperte (HEX), die Nebenexpertin oder der Nebenexperte (NEX) sowie die vorgesetzte Fachkraft (VF) die Bewertung in PkOrg. Die Note wird erst nach der Notenkonferenz und durch die Festlegung in der Prüfungskommission 19 bestimmt. Die Note kann und darf der Kandidatin oder dem Kandidaten (KAND) nicht mitgeteilt werden. Die Kandidatin oder der Kandidat erfährt sie mit dem Notenausweis!
 
 Bitte beachten Sie alle weiteren Dokumente zur Facharbeit, insbesondere den Ablaufplan mit den Verantwortlichkeiten und Terminen. Melden Sie Widersprüche dem Aktuariat, damit wir diese korrigieren können.

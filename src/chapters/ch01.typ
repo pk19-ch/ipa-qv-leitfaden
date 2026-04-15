@@ -8,7 +8,7 @@ Die Wegleitung des Staatssekretariats für Bildung, Forschung und Innovation (SB
 
 Die wichtigsten Punkte aus der Wegleitung sind:
 
-Die vorgesetzte Fachkraft formuliert die Aufgabenstellung und reicht diese fristgerecht in PKOrg ein. Mit der Aufgabenstellung müssen folgende Angaben eingereicht werden:
+Die vorgesetzte Fachkraft formuliert die Aufgabenstellung und reicht diese fristgerecht in PkOrg ein. Mit der Aufgabenstellung müssen folgende Angaben eingereicht werden:
 
 - Die geschätzte Ausführungsdauer
 - Der geplante Ausführungszeitraum

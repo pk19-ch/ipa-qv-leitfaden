@@ -147,6 +147,9 @@ def _lt_request(req: urllib.request.Request, max_retries: int = 2) -> dict | Non
         try:
             with urllib.request.urlopen(req, timeout=60) as resp:
                 return json.loads(resp.read().decode("utf-8"))
+        except json.JSONDecodeError:
+            print("warning: LanguageTool returned malformed JSON", file=sys.stderr)
+            return None
         except urllib.error.HTTPError as exc:
             if exc.code in (429, 500, 502, 503, 504) and attempt < max_retries:
                 wait = 2**attempt
@@ -171,7 +174,8 @@ def lt_check_chunk(
     *,
     ignore_rules: set[str],
     disabled_categories: str | None,
-) -> list[LTMatch]:
+) -> list[LTMatch] | None:
+    """Check a text chunk via LanguageTool; return ``None`` when the API is unreachable."""
     params: dict[str, str] = {"text": text, "language": LT_LANG}
     if disabled_categories:
         params["disabledCategories"] = disabled_categories
@@ -182,7 +186,7 @@ def lt_check_chunk(
     )
     payload = _lt_request(req)
     if payload is None:
-        return []
+        return None
     out: list[LTMatch] = []
     for m in payload.get("matches") or []:
         rid = str(m.get("rule", {}).get("id") or "")
@@ -206,20 +210,30 @@ def format_lt_match(m: LTMatch, chunk: str) -> str:
     return f'[{rid}] {msg}\n  … {ctx} …\n  ^ "{frag}"'
 
 
-def _run_lt_checks(corpus: str, args: argparse.Namespace) -> list[str]:
-    """Run LanguageTool on the corpus unless skipped; return formatted issues."""
+def _run_lt_checks(corpus: str, args: argparse.Namespace) -> tuple[list[str], bool]:
+    """Run LanguageTool on the corpus unless skipped.
+
+    Returns ``(formatted_issues, lt_reachable)``.  ``lt_reachable`` is ``False``
+    when every chunk failed, so callers can distinguish "clean" from "not checked".
+    """
     if args.skip_lt:
-        return []
+        return [], True
+    print(f"note: sending corpus to {LT_URL} for grammar checking", file=sys.stderr)
     ignore_rules = load_lt_ignore_rules(ROOT / "dict" / "languagetool-ignore-rules.txt")
     disabled = args.lt_disable_categories.strip() or None
     chunks = lt_chunks(corpus, CHUNK_CHARS)
     issues: list[str] = []
+    chunks_ok = 0
     for i, chunk in enumerate(chunks):
         if i:
             time.sleep(CHUNK_PAUSE)
-        for m in lt_check_chunk(chunk, ignore_rules=ignore_rules, disabled_categories=disabled):
+        matches = lt_check_chunk(chunk, ignore_rules=ignore_rules, disabled_categories=disabled)
+        if matches is None:
+            continue
+        chunks_ok += 1
+        for m in matches:
             issues.append(format_lt_match(m, chunk))
-    return issues
+    return issues, chunks_ok > 0
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
@@ -270,7 +284,7 @@ def main() -> None:
                 print(f"  {w}", file=sys.stderr)
             print("  (add to dict/ipa-personal.pws if correct)", file=sys.stderr)
 
-        lt_issues = _run_lt_checks(corpus, args)
+        lt_issues, lt_reachable = _run_lt_checks(corpus, args)
 
         if lt_issues:
             print(f"\nLanguageTool — {len(lt_issues)} issue(s):", file=sys.stderr)
@@ -282,7 +296,13 @@ def main() -> None:
 
         checks = "hunspell"
         if not args.skip_lt:
-            checks += " + LanguageTool"
+            if lt_reachable:
+                checks += " + LanguageTool"
+            else:
+                print(
+                    "warning: LanguageTool was unreachable — grammar check incomplete",
+                    file=sys.stderr,
+                )
         print(f"OK ({checks})")
     except InfrastructureError as exc:
         print(f"error: {exc}", file=sys.stderr)

@@ -14,6 +14,10 @@ __pycache__/
 .venv/
 .env*
 
+# Audit
+.audit-state.json
+.audit-progress.md
+
 # Editor / AI tooling
 .cursor/
 .superpowers/

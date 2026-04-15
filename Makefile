@@ -66,7 +66,7 @@ podman-test: ## Run Python tests in container
 podman-check-text: ## Run text checks in container
 	$(PODMAN) run --rm \
 		-e SKIP_LANGUAGETOOL="$(SKIP_LANGUAGETOOL)" \
-		$(if $(strip $(HUNSPELL_LANG)),-e HUNSPELL_LANG="$(HUNSPELL_LANG)") \
+		-e HUNSPELL_LANG="$(or $(HUNSPELL_LANG),de_DE)" \
 		-v "$$(pwd):/work:Z" -w /work $(CHECK_IMAGE) bash -lc '\
 		microdnf install -y python3 hunspell hunspell-de >/dev/null && \
 		python3 scripts/check_text.py'
