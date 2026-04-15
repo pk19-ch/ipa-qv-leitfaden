@@ -28,13 +28,9 @@
 #let zh_black_10   = rgb("#F0F0F0")
 #let zh_black_5    = rgb("#F7F7F7")
 
-// ── Functional status colours ──────────────────────────────────────────────
-#let zh_rot        = rgb("#D93C1A")
-#let zh_gruen      = rgb("#1A7F1F")
-
 // ── Tip / callout backgrounds ──────────────────────────────────────────────
-#let bg_tip        = rgb("#FFF8E6")
-#let stroke_tip    = rgb("#CC9900")
+#let zh_bg_tip     = rgb("#FFF8E6")
+#let zh_stroke_tip = rgb("#CC9900")
 
 // ── Typography ─────────────────────────────────────────────────────────────
 #let body_font    = "Inter"
@@ -53,8 +49,8 @@
 )
 
 #let tip_block(body) = block(
-  fill: bg_tip,
-  stroke: (left: 4pt + stroke_tip, top: 0.5pt + stroke_tip.transparentize(60%), right: 0.5pt + stroke_tip.transparentize(60%), bottom: 0.5pt + stroke_tip.transparentize(60%)),
+  fill: zh_bg_tip,
+  stroke: (left: 4pt + zh_stroke_tip, top: 0.5pt + zh_stroke_tip.transparentize(60%), right: 0.5pt + zh_stroke_tip.transparentize(60%), bottom: 0.5pt + zh_stroke_tip.transparentize(60%)),
   radius: (right: 3pt),
   inset: (left: 16pt, y: 12pt, right: 12pt),
   spacing: 1.2em,

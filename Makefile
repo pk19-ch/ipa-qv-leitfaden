@@ -60,7 +60,7 @@ podman-test: ## Run Python tests in container
 	$(PODMAN) run --rm \
 		-v "$$(pwd):/work:Z" -w /work $(CHECK_IMAGE) bash -lc '\
 		microdnf install -y python3 python3-pip >/dev/null && \
-		python3 -m pip install -q --root-user-action=ignore pytest >/dev/null && \
+		python3 -m pip install -q --root-user-action=ignore -r requirements.txt >/dev/null && \
 		python3 -m pytest scripts/ -v'
 
 podman-check-text: ## Run text checks in container
