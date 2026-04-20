@@ -102,12 +102,12 @@ Der Bericht muss termingerecht eingereicht werden. Eine verspätete Abgabe von b
 == Abgaberegel der PK19 des Kantons ZH
 
 - Alle Abgaben (IPA-Bericht & Anhang) sowie die Signatur müssen vor dem Abgabetermin erfolgen.
-- Der IPA-Bericht muss als PDF-Datei auf PKOrg hochgeladen werden.
-- Das Ende des Uploads des letzten Dokumentes (IPA-Bericht sowie Anhang) zählt. (Systemzeit PKOrg-Webserver)
+- Der IPA-Bericht muss als PDF-Datei auf PkOrg hochgeladen werden.
+- Das Ende des Uploads des letzten Dokumentes (IPA-Bericht sowie Anhang) zählt. (Systemzeit PkOrg-Webserver)
 - Eine verspätete, fehlerhafte oder falsche Abgabe des IPA-Berichtes inklusive allfälliger Anhänge gibt mindestens 0.5 Notenpunkte Abzug.
 - Der Abgabetermin ist 18:00:00.000 Uhr des letzten IPA-Tages (bei Halbtag: 13:00:00.000 Uhr)
 - Es wird keine Toleranz gewährt.
-- Nach dem Upload muss das Ende der IPA durch die Kandidatin oder den Kandidaten (KAND) mit dem dafür vorgesehenen Häkchen im PKOrg bestätigt werden.
+- Nach dem Upload muss das Ende der IPA durch die Kandidatin oder den Kandidaten (KAND) mit dem dafür vorgesehenen Häkchen im PkOrg bestätigt werden.
 - Probleme mit der Abgabe müssen spätestens 2 Stunden vor Abgabetermin der Hauptexpertin oder dem Hauptexperten (HEX) gemeldet werden.
 
 #tip_block[

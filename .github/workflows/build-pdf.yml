@@ -8,6 +8,7 @@ on:
       - "theme/**"
       - "assets/fonts/**"
       - "Makefile"
+      - "scripts/get_version.sh"
       - ".github/workflows/build-pdf.yml"
   pull_request:
     branches: [main]
@@ -16,6 +17,7 @@ on:
       - "theme/**"
       - "assets/fonts/**"
       - "Makefile"
+      - "scripts/get_version.sh"
       - ".github/workflows/build-pdf.yml"
   workflow_dispatch:
 
@@ -23,6 +25,7 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+# pull-requests: write is needed for the PR comment step (guarded by event check)
 permissions:
   contents: read
   pull-requests: write

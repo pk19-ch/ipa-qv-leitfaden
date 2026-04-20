@@ -15,5 +15,5 @@ fi
 case "${1:---full}" in
   --full) echo "$full" ;;
   --year) echo "$full" | cut -d. -f1 ;;
-  *) echo "usage: get_version.sh [--full|--year]" >&2; exit 1 ;;
+  *) echo "usage: get_version.sh [--full|--year]" >&2; exit 2 ;;
 esac

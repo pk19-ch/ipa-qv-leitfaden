@@ -1,12 +1,7 @@
 #!/usr/bin/env python3
 """Spell-check (hunspell) and grammar/style check (LanguageTool public API).
 
-Exit codes (from ``main()``):
-  0 — no issues
-  1 — spelling or grammar issues found
-  2 — tool/infrastructure error (see ``InfrastructureError``)
-
-Hunspell helpers raise ``InfrastructureError``; ``main()`` prints it and exits 2.
+Exit codes: 0 = clean, 1 = issues found, 2 = infrastructure error (``InfrastructureError``).
 """
 
 from __future__ import annotations
@@ -24,6 +19,8 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 from typing import TypedDict
+
+from extract_text import build_corpus
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -53,11 +50,7 @@ LT_LANG = os.environ.get("LANGUAGETOOL_LANG", "de-CH")
 CHUNK_CHARS = int(os.environ.get("LANGUAGETOOL_CHUNK", "12000"))
 CHUNK_PAUSE = float(os.environ.get("LANGUAGETOOL_PAUSE", "1.25"))
 
-# ---------------------------------------------------------------------------
-# LanguageTool ignore-list
-# ---------------------------------------------------------------------------
-
-
+# ── LanguageTool ignore-list ──────────────────────────────────────────────────
 def load_lt_ignore_rules(path: Path) -> set[str]:
     if not path.is_file():
         return set()
@@ -69,11 +62,7 @@ def load_lt_ignore_rules(path: Path) -> set[str]:
     return rules
 
 
-# ---------------------------------------------------------------------------
-# Hunspell
-# ---------------------------------------------------------------------------
-
-
+# ── Hunspell ──────────────────────────────────────────────────────────────────
 def resolve_hunspell_lang(cli_value: str | None) -> str:
     """CLI ``--hunspell-lang`` overrides ``HUNSPELL_LANG``; empty values use ``de_CH``."""
     if cli_value is not None:
@@ -94,13 +83,7 @@ def hunspell_executable() -> str:
 
 
 def ensure_hunspell_dictionary(hunspell: str, lang: str) -> None:
-    """Confirm ``hunspell -d lang`` can load before spelling the corpus.
-
-    Runs ``hunspell`` on empty stdin. Exit code ``0`` means the affix/dictionary
-    for ``lang`` loaded; a non-zero code usually means missing or broken dict
-    files (hunspell also uses ``1`` for that case, which would be ambiguous on
-    real text).
-    """
+    """Confirm that hunspell can load the dictionary for ``lang``; raise on failure."""
     proc = subprocess.run(
         [hunspell, "-d", lang, "-i", "utf-8", "-l"],
         input="",
@@ -133,10 +116,7 @@ def hunspell_check(hunspell: str, corpus: str, lang: str, personal: Path) -> lis
     return sorted({w for w in words if not re.fullmatch(r"[\d./:-]+", w) and len(w) > 1})
 
 
-# ---------------------------------------------------------------------------
-# LanguageTool (HTTP API)
-# ---------------------------------------------------------------------------
-
+# ── LanguageTool (HTTP API) ───────────────────────────────────────────────────
 
 def lt_chunks(text: str, max_len: int) -> list[str]:
     """Split text into paragraph-aligned chunks that fit the API size limit."""
@@ -161,58 +141,52 @@ def lt_chunks(text: str, max_len: int) -> list[str]:
     return parts
 
 
+def _lt_request(req: urllib.request.Request, max_retries: int = 2) -> dict | None:
+    """Send a LanguageTool API request with retries; return parsed JSON or ``None``."""
+    for attempt in range(max_retries + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                return json.loads(resp.read().decode("utf-8"))
+        except json.JSONDecodeError:
+            print("warning: LanguageTool returned malformed JSON", file=sys.stderr)
+            return None
+        except urllib.error.HTTPError as exc:
+            if exc.code in (429, 500, 502, 503, 504) and attempt < max_retries:
+                wait = 2**attempt
+                print(f"LanguageTool HTTP {exc.code} — retrying in {wait}s …", file=sys.stderr)
+                time.sleep(wait)
+                continue
+            body = exc.read().decode("utf-8", errors="replace")
+            print(f"warning: LanguageTool HTTP {exc.code}: {body}", file=sys.stderr)
+            return None
+        except urllib.error.URLError as exc:
+            if attempt < max_retries:
+                wait = 2**attempt
+                print(f"LanguageTool request failed — retrying in {wait}s …", file=sys.stderr)
+                time.sleep(wait)
+                continue
+            print(f"warning: LanguageTool unreachable: {exc}", file=sys.stderr)
+            return None
+
+
 def lt_check_chunk(
     text: str,
     *,
     ignore_rules: set[str],
     disabled_categories: str | None,
-) -> list[LTMatch]:
-    data = urllib.parse.urlencode(
-        {
-            "text": text,
-            "language": LT_LANG,
-            **({"disabledCategories": disabled_categories} if disabled_categories else {}),
-        }
-    ).encode("utf-8")
-
+) -> list[LTMatch] | None:
+    """Check a text chunk via LanguageTool; return ``None`` when the API is unreachable."""
+    params: dict[str, str] = {"text": text, "language": LT_LANG}
+    if disabled_categories:
+        params["disabledCategories"] = disabled_categories
+    data = urllib.parse.urlencode(params).encode("utf-8")
     req = urllib.request.Request(
-        LT_URL,
-        data=data,
-        method="POST",
-        headers={
-            "Content-Type": "application/x-www-form-urlencoded",
-            "Accept": "application/json",
-        },
+        LT_URL, data=data, method="POST",
+        headers={"Content-Type": "application/x-www-form-urlencoded", "Accept": "application/json"},
     )
-    max_retries = 2
-    for attempt in range(max_retries + 1):
-        try:
-            with urllib.request.urlopen(req, timeout=60) as resp:
-                payload = json.loads(resp.read().decode("utf-8"))
-            break
-        except urllib.error.HTTPError as exc:
-            if exc.code in (429, 500, 502, 503, 504) and attempt < max_retries:
-                wait = 2**attempt
-                print(
-                    f"LanguageTool HTTP {exc.code} — retrying in {wait}s …",
-                    file=sys.stderr,
-                )
-                time.sleep(wait)
-                continue
-            body = exc.read().decode("utf-8", errors="replace")
-            print(f"warning: LanguageTool HTTP {exc.code}: {body}", file=sys.stderr)
-            return []
-        except urllib.error.URLError as exc:
-            if attempt < max_retries:
-                wait = 2**attempt
-                print(
-                    f"LanguageTool request failed — retrying in {wait}s …",
-                    file=sys.stderr,
-                )
-                time.sleep(wait)
-                continue
-            print(f"warning: LanguageTool unreachable: {exc}", file=sys.stderr)
-            return []
+    payload = _lt_request(req)
+    if payload is None:
+        return None
     out: list[LTMatch] = []
     for m in payload.get("matches") or []:
         rid = str(m.get("rule", {}).get("id") or "")
@@ -236,12 +210,34 @@ def format_lt_match(m: LTMatch, chunk: str) -> str:
     return f'[{rid}] {msg}\n  … {ctx} …\n  ^ "{frag}"'
 
 
-# ---------------------------------------------------------------------------
-# Main
-# ---------------------------------------------------------------------------
+def _run_lt_checks(corpus: str, args: argparse.Namespace) -> tuple[list[str], bool]:
+    """Run LanguageTool on the corpus unless skipped.
+
+    Returns ``(formatted_issues, lt_reachable)``.  ``lt_reachable`` is ``False``
+    when every chunk failed, so callers can distinguish "clean" from "not checked".
+    """
+    if args.skip_lt:
+        return [], True
+    print(f"note: sending corpus to {LT_URL} for grammar checking", file=sys.stderr)
+    ignore_rules = load_lt_ignore_rules(ROOT / "dict" / "languagetool-ignore-rules.txt")
+    disabled = args.lt_disable_categories.strip() or None
+    chunks = lt_chunks(corpus, CHUNK_CHARS)
+    issues: list[str] = []
+    chunks_ok = 0
+    for i, chunk in enumerate(chunks):
+        if i:
+            time.sleep(CHUNK_PAUSE)
+        matches = lt_check_chunk(chunk, ignore_rules=ignore_rules, disabled_categories=disabled)
+        if matches is None:
+            continue
+        chunks_ok += 1
+        for m in matches:
+            issues.append(format_lt_match(m, chunk))
+    return issues, chunks_ok > 0
 
 
-def main() -> None:
+# ── Main ──────────────────────────────────────────────────────────────────────
+def _parse_args() -> argparse.Namespace:
     ap = argparse.ArgumentParser(
         description="Spell/grammar check for QV-Leitfaden sources.",
     )
@@ -266,11 +262,13 @@ def main() -> None:
     )
     args = ap.parse_args()
     args.hunspell_lang = resolve_hunspell_lang(args.hunspell_lang)
-
     if os.environ.get("SKIP_LANGUAGETOOL", "").strip() in ("1", "true", "yes"):
         args.skip_lt = True
+    return args
 
-    from extract_text import build_corpus
+
+def main() -> None:
+    args = _parse_args()
 
     try:
         corpus = build_corpus(ROOT)
@@ -286,20 +284,7 @@ def main() -> None:
                 print(f"  {w}", file=sys.stderr)
             print("  (add to dict/ipa-personal.pws if correct)", file=sys.stderr)
 
-        lt_issues: list[str] = []
-        if not args.skip_lt:
-            ignore_rules = load_lt_ignore_rules(ROOT / "dict" / "languagetool-ignore-rules.txt")
-            disabled = args.lt_disable_categories.strip() or None
-            chunks = lt_chunks(corpus, CHUNK_CHARS)
-            for i, chunk in enumerate(chunks):
-                if i:
-                    time.sleep(CHUNK_PAUSE)
-                for m in lt_check_chunk(
-                    chunk,
-                    ignore_rules=ignore_rules,
-                    disabled_categories=disabled,
-                ):
-                    lt_issues.append(format_lt_match(m, chunk))
+        lt_issues, lt_reachable = _run_lt_checks(corpus, args)
 
         if lt_issues:
             print(f"\nLanguageTool — {len(lt_issues)} issue(s):", file=sys.stderr)
@@ -311,7 +296,13 @@ def main() -> None:
 
         checks = "hunspell"
         if not args.skip_lt:
-            checks += " + LanguageTool"
+            if lt_reachable:
+                checks += " + LanguageTool"
+            else:
+                print(
+                    "warning: LanguageTool was unreachable — grammar check incomplete",
+                    file=sys.stderr,
+                )
         print(f"OK ({checks})")
     except InfrastructureError as exc:
         print(f"error: {exc}", file=sys.stderr)

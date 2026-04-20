@@ -13,7 +13,7 @@ Der zeitliche Ablauf des Qualifikationsverfahrens gestaltet sich wie folgt:
 ]
 
 #timeline_entry([Dezember])[
-  Kandidatinnen & Kandidaten (KAND) erhalten die Aufforderung per E-Mail, sich auf PKOrg anzumelden. Anschliessend wird durch die Kandidatinnen & Kandidaten (KAND) die vorgesetzte Fachperson (VF) in PKOrg eingetragen. Die vorgesetzte Fachperson (VF) wählt den Startblock und erfasst Thema und Grobbeschrieb der Arbeit.
+  Kandidatinnen & Kandidaten (KAND) erhalten die Aufforderung per E-Mail, sich auf PkOrg anzumelden. Anschliessend wird durch die Kandidatinnen & Kandidaten (KAND) die vorgesetzte Fachperson (VF) in PkOrg eingetragen. Die vorgesetzte Fachperson (VF) wählt den Startblock und erfasst Thema und Grobbeschrieb der Arbeit.
 ]
 
 #timeline_entry([Januar – April])[
@@ -62,9 +62,9 @@ Zwischen Beginn und Abgabe der IPA (ohne Präsentationstag) dürfen maximal 30 K
 
 == Organisatorisches
 
-Die gesamte Organisation der Facharbeit wird mittels Online-Tool namens PKOrg abgewickelt. Die Kandidatin oder der Kandidat (KAND) und die vorgesetzte Fachkraft (VF) benötigen dafür eine tadellos erreichbare E-Mail-Adresse. Die E-Mails sollten täglich gelesen werden.
+Die gesamte Organisation der Facharbeit wird mittels Online-Tool namens PkOrg abgewickelt. Die Kandidatin oder der Kandidat (KAND) und die vorgesetzte Fachkraft (VF) benötigen dafür eine tadellos erreichbare E-Mail-Adresse. Die E-Mails sollten täglich gelesen werden.
 
-Die Aufgabenstellung muss vollständig und termingerecht im PKOrg eingetragen werden. Sie muss bewertbare Kriterien enthalten und sowohl in Qualität als auch in der Quantität klar definiert sein. Aus der Aufgabenstellung sollen das Umfeld und das konkrete Ziel der Facharbeit ersichtlich sein.
+Die Aufgabenstellung muss vollständig und termingerecht im PkOrg eingetragen werden. Sie muss bewertbare Kriterien enthalten und sowohl in Qualität als auch in der Quantität klar definiert sein. Aus der Aufgabenstellung sollen das Umfeld und das konkrete Ziel der Facharbeit ersichtlich sein.
 
 Die Formulierung darf kompakt sein, aber keine externen Verweise wie "gem. Besprechung" enthalten. Die zu prüfende Person kann weitere, notwendige Angaben in ihrem Bericht einfügen. Die Aufgabenstellung ist zusammen mit den Bewertungskriterien die Basis für die Beurteilung durch die Validierungsexperten (VEX), das Expertenteam (HEX/NEX) und die vorgesetzte Fachkraft (VF).
 
@@ -74,7 +74,7 @@ Mit der Arbeit darf erst am deklarierten Starttermin und nach der formellen Frei
 
 Die Hauptexpertin oder der Hauptexperte (HEX) ist für die korrekte Durchführung der IPA zuständig und meldet Unregelmässigkeiten unverzüglich dem Chefexperten (CEX).
 
-Die Kandidatin oder der Kandidat (KAND) oder die vorgesetzte Fachkraft (VF) können Unregelmässigkeiten ebenfalls direkt beim Chefexperten (CEX) im Vertrauen melden. Hierfür wird ein schriftlicher Weg wie zum Beispiel per E-Mail oder über die entsprechende Funktion in PKOrg zur Nachvollziehbarkeit empfohlen. Die Chefexpertin oder der Chefexperte (CEX) wird geeignete Massnahmen absprechen und anordnen. Die Meldungen werden vertraulich behandelt und haben somit keinen Einfluss auf die Notengebung.
+Die Kandidatin oder der Kandidat (KAND) oder die vorgesetzte Fachkraft (VF) können Unregelmässigkeiten ebenfalls direkt beim Chefexperten (CEX) im Vertrauen melden. Hierfür wird ein schriftlicher Weg wie zum Beispiel per E-Mail oder über die entsprechende Funktion in PkOrg zur Nachvollziehbarkeit empfohlen. Die Chefexpertin oder der Chefexperte (CEX) wird geeignete Massnahmen absprechen und anordnen. Die Meldungen werden vertraulich behandelt und haben somit keinen Einfluss auf die Notengebung.
 
 == Ausstandsregel
 

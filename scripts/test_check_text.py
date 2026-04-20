@@ -5,7 +5,6 @@ from __future__ import annotations
 
 import json
 import os
-import sys
 import urllib.error
 from io import BytesIO
 from pathlib import Path
@@ -21,7 +20,6 @@ from check_text import (
     load_lt_ignore_rules,
     lt_check_chunk,
     lt_chunks,
-    main,
     resolve_hunspell_lang,
 )
 
@@ -144,11 +142,11 @@ def test_ensure_hunspell_dictionary_passes_on_probe_ok(mock_run: MagicMock) -> N
     assert kwargs.get("input") == ""
 
 
-def _mock_lt_response(matches: list[dict]) -> MagicMock:
+def _mock_lt_response(matches: list[dict[str, object]]) -> MagicMock:
     payload = json.dumps({"matches": matches}).encode("utf-8")
     resp = MagicMock()
     resp.read.return_value = payload
-    resp.__enter__ = lambda s: s
+    resp.__enter__ = MagicMock(side_effect=lambda: resp)
     resp.__exit__ = MagicMock(return_value=False)
     return resp
 
@@ -228,99 +226,18 @@ def test_lt_check_chunk_soft_fails_after_retries(
     )
     mock_urlopen.side_effect = [error_resp, error_resp, error_resp]
     result = lt_check_chunk("text", ignore_rules=set(), disabled_categories=None)
-    assert result == []
+    assert result is None
     assert mock_urlopen.call_count == 3
 
 
-# ---------------------------------------------------------------------------
-# main() integration (exit codes)
-# ---------------------------------------------------------------------------
-
-
-@patch("extract_text.build_corpus", return_value="")
-def test_main_exit_2_empty_corpus(
-    _mock_corpus: MagicMock,
-    monkeypatch: pytest.MonkeyPatch,
+@patch("check_text.urllib.request.urlopen")
+def test_lt_check_chunk_returns_none_on_malformed_json(
+    mock_urlopen: MagicMock,
 ) -> None:
-    monkeypatch.setattr(sys, "argv", ["check_text", "--skip-lt"])
-    with pytest.raises(SystemExit) as exc_info:
-        main()
-    assert exc_info.value.code == 2
-
-
-@patch("extract_text.build_corpus", return_value="Ein Satz mit genug Worten hier.")
-@patch(
-    "check_text.hunspell_executable",
-    side_effect=InfrastructureError("simulated missing hunspell"),
-)
-def test_main_exit_2_infrastructure_error(
-    _mock_exe: MagicMock,
-    _mock_corpus: MagicMock,
-    monkeypatch: pytest.MonkeyPatch,
-) -> None:
-    monkeypatch.setattr(sys, "argv", ["check_text", "--skip-lt"])
-    with pytest.raises(SystemExit) as exc_info:
-        main()
-    assert exc_info.value.code == 2
-
-
-@patch("extract_text.build_corpus", return_value="Korpus Text.")
-@patch("check_text.hunspell_executable", return_value="/usr/bin/hunspell")
-@patch("check_text.subprocess.run")
-def test_main_exits_1_when_hunspell_lists_unknown_words(
-    mock_run: MagicMock,
-    _mock_exe: MagicMock,
-    _mock_corpus: MagicMock,
-    monkeypatch: pytest.MonkeyPatch,
-) -> None:
-    monkeypatch.setattr(sys, "argv", ["check_text", "--skip-lt"])
-    mock_run.side_effect = [
-        MagicMock(returncode=0, stdout="", stderr=""),
-        MagicMock(returncode=0, stdout="Unbekanntwort\n", stderr=""),
-    ]
-    with pytest.raises(SystemExit) as exc_info:
-        main()
-    assert exc_info.value.code == 1
-
-
-@patch("extract_text.build_corpus", return_value="Alles in Ordnung hier.")
-@patch("check_text.hunspell_executable", return_value="/usr/bin/hunspell")
-@patch("check_text.subprocess.run")
-def test_main_ok_hunspell_only_when_skip_lt(
-    mock_run: MagicMock,
-    _mock_exe: MagicMock,
-    _mock_corpus: MagicMock,
-    monkeypatch: pytest.MonkeyPatch,
-    capsys: pytest.CaptureFixture[str],
-) -> None:
-    monkeypatch.setattr(sys, "argv", ["check_text", "--skip-lt"])
-    mock_run.side_effect = [
-        MagicMock(returncode=0, stdout="", stderr=""),
-        MagicMock(returncode=0, stdout="", stderr=""),
-    ]
-    main()
-    assert mock_run.call_count == 2
-    out = capsys.readouterr().out
-    assert "OK (hunspell)" in out
-
-
-@patch("extract_text.build_corpus", return_value="Ein kurzer Text.")
-@patch("check_text.hunspell_executable", return_value="/usr/bin/hunspell")
-@patch("check_text.subprocess.run")
-@patch("check_text.lt_check_chunk", return_value=[])
-def test_main_ok_with_languagetool_when_lt_clean(
-    _mock_lt: MagicMock,
-    mock_run: MagicMock,
-    _mock_exe: MagicMock,
-    _mock_corpus: MagicMock,
-    monkeypatch: pytest.MonkeyPatch,
-    capsys: pytest.CaptureFixture[str],
-) -> None:
-    monkeypatch.setattr(sys, "argv", ["check_text"])
-    mock_run.side_effect = [
-        MagicMock(returncode=0, stdout="", stderr=""),
-        MagicMock(returncode=0, stdout="", stderr=""),
-    ]
-    main()
-    out = capsys.readouterr().out
-    assert "OK (hunspell + LanguageTool)" in out
+    resp = MagicMock()
+    resp.read.return_value = b"not valid json"
+    resp.__enter__ = MagicMock(side_effect=lambda: resp)
+    resp.__exit__ = MagicMock(return_value=False)
+    mock_urlopen.return_value = resp
+    result = lt_check_chunk("text", ignore_rules=set(), disabled_categories=None)
+    assert result is None

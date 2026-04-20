@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import re
 import sys
+from dataclasses import dataclass, field
 from pathlib import Path
 
 # ---------------------------------------------------------------------------
@@ -89,86 +90,98 @@ def _emit_prose(prose_buf: list[str], parts: list[str]) -> None:
         parts.append(cleaned)
 
 
+@dataclass
+class _ParserState:
+    """Mutable state container for the character-by-character Typst parser."""
+
+    raw: str
+    i: int = 0
+    bracket_depth: int = 0
+    paren_depth: int = 0
+    bracket_start: int | None = None
+    prose_buf: list[str] = field(default_factory=list)
+    parts: list[str] = field(default_factory=list)
+
+
+def _step_bracket(s: _ParserState) -> None:
+    ch = s.raw[s.i]
+    if ch == "[":
+        s.bracket_depth += 1
+    elif ch == "]":
+        s.bracket_depth -= 1
+        if s.bracket_depth == 0 and s.bracket_start is not None:
+            _emit_bracket(s.raw[s.bracket_start : s.i], s.parts)
+            s.bracket_start = None
+    s.i += 1
+
+
+def _step_paren(s: _ParserState) -> None:
+    ch = s.raw[s.i]
+    if ch == "(":
+        s.paren_depth += 1
+    elif ch == ")":
+        s.paren_depth -= 1
+    elif ch == "[":
+        s.bracket_depth = 1
+        s.bracket_start = s.i + 1
+    s.i += 1
+
+
+def _enter_func(s: _ParserState, n: int) -> None:
+    """Skip ``#func_name`` and enter paren/bracket tracking if followed by ``(`` or ``[``."""
+    j = s.i + 1
+    while j < n and (s.raw[j].isalnum() or s.raw[j] == "_"):
+        j += 1
+    k = j
+    while k < n and s.raw[k] in " \t":
+        k += 1
+    if k < n and s.raw[k] == "(":
+        s.paren_depth = 1
+        s.i = k + 1
+    elif k < n and s.raw[k] == "[":
+        s.bracket_depth = 1
+        s.bracket_start = k + 1
+        s.i = k + 1
+    else:
+        s.i = j
+
+
+def _step_depth0(s: _ParserState, n: int) -> None:
+    ch = s.raw[s.i]
+    if ch == "#" and s.i + 1 < n and (s.raw[s.i + 1].isalpha() or s.raw[s.i + 1] == "_"):
+        _emit_prose(s.prose_buf, s.parts)
+        s.prose_buf = []
+        _enter_func(s, n)
+    elif ch == "[":
+        _emit_prose(s.prose_buf, s.parts)
+        s.prose_buf = []
+        s.bracket_depth = 1
+        s.bracket_start = s.i + 1
+        s.i += 1
+    else:
+        s.prose_buf.append(ch)
+        s.i += 1
+
+
 def extract_typst(path: Path) -> str:
     """Extract prose from a Typst file using a state machine.
 
-    Walks character-by-character, tracking three states:
-    - **depth-0 prose** (bracket_depth == 0, paren_depth == 0): paragraph text
-    - **inside function args** (paren_depth > 0): skipped, but brackets
-      inside args are still extracted as prose
-    - **inside brackets** (bracket_depth > 0): content extracted as-is
+    Walks character-by-character, tracking three states via ``_ParserState``:
+    depth-0 prose, function args (paren), and bracket content.
     """
     raw = path.read_text(encoding="utf-8")
     raw = _TYP_DIRECTIVE.sub("\n", raw)
-
-    parts: list[str] = []
-    bracket_depth = 0
-    paren_depth = 0
-    bracket_start: int | None = None
-    prose_buf: list[str] = []
-    i = 0
+    s = _ParserState(raw)
     n = len(raw)
-
-    while i < n:
-        ch = raw[i]
-
-        if bracket_depth > 0:
-            if ch == "[":
-                bracket_depth += 1
-            elif ch == "]":
-                bracket_depth -= 1
-                if bracket_depth == 0 and bracket_start is not None:
-                    _emit_bracket(raw[bracket_start:i], parts)
-                    bracket_start = None
-            i += 1
-
-        elif paren_depth > 0:
-            if ch == "(":
-                paren_depth += 1
-                i += 1
-            elif ch == ")":
-                paren_depth -= 1
-                i += 1
-            elif ch == "[":
-                bracket_depth = 1
-                bracket_start = i + 1
-                i += 1
-            else:
-                i += 1
-
-        elif ch == "#" and i + 1 < n and (raw[i + 1].isalpha() or raw[i + 1] == "_"):
-            _emit_prose(prose_buf, parts)
-            prose_buf = []
-            j = i + 1
-            while j < n and (raw[j].isalnum() or raw[j] == "_"):
-                j += 1
-            k = j
-            while k < n and raw[k] in " \t":
-                k += 1
-            if k < n and raw[k] == "(":
-                paren_depth = 1
-                i = k + 1
-            elif k < n and raw[k] == "[":
-                bracket_depth = 1
-                bracket_start = k + 1
-                i = k + 1
-            else:
-                i = j
-
-        elif ch == "[":
-            _emit_prose(prose_buf, parts)
-            prose_buf = []
-            bracket_depth = 1
-            bracket_start = i + 1
-            i += 1
-
+    while s.i < n:
+        if s.bracket_depth > 0:
+            _step_bracket(s)
+        elif s.paren_depth > 0:
+            _step_paren(s)
         else:
-            prose_buf.append(ch)
-            i += 1
-
-    _emit_prose(prose_buf, parts)
-
-    return "\n".join(p for p in parts if p)
+            _step_depth0(s, n)
+    _emit_prose(s.prose_buf, s.parts)
+    return "\n".join(p for p in s.parts if p)
 
 
 # ---------------------------------------------------------------------------

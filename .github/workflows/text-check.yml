@@ -39,15 +39,32 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install hunspell and pytest
+      - name: Install hunspell
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y -qq hunspell hunspell-de-ch python3-pytest
+          sudo apt-get install -y -qq hunspell hunspell-de-ch
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Read ruff version from requirements.txt
+        id: ruff
+        run: |
+          ver=$(grep '^ruff==' requirements.txt | cut -d= -f3)
+          if [[ -z "$ver" ]]; then
+            echo "::error::Could not extract ruff version from requirements.txt"
+            exit 1
+          fi
+          echo "version=$ver" >> "$GITHUB_OUTPUT"
 
       - uses: astral-sh/ruff-action@v3
         with:
           src: "./scripts"
-          version: "0.15.8"
+          version: ${{ steps.ruff.outputs.version }}
 
       - name: Run Python tests
         run: python3 -m pytest scripts/ -v

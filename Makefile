@@ -60,13 +60,13 @@ podman-test: ## Run Python tests in container
 	$(PODMAN) run --rm \
 		-v "$$(pwd):/work:Z" -w /work $(CHECK_IMAGE) bash -lc '\
 		microdnf install -y python3 python3-pip >/dev/null && \
-		python3 -m pip install -q --root-user-action=ignore pytest >/dev/null && \
+		python3 -m pip install -q --root-user-action=ignore -r requirements.txt >/dev/null && \
 		python3 -m pytest scripts/ -v'
 
 podman-check-text: ## Run text checks in container
 	$(PODMAN) run --rm \
 		-e SKIP_LANGUAGETOOL="$(SKIP_LANGUAGETOOL)" \
-		$(if $(strip $(HUNSPELL_LANG)),-e HUNSPELL_LANG="$(HUNSPELL_LANG)") \
+		-e HUNSPELL_LANG="$(or $(HUNSPELL_LANG),de_DE)" \
 		-v "$$(pwd):/work:Z" -w /work $(CHECK_IMAGE) bash -lc '\
 		microdnf install -y python3 hunspell hunspell-de >/dev/null && \
 		python3 scripts/check_text.py'

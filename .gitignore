@@ -1,15 +1,25 @@
+# Build output
 dist/*.pdf
 
+# macOS
 *.DS_Store
 .Spotlight-V100
 .Trashes
 
+# Python
 __pycache__/
 *.pyc
 .pytest_cache/
 .ruff_cache/
 .venv/
+.env*
 
+# Audit
+.audit-state.json
+.audit-progress.md
+
+# Editor / AI tooling
 .cursor/
 .superpowers/
 docs/superpowers/
+CLAUDE.md

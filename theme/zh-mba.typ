@@ -15,6 +15,9 @@
 #let zh_dunkelblau = rgb("#00407C")
 #let zh_cyan       = rgb("#009EE0")
 
+// ── Surface / page colour ─────────────────────────────────────────────────
+#let zh_white      = rgb("#FFFFFF")
+
 // ── Soft / background colours ──────────────────────────────────────────────
 #let zh_soft_blau  = rgb("#EDF5FA")
 #let zh_blaugrau   = rgb("#E0E8EE")
@@ -28,13 +31,9 @@
 #let zh_black_10   = rgb("#F0F0F0")
 #let zh_black_5    = rgb("#F7F7F7")
 
-// ── Functional status colours ──────────────────────────────────────────────
-#let zh_rot        = rgb("#D93C1A")
-#let zh_gruen      = rgb("#1A7F1F")
-
 // ── Tip / callout backgrounds ──────────────────────────────────────────────
-#let bg_tip        = rgb("#FFF8E6")
-#let stroke_tip    = rgb("#CC9900")
+#let zh_bg_tip     = rgb("#FFF8E6")
+#let zh_stroke_tip = rgb("#CC9900")
 
 // ── Typography ─────────────────────────────────────────────────────────────
 #let body_font    = "Inter"
@@ -53,8 +52,8 @@
 )
 
 #let tip_block(body) = block(
-  fill: bg_tip,
-  stroke: (left: 4pt + stroke_tip, top: 0.5pt + stroke_tip.transparentize(60%), right: 0.5pt + stroke_tip.transparentize(60%), bottom: 0.5pt + stroke_tip.transparentize(60%)),
+  fill: zh_bg_tip,
+  stroke: (left: 4pt + zh_stroke_tip, top: 0.5pt + zh_stroke_tip.transparentize(60%), right: 0.5pt + zh_stroke_tip.transparentize(60%), bottom: 0.5pt + zh_stroke_tip.transparentize(60%)),
   radius: (right: 3pt),
   inset: (left: 16pt, y: 12pt, right: 12pt),
   spacing: 1.2em,
@@ -77,7 +76,7 @@
   width: 100%,
 )[
   #place(left + top, dx: -27pt, dy: 2pt)[
-    #circle(radius: 6pt, fill: white, stroke: 2.5pt + zh_blau)
+    #circle(radius: 6pt, fill: zh_white, stroke: 2.5pt + zh_blau)
   ]
   #block(below: 4pt)[
     #text(11pt, weight: "bold", fill: zh_dunkelblau, font: heading_font)[#period]
