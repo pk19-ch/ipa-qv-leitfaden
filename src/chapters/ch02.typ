@@ -70,6 +70,10 @@ Die Formulierung darf kompakt sein, aber keine externen Verweise wie "gem. Bespr
 
 Mit der Arbeit darf erst am deklarierten Starttermin und nach der formellen Freigabe (E-Mail) durch die Validexpertin oder den Validexperten (VEX) begonnen werden.
 
+== Keine identischen Aufgabenstellungen
+
+Aufgabenstellungen müssen individuell formuliert sein. Die Wiederverwendung einer identischen oder weitgehend identischen Aufgabenstellung aus einem früheren Qualifikationsverfahren – auch im selben Betrieb – ist nicht zulässig. Die vorgesetzte Fachkraft (VF) ist dafür verantwortlich, dass die Aufgabenstellung auf die aktuelle Situation und die spezifischen Kompetenzen der Kandidatin oder des Kandidaten zugeschnitten ist. Aufgabenstellungen, die bei der Validierung als Duplikate erkannt werden, werden zur Überarbeitung zurückgewiesen.
+
 == Unregelmässigkeiten
 
 Die Hauptexpertin oder der Hauptexperte (HEX) ist für die korrekte Durchführung der IPA zuständig und meldet Unregelmässigkeiten unverzüglich dem Chefexperten (CEX).
