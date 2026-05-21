@@ -11,15 +11,9 @@ __pycache__/
 *.pyc
 .pytest_cache/
 .ruff_cache/
+.coverage
 .venv/
 .env*
 
-# Audit
-.audit-state.json
-.audit-progress.md
-
 # Editor / AI tooling
 .cursor/
-.superpowers/
-docs/superpowers/
-CLAUDE.md

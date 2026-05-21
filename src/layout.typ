@@ -147,13 +147,13 @@
   }
 
   show heading.where(level: 3): it => {
-    v(0.6em)
+    v(0.8em)
     block(below: 0.5em)[
-      #text(9pt, weight: "semibold", fill: zh_black_40, font: heading_font)[
+      #text(9pt, weight: "bold", fill: zh_blau, font: heading_font)[
         #counter(heading).display("1.1.1")
       ]
       #h(4pt)
-      #text(11pt, weight: "semibold", fill: zh_black_60, font: heading_font)[
+      #text(11pt, weight: "bold", fill: zh_black_80, font: heading_font)[
         #it.body
       ]
     ]

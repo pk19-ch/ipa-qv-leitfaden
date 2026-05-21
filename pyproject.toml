@@ -7,3 +7,7 @@ select = ["E", "F", "W", "I", "UP", "B", "SIM", "RUF"]
 
 [tool.pytest.ini_options]
 testpaths = ["scripts"]
+addopts = ["--cov=scripts", "--cov-report=term-missing"]
+
+[tool.coverage.run]
+omit = ["scripts/test_*", "scripts/conftest.py"]
