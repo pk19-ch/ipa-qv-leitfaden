@@ -90,11 +90,11 @@
   width: 100%,
   inset: (x: 24pt, y: 8pt),
 )[
-  #line(length: 100%, stroke: 0.6pt + zh_black_10)
+  #line(length: 100%, stroke: 0.6pt + zh_black_20)
   #v(0.5em)
   #align(center)[
-    #text(11pt, style: "italic", fill: zh_black_60)[#body]
+    #text(11pt, style: "italic", fill: zh_dunkelblau)[#body]
   ]
   #v(0.5em)
-  #line(length: 100%, stroke: 0.6pt + zh_black_10)
+  #line(length: 100%, stroke: 0.6pt + zh_black_20)
 ]
