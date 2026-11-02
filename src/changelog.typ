@@ -3,5 +3,5 @@
 #table(
   columns: (auto, auto, 1fr),
   [Version], [Datum], [Änderungen],
-  [2026.1], [März 2026], [Erstausgabe: Typst-Migration, überarbeitetes Layout und Zeitplan-Darstellung],
+  [2027.1], [Nov 2026], [Eigenleistung überprüfen, Abgabe über Zwischenspeichern],
 )
