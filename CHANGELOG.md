@@ -2,6 +2,14 @@
 
 Alle Änderungen am QV-Leitfaden werden hier dokumentiert.
 
+## 2027.1
+_02.11.2027_
+
+### Changes
+
+- Ergänzung zur Überprüfung der Eigenleistung
+- Ergänzung zum Ausprobieren der Abgabe via PkOrg "Zwischenspeichern"
+
 ## 2026.1
 _02.04.2026_
 
