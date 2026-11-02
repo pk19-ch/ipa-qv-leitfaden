@@ -95,6 +95,10 @@ Hilfestellungen von generativen Tools (z.B. ChatGPT) dürfen verwendet werden. D
 
 IPA-Berichte und Arbeiten mit zu hohem Anteil von Fremdleistung – deklariert oder nicht – können nicht bewertet werden, was ein "nicht bestanden" zur Folge hat. Nicht deklarierte Fremdleistung wird als Plagiat betrachtet. Es sollte auf Bilder aus dem Internet verzichtet werden, welche nur dekorativen Charakter haben, und es sollte immer das Copyright beachtet werden.
 
+#strong[Überprüfung der Eigenleistung und Nachvollziehbarkeit] \
+
+Das Expertenteam ist berechtigt, im Anschluss an die IPA-Prüfung bei begründetem Verdacht auf nicht deklarierte Fremdleistungen oder eine unzureichende Eigenleistung einzelne Inhalte des IPA-Berichts sowie die dazugehörigen Arbeitsergebnisse näher zu überprüfen. Kann die Kandidatin oder der Kandidat einzelne Textpassagen, Lösungsansätze,Codebestandteile, Konfigurationen oder andere dokumentierte Arbeitsergebnisse nicht nachvollziehbar erklären, fachlich begründen oder deren Entstehung plausibel darlegen, kann das Expertenteam die entsprechenden Teile als nicht bewertbar einstufen. Die Beurteilung erfolgt durch das Expertenteam im Rahmen der Gesamtbewertung der IPA. Werden wesentliche Teile der Arbeit als nicht bewertbar eingestuft, kann dies dazu führen, dass die IPA insgesamt als nicht bestanden bewertet wird.
+
 == Abgabe des IPA-Berichtes
 
 Der Bericht muss termingerecht eingereicht werden. Eine verspätete Abgabe von bis zu 4 Stunden hat einen Notenabzug von 0,5 Notenpunkten zur Folge. Bei noch späterer Abgabe entscheiden die Chefexperten (CEX) situativ. Es gilt der Upload-Zeitpunkt aller prüfungsrelevanten Dokumente (IPA-Bericht & Anhang) als Abgabetermin.
