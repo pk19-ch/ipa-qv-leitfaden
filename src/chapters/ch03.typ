@@ -111,5 +111,5 @@ Der Bericht muss termingerecht eingereicht werden. Eine verspätete Abgabe von b
 - Probleme mit der Abgabe müssen spätestens 2 Stunden vor Abgabetermin der Hauptexpertin oder dem Hauptexperten (HEX) gemeldet werden.
 
 #tip_block[
-  Der Upload sollte erst gestartet werden, wenn die PDF-Datei fertig erzeugt ist. Die Abgabe sollte frühzeitig getestet und überprüft werden, damit für alle hochgeladenen Dokumente der Inhalt und die Lesbarkeit gewährleistet sind.
+  Der Upload sollte erst gestartet werden, wenn die PDF-Datei fertig erzeugt ist. Die Abgabe sollte frühzeitig getestet, auf PKOrg mittels "Zwischenspeichern" gespeichert und überprüft werden, damit für alle hochgeladenen Dokumente der Inhalt und die Lesbarkeit gewährleistet sind.
 ]
