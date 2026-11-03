@@ -131,6 +131,7 @@ cd ~
 git clone https://github.com/pk19-ch/ipa-qv-leitfaden.git
 cd ipa-qv-leitfaden
 make podman-pdf          # build both PDFs into dist/
+make podman-check-pdf    # check the PDFs are accessible (PDF/UA-1, PDF/A-2a)
 make podman-check-text   # spelling and grammar
 make podman-ci           # all checks: lint, tests, spelling and grammar
 ```
