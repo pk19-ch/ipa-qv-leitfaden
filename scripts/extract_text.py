@@ -55,6 +55,7 @@ def _clean_chunk(chunk: str) -> str:
     text = _INLINE_FUNC_CALL.sub("", chunk)
     text = _INLINE_FUNC.sub("", text)
     text = text.replace("[", "").replace("]", "")
+    text = _TYPST_LINE_BREAK.sub("", text)
     return text.strip()
 
 
