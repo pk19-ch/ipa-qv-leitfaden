@@ -35,12 +35,12 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Install Typst
-        uses: typst-community/setup-typst@v5
+        uses: typst-community/setup-typst@6a2cfaf0b28d636b00148f965e315bae81079aaa # v5.3.1
         with:
-          typst-version: "0.14.2"
+          typst-version: "0.15.1"
 
       - name: Check changelog contains current version
         id: meta
@@ -55,8 +55,11 @@ jobs:
       - name: Compile PDFs
         run: make pdf
 
+      - name: Check accessibility (PDF/UA-1, PDF/A-2a)
+        run: make podman-check-pdf PODMAN=docker
+
       - name: Upload artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: qv-leitfaden-pdf-${{ steps.meta.outputs.version }}
           path: dist/*.pdf
@@ -64,15 +67,16 @@ jobs:
 
       - name: Comment PDF link on PR
         if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
-        uses: actions/github-script@v7
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         with:
           script: |
             const marker = '<!-- pdf-artifacts -->';
             const body = `${marker}\n**PDF preview ready** — [download artifacts](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}#artifacts) (scroll to bottom of the linked page)`;
-            const { data: comments } = await github.rest.issues.listComments({
+            const comments = await github.paginate(github.rest.issues.listComments, {
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.issue.number,
+              per_page: 100,
             });
             const existing = comments.find(c => c.body.includes(marker));
             if (existing) {
