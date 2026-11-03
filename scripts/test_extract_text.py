@@ -205,3 +205,18 @@ def test_corpus_files_includes_entrypoints(tmp_path: Path) -> None:
     assert "leitfaden-hex-nex.typ" in names
 
 
+def test_extract_typst_strips_line_break_in_bracket_argument(tmp_path: Path) -> None:
+    """Typst ``\\`` line breaks inside ``[...]`` arguments must not leak into prose."""
+    p = tmp_path / "sample.typ"
+    p.write_text(
+        "#cover_page(\n"
+        "  audience: [\n"
+        "    für Hauptexpertinnen und Hauptexperten (HEX) \\\n"
+        "    sowie Nebenexpertinnen und Nebenexperten (NEX)\n"
+        "  ],\n"
+        ")\n",
+        encoding="utf-8",
+    )
+    result = extract_typst(p)
+    assert "Hauptexperten (HEX)" in result
+    assert "\\" not in result
