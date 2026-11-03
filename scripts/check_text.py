@@ -7,6 +7,7 @@ Exit codes: 0 = clean, 1 = issues found, 2 = infrastructure error (``Infrastruct
 from __future__ import annotations
 
 import argparse
+import http.client
 import json
 import os
 import re
@@ -122,20 +123,32 @@ def lt_chunks(text: str, max_len: int) -> list[str]:
     """Split text into paragraph-aligned chunks that fit the API size limit."""
     if len(text) <= max_len:
         return [text]
-    parts: list[str] = []
-    buf: list[str] = []
-    size = 0
+
+    # Build flat list of units: paragraphs or lines from over-long paragraphs
+    units: list[str] = []
     for para in text.split("\n\n"):
         p = para.strip()
         if not p:
             continue
-        if size + len(p) + 2 > max_len and buf:
-            parts.append("\n\n".join(buf))
-            buf = [p]
-            size = len(p)
+        if len(p) <= max_len:
+            units.append(p)
         else:
-            buf.append(p)
-            size += len(p) + 2
+            # shortcut: a single line longer than max_len is not split further;
+            # split on sentences if LT ever rejects one
+            units.extend(line for line in p.split('\n') if line.strip())
+
+    # Buffer units into chunks
+    parts: list[str] = []
+    buf: list[str] = []
+    size = 0
+    for unit in units:
+        if size + len(unit) + 2 > max_len and buf:
+            parts.append("\n\n".join(buf))
+            buf = [unit]
+            size = len(unit)
+        else:
+            buf.append(unit)
+            size += len(unit) + 2
     if buf:
         parts.append("\n\n".join(buf))
     return parts
@@ -159,7 +172,8 @@ def _lt_request(req: urllib.request.Request, max_retries: int = 2) -> dict | Non
             body = exc.read().decode("utf-8", errors="replace")
             print(f"warning: LanguageTool HTTP {exc.code}: {body}", file=sys.stderr)
             return None
-        except urllib.error.URLError as exc:
+        except (urllib.error.URLError, OSError, http.client.HTTPException) as exc:
+            # getresponse()/read() timeouts and RemoteDisconnected are not wrapped in URLError
             if attempt < max_retries:
                 wait = 2**attempt
                 print(f"LanguageTool request failed — retrying in {wait}s …", file=sys.stderr)
@@ -210,14 +224,14 @@ def format_lt_match(m: LTMatch, chunk: str) -> str:
     return f'[{rid}] {msg}\n  … {ctx} …\n  ^ "{frag}"'
 
 
-def _run_lt_checks(corpus: str, args: argparse.Namespace) -> tuple[list[str], bool]:
+def _run_lt_checks(corpus: str, args: argparse.Namespace) -> tuple[list[str], int, int]:
     """Run LanguageTool on the corpus unless skipped.
 
-    Returns ``(formatted_issues, lt_reachable)``.  ``lt_reachable`` is ``False``
-    when every chunk failed, so callers can distinguish "clean" from "not checked".
+    Returns ``(formatted_issues, chunks_ok, chunks_total)``.
+    When ``chunks_ok < chunks_total``, some chunks failed to check.
     """
     if args.skip_lt:
-        return [], True
+        return [], 0, 0
     print(f"note: sending corpus to {LT_URL} for grammar checking", file=sys.stderr)
     ignore_rules = load_lt_ignore_rules(ROOT / "dict" / "languagetool-ignore-rules.txt")
     disabled = args.lt_disable_categories.strip() or None
@@ -233,7 +247,7 @@ def _run_lt_checks(corpus: str, args: argparse.Namespace) -> tuple[list[str], bo
         chunks_ok += 1
         for m in matches:
             issues.append(format_lt_match(m, chunk))
-    return issues, chunks_ok > 0
+    return issues, chunks_ok, len(chunks)
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
@@ -284,7 +298,7 @@ def main() -> None:
                 print(f"  {w}", file=sys.stderr)
             print("  (add to dict/ipa-personal.pws if correct)", file=sys.stderr)
 
-        lt_issues, lt_reachable = _run_lt_checks(corpus, args)
+        lt_issues, chunks_ok, chunks_total = _run_lt_checks(corpus, args)
 
         if lt_issues:
             print(f"\nLanguageTool — {len(lt_issues)} issue(s):", file=sys.stderr)
@@ -296,11 +310,12 @@ def main() -> None:
 
         checks = "hunspell"
         if not args.skip_lt:
-            if lt_reachable:
+            if chunks_ok == chunks_total:
                 checks += " + LanguageTool"
             else:
                 print(
-                    "warning: LanguageTool was unreachable — grammar check incomplete",
+                    f"warning: LanguageTool checked {chunks_ok}/{chunks_total} chunks"
+                    " — grammar check incomplete",
                     file=sys.stderr,
                 )
         print(f"OK ({checks})")

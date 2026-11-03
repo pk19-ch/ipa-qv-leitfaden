@@ -1,6 +1,8 @@
 #import "layout.typ": cover_page, matter
 #import "meta.typ": version, org_line, mba_line
 
+#set document(title: "QV-Leitfaden HEX/NEX", author: "Prüfungskommission 19 · Informatikberufe Kanton Zürich")
+
 #cover_page(
   doc_title: [QV-Leitfaden],
   audience: [
@@ -16,7 +18,7 @@
 #matter(
   version: version,
   running_footer_title: [QV-Leitfaden HEX/NEX],
-  running_header: [Prüfungskommission 19 · Informatikberufe Kanton Zürich],
+  running_header: org_line,
 )[
   #outline(title: [Inhaltsverzeichnis], depth: 3)
 

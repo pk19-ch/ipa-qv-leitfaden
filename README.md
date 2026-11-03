@@ -24,6 +24,7 @@ make test
 | PDFs (native) | `make pdf` | [Typst](https://typst.app/) ≥ 0.14.2 |
 | Spell/grammar (container) | `make podman-check-text` | Podman |
 | Spell/grammar (native) | `make check-text` | `.venv` with `requirements.txt`, hunspell, hunspell-de-ch |
+| Lint (container) | `make podman-lint` | Podman |
 | Unit tests (container) | `make podman-test` | Podman |
 | Unit tests (native) | `make test` | `.venv` with `requirements.txt` |
 | Python linter (native) | `make lint` | `.venv` with `requirements.txt` |
@@ -32,6 +33,8 @@ make test
 | Show all targets | `make help` | — |
 
 Set `SKIP_LANGUAGETOOL=1` to skip the LanguageTool API call (offline). Override the container runtime with `PODMAN=docker`.
+
+> **Note:** The container spell/grammar check uses de_DE (no hunspell-de-ch package in CentOS Stream 10), so ß/ss differences are expected. The native check and CI use de_CH and are authoritative; do not add ß/ss-related hits to `dict/` based on container output alone.
 
 ### Directories
 
