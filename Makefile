@@ -1,6 +1,6 @@
 TYPST           ?= typst
 PODMAN          ?= podman
-IMAGE           ?= ghcr.io/typst/typst:v0.14.2
+IMAGE           ?= ghcr.io/typst/typst:0.14.2
 CHECK_IMAGE     ?= quay.io/centos/centos:stream10-minimal
 OUT             := dist
 FONT_DIR        := assets/fonts/inter
@@ -70,11 +70,10 @@ podman-test: ## Run Python tests in container
 		python3 -m pip install -q --root-user-action=ignore -r requirements.txt >/dev/null && \
 		python3 -m pytest scripts/ -v'
 
-# Container uses de_DE (no hunspell-de-ch package in Stream 10); ss/ß hits here are expected — CI (de_CH) is authoritative, do not add them to dict/.
 podman-check-text: ## Run text checks in container
 	$(PODMAN) run --rm \
 		-e SKIP_LANGUAGETOOL="$(SKIP_LANGUAGETOOL)" \
-		-e HUNSPELL_LANG="$(or $(HUNSPELL_LANG),de_DE)" \
+		-e HUNSPELL_LANG="$(or $(HUNSPELL_LANG),de_CH)" \
 		-v "$$(pwd):/work:Z" -w /work $(CHECK_IMAGE) bash -lc '\
 		microdnf install -y python3 hunspell hunspell-de >/dev/null && \
 		python3 scripts/check_text.py'

@@ -61,6 +61,15 @@ jobs:
       - name: Run Python tests
         run: python3 -m pytest scripts/ -v
 
+      - name: Check version bump
+        if: github.event_name == 'pull_request'
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          git fetch --no-tags --depth=1 origin "$BASE_SHA"
+          git worktree add --detach "$RUNNER_TEMP/base" "$BASE_SHA"
+          python3 scripts/check_version.py "$RUNNER_TEMP/base"
+
       - name: Check spelling & grammar
         env:
           LANGUAGETOOL_LANG: de-CH
