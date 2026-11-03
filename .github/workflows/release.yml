@@ -20,7 +20,7 @@ jobs:
     timeout-minutes: 10
     environment: release
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
 
@@ -46,9 +46,9 @@ jobs:
 
       - name: Install Typst
         if: steps.check.outputs.exists == 'false'
-        uses: typst-community/setup-typst@v5
+        uses: typst-community/setup-typst@6a2cfaf0b28d636b00148f965e315bae81079aaa # v5.3.1
         with:
-          typst-version: "0.14.2"
+          typst-version: "0.15.1"
 
       - name: Build PDFs
         if: steps.check.outputs.exists == 'false'
@@ -64,7 +64,7 @@ jobs:
 
       - name: Generate release notes
         if: steps.check.outputs.exists == 'false'
-        uses: orhun/git-cliff-action@v4
+        uses: orhun/git-cliff-action@a9a95522b26fe6403f7bb24031f21fb573d0f5ff # v4.9.1
         id: release_notes
         with:
           config: cliff.toml
@@ -72,11 +72,12 @@ jobs:
 
       - name: Create GitHub Release
         if: steps.check.outputs.exists == 'false'
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@efb35369e0ad2afab669f228072c1b0d510eae64 # v3.0.3
         with:
           tag_name: ${{ steps.version.outputs.tag }}
           name: QV-Leitfaden ${{ steps.version.outputs.version }}
           body: ${{ steps.release_notes.outputs.content }}
+          fail_on_unmatched_files: true
           files: |
             dist/qv-leitfaden-${{ steps.version.outputs.version }}.pdf
             dist/qv-leitfaden-hex-nex-${{ steps.version.outputs.version }}.pdf
