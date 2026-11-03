@@ -17,3 +17,6 @@ __pycache__/
 
 # Editor / AI tooling
 .cursor/
+
+# graphify knowledge graph output
+graphify-out/
