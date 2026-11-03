@@ -5,7 +5,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from extract_text import build_corpus, corpus_files, extract_typst
+from extract_text import _clean_chunk, _clean_prose, build_corpus, corpus_files, extract_typst
 
 
 def test_extract_typst_strips_directives(tmp_path: Path) -> None:
@@ -220,3 +220,24 @@ def test_extract_typst_strips_line_break_in_bracket_argument(tmp_path: Path) -> 
     result = extract_typst(p)
     assert "Hauptexperten (HEX)" in result
     assert "\\" not in result
+
+
+def test_clean_prose_strips_bold_markup() -> None:
+    """_clean_prose must strip *bold* markup while preserving the text."""
+    assert _clean_prose("*Wichtig:* Im Falle von X") == "Wichtig: Im Falle von X"
+
+
+def test_clean_chunk_strips_bold_markup() -> None:
+    """_clean_chunk must strip *bold* markup while preserving the text."""
+    assert _clean_chunk("*Zeitvorgaben:* Gemäss") == "Zeitvorgaben: Gemäss"
+
+
+def test_clean_prose_leaves_escaped_and_unpaired_asterisks() -> None:
+    """Escaped \\* and unpaired * should be left unchanged."""
+    assert _clean_prose(r"Preis: 5\* Euro") == r"Preis: 5\* Euro"
+    assert _clean_prose("Ein einzelnes * Zeichen") == "Ein einzelnes * Zeichen"
+
+
+def test_clean_prose_preserves_underscores() -> None:
+    """Underscores in identifiers should remain untouched."""
+    assert "foo_bar_baz" in _clean_prose("Variable foo_bar_baz verwenden")

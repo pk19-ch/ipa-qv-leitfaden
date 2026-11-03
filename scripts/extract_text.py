@@ -29,6 +29,7 @@ _TYP_DIRECTIVE = re.compile(
 _HEADING_MARKER = re.compile(r"(?m)^=+\s+")
 _LIST_MARKER = re.compile(r"(?m)^\s*-\s+")
 _TYPST_LINE_BREAK = re.compile(r"\\\s*$", re.MULTILINE)
+_STRONG = re.compile(r"(?<!\\)\*([^*\n]+)\*")
 _INLINE_FUNC = re.compile(r"#\w+")
 
 _HAS_LETTERS = re.compile(r"[A-Za-zÀ-ÿ]{2,}")
@@ -56,6 +57,7 @@ def _clean_chunk(chunk: str) -> str:
     text = _INLINE_FUNC.sub("", text)
     text = text.replace("[", "").replace("]", "")
     text = _TYPST_LINE_BREAK.sub("", text)
+    text = _STRONG.sub(r"\1", text)
     return text.strip()
 
 
@@ -64,6 +66,7 @@ def _clean_prose(text: str) -> str:
     text = _HEADING_MARKER.sub("", text)
     text = _LIST_MARKER.sub("", text)
     text = _TYPST_LINE_BREAK.sub("", text)
+    text = _STRONG.sub(r"\1", text)
     lines: list[str] = []
     for raw_line in text.splitlines():
         stripped = raw_line.strip()

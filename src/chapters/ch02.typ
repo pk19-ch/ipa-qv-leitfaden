@@ -9,11 +9,11 @@ Der zeitliche Ablauf des Qualifikationsverfahrens gestaltet sich wie folgt:
 #v(0.4em)
 
 #timeline_entry([November – Dezember])[
-  Orientierung über das Qualifikationsverfahren und die Facharbeit durch die Chefexperten (CEX). In dieser Phase erfolgt auch die Bereitstellung der digitalen Unterlagen durch die PK19. In der Regel und bei Bedarf werden virtuelle Infoveranstaltungen für die vorgesetzten Fachpersonen (VF) sowie Kandidatinnen & Kandidaten (KAND) durchgeführt.
+  Orientierung über das Qualifikationsverfahren und die Facharbeit durch die Chefexperten (CEX). In dieser Phase erfolgt auch die Bereitstellung der digitalen Unterlagen durch die PK19. In der Regel und bei Bedarf werden virtuelle Infoveranstaltungen für die vorgesetzten Fachkräfte (VF) sowie Kandidatinnen & Kandidaten (KAND) durchgeführt.
 ]
 
 #timeline_entry([Dezember])[
-  Kandidatinnen & Kandidaten (KAND) erhalten die Aufforderung per E-Mail, sich auf PkOrg anzumelden. Anschliessend wird durch die Kandidatinnen & Kandidaten (KAND) die vorgesetzte Fachperson (VF) in PkOrg eingetragen. Die vorgesetzte Fachperson (VF) wählt den Startblock und erfasst Thema und Grobbeschrieb der Arbeit.
+  Kandidatinnen & Kandidaten (KAND) erhalten die Aufforderung per E-Mail, sich auf PkOrg anzumelden. Anschliessend wird durch die Kandidatinnen & Kandidaten (KAND) die vorgesetzte Fachkraft (VF) in PkOrg eingetragen. Die vorgesetzte Fachkraft (VF) wählt den Startblock und erfasst Thema und Grobbeschrieb der Arbeit.
 ]
 
 #timeline_entry([Januar – April])[
@@ -68,7 +68,7 @@ Die Aufgabenstellung muss vollständig und termingerecht im PkOrg eingetragen we
 
 Die Formulierung darf kompakt sein, aber keine externen Verweise wie "gem. Besprechung" enthalten. Die zu prüfende Person kann weitere, notwendige Angaben in ihrem Bericht einfügen. Die Aufgabenstellung ist zusammen mit den Bewertungskriterien die Basis für die Beurteilung durch die Validierungsexperten (VEX), das Expertenteam (HEX/NEX) und die vorgesetzte Fachkraft (VF).
 
-Mit der Arbeit darf erst am deklarierten Starttermin und nach der formellen Freigabe (E-Mail) durch die Validexpertin oder den Validexperten (VEX) begonnen werden.
+Mit der Arbeit darf erst am deklarierten Starttermin und nach der formellen Freigabe (E-Mail) durch die Validierungsexpertin oder den Validierungsexperten (VEX) begonnen werden.
 
 == Keine identischen Aufgabenstellungen
 

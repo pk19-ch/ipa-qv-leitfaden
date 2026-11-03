@@ -18,7 +18,7 @@ TYPST_FLAGS     := --root . --font-path $(FONT_DIR)
 
 .DEFAULT_GOAL := pdf
 
-.PHONY: pdf clean podman-pdf check-text podman-check-text test lint podman-test podman-ci help
+.PHONY: pdf clean podman-pdf check-text podman-check-text test lint podman-lint podman-test podman-ci help
 
 # ── Native builds (requires `typst` on PATH) ─────────────────────────────────
 
@@ -56,6 +56,13 @@ test: ## Run Python tests (requires .venv)
 lint: ## Run Python linter (requires .venv)
 	.venv/bin/python3 -m ruff check scripts/
 
+podman-lint: ## Run ruff lint in a container
+	$(PODMAN) run --rm \
+		-v "$$(pwd):/work:Z" -w /work $(CHECK_IMAGE) bash -lc '\
+		microdnf install -y python3 python3-pip >/dev/null && \
+		python3 -m pip install -q --root-user-action=ignore -r requirements.txt && \
+		python3 -m ruff check scripts/'
+
 podman-test: ## Run Python tests in container
 	$(PODMAN) run --rm \
 		-v "$$(pwd):/work:Z" -w /work $(CHECK_IMAGE) bash -lc '\
@@ -63,6 +70,7 @@ podman-test: ## Run Python tests in container
 		python3 -m pip install -q --root-user-action=ignore -r requirements.txt >/dev/null && \
 		python3 -m pytest scripts/ -v'
 
+# Container uses de_DE (no hunspell-de-ch package in Stream 10); ss/ß hits here are expected — CI (de_CH) is authoritative, do not add them to dict/.
 podman-check-text: ## Run text checks in container
 	$(PODMAN) run --rm \
 		-e SKIP_LANGUAGETOOL="$(SKIP_LANGUAGETOOL)" \
@@ -71,7 +79,7 @@ podman-check-text: ## Run text checks in container
 		microdnf install -y python3 hunspell hunspell-de >/dev/null && \
 		python3 scripts/check_text.py'
 
-podman-ci: podman-test podman-check-text ## Run full CI suite in containers
+podman-ci: podman-lint podman-test podman-check-text ## Run full CI suite in containers
 
 # ── Help ──────────────────────────────────────────────────────────────────────
 

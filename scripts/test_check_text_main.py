@@ -97,3 +97,50 @@ def test_main_ok_with_languagetool_when_lt_clean(
     main()
     out = capsys.readouterr().out
     assert "OK (hunspell + LanguageTool)" in out
+
+
+@patch("check_text.build_corpus", return_value="\n\n".join(["x" * 5000] * 3))
+@patch("check_text.hunspell_executable", return_value="/usr/bin/hunspell")
+@patch("check_text.subprocess.run")
+@patch("check_text.lt_check_chunk")
+def test_main_partial_lt_failure_exits_0_no_languagetool_label(
+    mock_lt: MagicMock,
+    mock_run: MagicMock,
+    _mock_exe: MagicMock,
+    _mock_corpus: MagicMock,
+    monkeypatch: pytest.MonkeyPatch,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    monkeypatch.setattr(sys, "argv", ["check_text"])
+    mock_run.side_effect = [
+        MagicMock(returncode=0, stdout="", stderr=""),
+        MagicMock(returncode=0, stdout="", stderr=""),
+    ]
+    mock_lt.side_effect = [[], None, None]
+    main()
+    out = capsys.readouterr()
+    assert "OK (hunspell)" in out.out
+    assert "LanguageTool" not in out.out
+    assert "checked 1/" in out.err
+
+
+@patch("check_text.build_corpus", return_value="\n\n".join(["x" * 5000] * 3))
+@patch("check_text.hunspell_executable", return_value="/usr/bin/hunspell")
+@patch("check_text.subprocess.run")
+@patch("check_text.lt_check_chunk", return_value=[])
+def test_main_all_lt_chunks_succeed_shows_languagetool(
+    _mock_lt: MagicMock,
+    mock_run: MagicMock,
+    _mock_exe: MagicMock,
+    _mock_corpus: MagicMock,
+    monkeypatch: pytest.MonkeyPatch,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    monkeypatch.setattr(sys, "argv", ["check_text"])
+    mock_run.side_effect = [
+        MagicMock(returncode=0, stdout="", stderr=""),
+        MagicMock(returncode=0, stdout="", stderr=""),
+    ]
+    main()
+    out = capsys.readouterr().out
+    assert "OK (hunspell + LanguageTool)" in out

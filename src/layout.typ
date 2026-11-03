@@ -16,6 +16,8 @@
   header: none,
   footer: none,
 )[
+  #set text(lang: "de", region: "ch")
+
   // ── Top accent bar ──────────────────────────────────────────────────────
   #rect(fill: zh_blau, width: 100%, height: 6mm)
 

@@ -12,17 +12,9 @@ on:
       - "pyproject.toml"
       - "requirements.txt"
       - ".github/workflows/text-check.yml"
+  # no paths filter: lint-text is a required status check and must report on every PR
   pull_request:
     branches: [main]
-    paths:
-      - "src/**"
-      - "theme/**"
-      - "scripts/**"
-      - "dict/**"
-      - "Makefile"
-      - "pyproject.toml"
-      - "requirements.txt"
-      - ".github/workflows/text-check.yml"
   workflow_dispatch:
 
 concurrency:

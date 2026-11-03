@@ -31,7 +31,7 @@ Zuständig für den Aufbau, den Betrieb und die Überwachung von Netzen, Dienste
 #strong[Applikationsentwicklung]: \
 Realisieren Softwarelösungen für Produkte, Prozesse oder Dienstleistungen. Sie setzen Kundenanforderungen in funktionierende technische Lösungen um.
 
-== Was sich nicht bewährt hat:
+== Was sich nicht bewährt hat
 
 #callout[
   Die Erfahrung zeigt, dass folgende Ansätze sich nicht bewährt haben:

@@ -40,11 +40,11 @@ Der zweite Besuch sollte zwischen dem siebten und achten Tag der IPA online oder
 
 == Abgabetag
 
-Versuch erreichbar zu sein, falls die Kandidatin oder der Kandidat noch offene Fragen hat. Wichtig: Die Chefexpertin oder der Chefexperte muss über eine verspätete Abgabe über das PkOrg schriftlich informiert werden.
+Versuche, erreichbar zu sein, falls die Kandidatin oder der Kandidat noch offene Fragen hat. Wichtig: Die Chefexpertin oder der Chefexperte muss über eine verspätete Abgabe über das PkOrg schriftlich informiert werden.
 
 = Vorbereitung des Prüfungstags
 
-Die Vorbereitung des Prüfungstages bildet eine zentrale Hauptaufgabe als Hauptexpertin oder Hauptexperte. Das Korrigieren des Berichts steht nicht mehr im Vordergrund. Warte, bis die vorgesetzte Fachkraft den Bericht korrigiert und bewertet hat. Dies sollte spätestens drei Tage vor dem Prüfungstag geschehen sein. Lese zunächst die Bewertung durch, da diese Hinweise auf mögliche Problemstellen gibt und zeigt, wo du ein besonderes Augenmerk auf die Arbeit richten solltest. Lese anschliessend den Bericht mit Fokus auf mögliche Meinungsverschiedenheiten bezüglich der Bewertung und denke dabei bereits an das Fachgespräch.
+Die Vorbereitung des Prüfungstages bildet eine zentrale Hauptaufgabe als Hauptexpertin oder Hauptexperte. Das Korrigieren des Berichts steht nicht mehr im Vordergrund. Warte, bis die vorgesetzte Fachkraft den Bericht korrigiert und bewertet hat. Dies sollte spätestens drei Tage vor dem Prüfungstag geschehen sein. Lies zunächst die Bewertung durch, da diese Hinweise auf mögliche Problemstellen gibt und zeigt, wo du ein besonderes Augenmerk auf die Arbeit richten solltest. Lies anschliessend den Bericht mit Fokus auf mögliche Meinungsverschiedenheiten bezüglich der Bewertung und denke dabei bereits an das Fachgespräch.
 
 Plausibilisiere die Bewertung der vorgesetzten Fachkraft und bringe deine Änderungen an. Bei Unklarheiten oder offenen Fragen können diese am Präsentationstag besprochen und geklärt werden. Das Expertenteam hat jedoch das letzte Wort, wobei die vorgesetzte Fachkraft dies natürlich noch mit einem Vermerk zur Uneinigkeit kennzeichnen kann. Versuche, wo immer nötig einen Konsens zu finden.
 
@@ -54,7 +54,7 @@ Im Anschluss bereitest du ein Fachgespräch mit sechs Themenblöcken plus Reserv
 
 Die Durchführung der Präsentation, Demonstration und des Fachgespräches bildet den Abschluss der IPA. Als Expertenteam trägst du die Verantwortung für einen professionellen und würdevollen Ablauf dieser wichtigen Prüfungsphase.
 
-*Zeitvorgaben:* Gemäss allgemeinen QV-Leitfaden, darf die Gesamtzeit von Präsentation, Demonstration und Fachgespräch 60 Minuten nicht überschreiten.
+*Zeitvorgaben:* Gemäss dem allgemeinen QV-Leitfaden darf die Gesamtzeit von Präsentation, Demonstration und Fachgespräch 60 Minuten nicht überschreiten.
 
 Die Hauptexpertin oder der Hauptexperte beginnt mit der Begrüssung, stellt alle Anwesenden vor und erläutert den geplanten Ablauf. Zu Beginn muss der Gesundheitszustand der Kandidatin oder des Kandidaten erfragt werden. Bei gesundheitlichen oder psychischen Einschränkungen ist die Prüfung zu verschieben.
 
@@ -92,7 +92,7 @@ Als Expertin oder Experte bist du zur absoluten Vertraulichkeit verpflichtet. De
 
 Die Entschädigung erfolgt nach den offiziellen Richtlinien der PK19. Aufwand und Vergütung orientieren sich an Expertinnen und Experten, die mit den Technologien der IPA vertraut sind. Dies ist bei der Auswahl der IPA zwingend zu berücksichtigen. Ein übermässiger Einarbeitungsaufwand kann nicht vergütet werden. Daher sollte sich die Wahl der IPAs nach deinen fachlichen Kompetenzen richten, sodass die Aufwände durch die Pauschale abgedeckt werden können. Wichtig: Zeitüberschreitungen müssen innerhalb der IPA an anderer Stelle kompensiert werden.
 
-== Abrechenbare Zeiten pro IPA für Hauptexpertinnen und Hauptexperten:
+== Abrechenbare Zeiten pro IPA für Hauptexpertinnen und Hauptexperten
 
 - IPA-Pauschale von 11 Stunden
 - Reisezeit und ÖV-Kosten gemäss den geltenden Ansätzen
@@ -112,11 +112,11 @@ Beispielhafter Zeitaufwand innerhalb der IPA-Pauschale:
   [Vorbereitung Fachgespräch / Austausch 2-Experten / Abholen VF], [1.0],
   [Dritter Besuch, Bewertung], [3.0],
   [Abschluss, Noteneintrag], [0.5],
-  [Korrespondenz, PkOrg Verrechnung, Feedback CEXP], [0.5],
+  [Korrespondenz, PkOrg Verrechnung, Feedback CEX], [0.5],
   [#strong[Total Pauschale]], [#strong[11.0]],
 )
 
-== Abrechenbare Zeiten pro IPA für Nebenexpertinnen und Nebenexperten:
+== Abrechenbare Zeiten pro IPA für Nebenexpertinnen und Nebenexperten
 
 Die Verrechnung für Nebenexpertinnen und Nebenexperten erfolgt ebenfalls als Pauschale:
 - Vorbereitungszeit: maximal 1 Stunde (Pauschale)

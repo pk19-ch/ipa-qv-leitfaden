@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import http.client
 import json
 import os
 import urllib.error
@@ -13,6 +14,7 @@ from unittest.mock import MagicMock, patch
 import pytest
 from check_text import (
     InfrastructureError,
+    _lt_request,
     ensure_hunspell_dictionary,
     format_lt_match,
     hunspell_check,
@@ -241,3 +243,40 @@ def test_lt_check_chunk_returns_none_on_malformed_json(
     mock_urlopen.return_value = resp
     result = lt_check_chunk("text", ignore_rules=set(), disabled_categories=None)
     assert result is None
+
+
+@patch("check_text.time.sleep")
+@patch("check_text.urllib.request.urlopen")
+def test_lt_request_retries_on_timeout(
+    mock_urlopen: MagicMock,
+    _mock_sleep: MagicMock,
+) -> None:
+    mock_urlopen.side_effect = TimeoutError("timed out")
+    req = MagicMock()
+    result = _lt_request(req, max_retries=2)
+    assert result is None
+    assert mock_urlopen.call_count == 3
+
+
+@patch("check_text.time.sleep")
+@patch("check_text.urllib.request.urlopen")
+def test_lt_request_retries_on_remote_disconnected(
+    mock_urlopen: MagicMock,
+    _mock_sleep: MagicMock,
+) -> None:
+    mock_urlopen.side_effect = http.client.RemoteDisconnected("Remote end closed connection")
+    req = MagicMock()
+    result = _lt_request(req, max_retries=2)
+    assert result is None
+    assert mock_urlopen.call_count == 3
+
+
+def test_lt_chunks_splits_long_paragraph_on_newlines() -> None:
+    text = '\n'.join(f'line {i} ' + 'x' * 40 for i in range(50))
+    chunks = lt_chunks(text, 200)
+    assert all(len(c) <= 200 for c in chunks)
+    rejoined = ' '.join('\n\n'.join(chunks).split())
+    original = ' '.join(text.split())
+    for i in range(50):
+        assert f'line {i}' in rejoined
+    assert rejoined == original
