@@ -2,12 +2,30 @@
 
 This repository contains the text of the QV-Leitfaden of Prüfungskommission 19 (Kanton Zürich). Two PDFs are built from it:
 
-| PDF | Audience | Source files |
-|-----|----------|--------------|
-| `qv-leitfaden-YYYY.N.pdf` | Candidates (KAND) and vorgesetzte Fachkräfte (VF) | `src/leitfaden.typ` + `src/chapters/ch01–ch06.typ` |
-| `qv-leitfaden-hex-nex-YYYY.N.pdf` | Experts (HEX/NEX) | `src/leitfaden-hex-nex.typ` + `src/body-hex-nex.typ` |
+| PDF | For |
+|-----|-----|
+| `qv-leitfaden-YYYY.N.pdf` | Candidates (KAND) and vorgesetzte Fachkräfte (VF) |
+| `qv-leitfaden-hex-nex-YYYY.N.pdf` | Experts (HEX/NEX) |
 
-The text is written in [Typst](https://typst.app/), a simple markup language similar to Markdown. `YYYY.N` is the edition number, e.g. `2027.1`.
+`YYYY.N` is the version number, e.g. `2027.1`.
+
+**In short:**
+
+- You change the text directly on GitHub, in your browser. You need a GitHub account, nothing else.
+- Every change is a *pull request* (PR). A maintainer checks it and puts it into the guide.
+- A new version with new PDFs is published only when someone raises the version number.
+- Maintainers are the members of [pk19-ch](https://github.com/pk19-ch).
+
+## Words used here
+
+| Word | Meaning |
+|------|---------|
+| `main` | The current, approved text. |
+| Pull request (PR) | A proposed change. It waits for approval. |
+| Branch / fork | A working copy that GitHub creates for your change. You don't have to manage it. |
+| Check | An automatic test on every PR: green ✓ is fine, red ✗ needs a fix. |
+| Release | A published version on the [Releases](../../releases) page, with both PDFs. |
+| Maintainer | A member of pk19-ch. Only maintainers can approve and merge PRs. |
 
 ## Where is which text?
 
@@ -19,116 +37,102 @@ The text is written in [Typst](https://typst.app/), a simple markup language sim
 | `src/chapters/ch04.typ` | Facharbeit: Präsentation und Demonstration |
 | `src/chapters/ch05.typ` | Facharbeit: Fachgespräch |
 | `src/chapters/ch06.typ` | Hinweise für VF |
-| `src/body-hex-nex.typ` | Whole text of the HEX/NEX edition |
-| `src/changelog.typ` | "Änderungshistorie" table at the start of both PDFs |
-| `src/meta.typ` | Edition number (`version`) |
+| `src/body-hex-nex.typ` | Gesamter Leitfaden für HEX/NEX |
+| `src/changelog.typ` | Änderungshistorie (in beiden PDFs) |
+| `src/meta.typ` | Versionsnummer |
 
-Some rules appear in both editions. If you change one, check whether the other edition says the same thing.
+Many rules (deadlines, durations) are in both editions. When you change a rule, change it in both editions in the same PR. To find all places: type a word of the rule into the search field at the top of the repository page and press Enter. GitHub lists every file that contains it.
 
-## Changing text (no installation needed)
+## Change the text
 
-All changes go through a pull request (PR). Nobody can change `main` directly.
+1. Open the file on GitHub.
+2. Click the pencil icon (**Edit**). If you are not a maintainer, GitHub first shows **Fork this repository**: click it.
+3. Make your change.
+4. Click **Commit changes…**.
+5. Enter a short title. Start it with `content:` for a change of content or `fix:` for a typo, e.g. `fix: Tippfehler in Kapitel 3`.
+6. Maintainers: choose **Create a new branch**. (Non-members don't see this choice.)
+7. Click **Propose changes**.
+8. Click **Create pull request**.
+9. Wait a few minutes until the checks are green.
+10. Check the PDFs (see [Check the PDFs](#check-the-pdfs)).
+11. GitHub asks the maintainers for a review automatically. You don't need to do anything.
 
-1. Open the file on GitHub and click the pencil icon (Edit).
-2. Make your change.
-3. Click **Commit changes…**, choose **Create a new branch** and give a short description, e.g. `content: Abgabefrist präzisiert`.
-4. Click **Propose changes**, then **Create pull request**.
-5. Wait a few minutes. The automatic checks run (see below), and a comment **PDF preview ready** appears with a download link. Open both PDFs and check your change.
-6. Ask another CEX or maintainer to review. As soon as one person approves and all checks are green, the PR can be merged with **Squash and merge**.
+You don't need to raise the version number. A maintainer does that when publishing.
 
-To fix something after the review, edit the file again on the same branch. The checks run again.
+### Check the PDFs
 
-### Typst in 30 seconds
+1. In your PR, open the `typst` check: click **Details**.
+2. Click **Summary** on the left.
+3. Scroll down to **Artifacts** and download the ZIP.
+4. Open the two PDFs in the ZIP and look at your change.
 
-```typst
-= Chapter title
-== Section title
+Maintainers also get a comment **PDF preview ready** with a direct link.
 
-A normal paragraph. An empty line starts a new paragraph.
+## Review a PR (maintainers)
 
-*bold text*  ·  _italic text_  ·  #strong[bold text]
+1. Open the PR.
+2. If you see **Approve and run workflows**, click it. This starts the checks for a first-time contributor.
+3. Click **Files changed** and read the change.
+4. Check:
+   - Is the text correct and clear?
+   - If the rule is in both editions: were both changed?
+   - If the version number was raised: is the new row in `changelog.typ` correct?
+   - Did only text files change? If a PR from outside pk19-ch changes files in `.github/` or `scripts/`, don't approve it yourself: ask the repository admins.
+   - Does `lint-text` show the warning *Text changed but the version is still …*? Then decide whether to publish a new version (see [New version](#new-version)).
+5. Look at the PDFs (see [Check the PDFs](#check-the-pdfs)).
+6. Click **Review changes** → **Approve** → **Submit review**.
+7. When all checks are green, click **Squash and merge** → **Confirm squash and merge**.
 
-- list item
-- another item
+## New version
 
-Line break inside a paragraph \
-continues here.
+A new version is published only when the version number is raised. Maintainers raise it, in the text PR before merging or in a separate PR. We recommend a new version for every change to the text, including typo fixes. Changes to colours or layout alone need no new version.
 
-#tip_block[A highlighted tip box.]
-```
+### Which number?
 
-Copy the style of the text around your change. If the PDF build fails, the check output shows the file and line.
+The number is `YEAR.COUNT`, e.g. `2027.2`.
 
-## Automatic checks on every PR
+- **YEAR** is the QV year: until 31 July the current year, from 1 August the current year + 1.
+- **COUNT**: if the current number already has this YEAR, add 1. Otherwise start at 1.
 
-| Check | What it does | If it fails |
-|-------|--------------|-------------|
-| `typst` (Build PDFs) | Builds both PDFs and checks that the current edition number appears in `src/changelog.typ` | Open **Details**. Usually a markup typo (e.g. a missing `]`) or a missing row in `changelog.typ` |
-| `lint-text` (spelling & grammar) | Spell check (Swiss German) and grammar check (LanguageTool) on the whole text, plus tests for the check scripts | Open **Details** and scroll to the end: the flagged word or sentence is shown |
+| Today | Current number | New number |
+|-------|----------------|------------|
+| 3 November 2026 | `2027.1` | `2027.2` |
+| 10 January 2027 | `2027.2` | `2027.3` |
+| 15 September 2027 | `2027.3` | `2028.1` |
 
-**The spell checker flags a correct word** (e.g. a new abbreviation): add the word on its own line to `dict/ipa-personal.pws` in the same PR.
+### How
 
-**The grammar checker flags something that is correct**: first try to rephrase the sentence. If the rule is wrong for this text in general, add its ID (shown in brackets, e.g. `[DE_CASE]`) to `dict/languagetool-ignore-rules.txt`.
+Make two changes, in your text PR or in a separate PR:
 
-## Publishing a new edition
+1. In `src/meta.typ`, change the number between the quotes: `#let version = "2027.2"`.
+2. In `src/changelog.typ`, add a new row directly below the header row `[Version], [Datum], [Änderungen],`. Write the month short and in German (`Jan`, `Feb`, `März`, `Apr`, `Mai`, `Juni`, `Juli`, `Aug`, `Sept`, `Okt`, `Nov`, `Dez`). Keep all other rows:
 
-In the same PR as your text changes, or in a separate one:
+   `[2027.2], [Nov 2026], [Abgabefrist für Anhänge präzisiert],`
 
-1. Increase `version` in `src/meta.typ`: next number in the same year (`2027.1` → `2027.2`), or `.1` for a new year.
-2. Add a new row **at the top** of the table in `src/changelog.typ` with version, month and a short summary. Keep the older rows.
-3. Do not edit `CHANGELOG.md`. It is generated automatically.
+The check `lint-text` tells you if the number is wrong, the new row is missing, or an old row was deleted.
 
-After the merge, GitHub creates a tag and a [release](../../releases) with both PDFs attached.
+After the merge, the new version appears on the [Releases](../../releases) page within a few minutes.
 
-## Commit and PR titles
+## Working on your own computer
 
-Start the title with one of these words so the generated changelog is sorted correctly:
+Optional. You only need this to build the PDFs or run the checks on your computer. Requirements: Git, Make and [Podman](https://podman.io/).
 
-| Prefix | Use for |
-|--------|---------|
-| `content:` | Text changes (new rules, rewording) |
-| `fix:` | Typos and corrections |
-| `design:` | Layout and appearance |
-| `docs:` | This README |
-| `ci:`, `build:`, `chore:`, `refactor:`, `feat:` | Technical changes (maintainers) |
-
-## Working on your own computer (optional)
-
-You only need this to build the PDFs locally or for technical changes.
-
-**Install:** [Typst](https://typst.app/) 0.14.2 or newer, Python 3, and `hunspell` with the Swiss German dictionary (`de_CH`). Alternatively only [Podman](https://podman.io/) (or Docker with `PODMAN=docker`).
+On macOS and Windows, Podman runs in a small virtual machine. Create it once, and start it again after every restart of your computer:
 
 ```bash
-git clone https://github.com/pk19-ch/ipa-qv-leitfaden.git
-cd ipa-qv-leitfaden
-make pdf                 # builds both PDFs into dist/
-
-# once, for checks and tests:
-python3 -m venv .venv
-.venv/bin/pip install -r requirements.txt
-
-make check-text          # spelling + grammar (same as the PR check)
-make test                # tests for the check scripts
-make lint                # Python code style
+podman machine init    # once
+podman machine start   # after every restart
 ```
 
-| Without local Typst/Python | Command |
-|----------------------------|---------|
-| Build PDFs | `make podman-pdf` |
-| Spelling + grammar | `make podman-check-text` (uses the German `de_DE` dictionary, so Swiss spellings may be flagged) |
-| All checks | `make podman-ci` |
+Clone the project into your home folder (the Podman machine can only see files there):
 
-`make help` lists all commands. `SKIP_LANGUAGETOOL=1 make check-text` skips the online grammar check.
+```bash
+cd ~
+git clone https://github.com/pk19-ch/ipa-qv-leitfaden.git
+cd ipa-qv-leitfaden
+make podman-pdf          # build both PDFs into dist/
+make podman-check-text   # spelling and grammar
+make podman-ci           # all checks: lint, tests, spelling and grammar
+```
 
-## For maintainers
-
-| Path | Purpose |
-|------|---------|
-| `src/layout.typ`, `theme/zh-mba.typ` | Cover page, page layout, Kanton Zürich colours and text blocks (`tip_block`, `callout`, …) |
-| `scripts/` | `extract_text.py` turns the Typst files into plain text, `check_text.py` runs hunspell and LanguageTool on it, plus tests |
-| `dict/` | Spell-check word list and ignored LanguageTool rules |
-| `assets/fonts/` | Inter font (SIL OFL) |
-| `.github/workflows/` | `build-pdf.yml` (PDFs + preview comment), `text-check.yml` (spelling/grammar/tests), `release.yml` (tag + GitHub Release when `version` in `src/meta.typ` changes on `main`) |
-| `cliff.toml` | Configuration for the generated `CHANGELOG.md` (git-cliff) |
-
-`main` is protected: changes only via PR, one approval, and the `lint-text` check must pass. `release.yml` commits the generated `CHANGELOG.md` back to `main`, so it needs a way past this protection (a bot bypass or a changelog PR). Otherwise the release job fails.
+`SKIP_LANGUAGETOOL=1 make podman-check-text` skips the online grammar check.
