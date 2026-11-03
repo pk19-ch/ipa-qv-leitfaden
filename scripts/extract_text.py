@@ -26,7 +26,8 @@ _TYP_DIRECTIVE = re.compile(
     re.MULTILINE,
 )
 
-_HEADING_MARKER = re.compile(r"(?m)^=+\s+")
+# Headings end without punctuation; add a period so LanguageTool sees a sentence boundary.
+_HEADING_LINE = re.compile(r"(?m)^=+\s+(.*?)\s*$")
 _LIST_MARKER = re.compile(r"(?m)^\s*-\s+")
 _TYPST_LINE_BREAK = re.compile(r"\\\s*$", re.MULTILINE)
 _STRONG = re.compile(r"(?<!\\)\*([^*\n]+)\*")
@@ -63,7 +64,7 @@ def _clean_chunk(chunk: str) -> str:
 
 def _clean_prose(text: str) -> str:
     """Strip remaining Typst syntax from depth-0 text, keeping readable prose."""
-    text = _HEADING_MARKER.sub("", text)
+    text = _HEADING_LINE.sub(lambda m: m[1] if m[1][-1:] in ".:?!" else m[1] + ".", text)
     text = _LIST_MARKER.sub("", text)
     text = _TYPST_LINE_BREAK.sub("", text)
     text = _STRONG.sub(r"\1", text)

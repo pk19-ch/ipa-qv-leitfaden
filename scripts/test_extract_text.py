@@ -241,3 +241,16 @@ def test_clean_prose_leaves_escaped_and_unpaired_asterisks() -> None:
 def test_clean_prose_preserves_underscores() -> None:
     """Underscores in identifiers should remain untouched."""
     assert "foo_bar_baz" in _clean_prose("Variable foo_bar_baz verwenden")
+
+
+def test_extract_typst_terminates_headings(tmp_path: Path) -> None:
+    """Headings get a sentence end so grammar checks don't merge them into the next sentence."""
+    p = tmp_path / "sample.typ"
+    p.write_text(
+        "== Was sich nicht bewährt hat\n\nDie Erfahrung zeigt etwas.\n\n== Fragen?\n\nJa.\n",
+        encoding="utf-8",
+    )
+    result = extract_typst(p)
+    assert "Was sich nicht bewährt hat.\nDie Erfahrung" in result
+    assert "Fragen?\n" in result
+    assert "==" not in result
