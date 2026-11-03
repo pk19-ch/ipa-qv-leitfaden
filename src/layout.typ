@@ -193,14 +193,9 @@
   )
 
   // ── Outline (TOC) ──────────────────────────────────────────────────────
-  show outline.entry: it => {
-    if it.level == 1 {
-      v(0.4em)
-      strong(it)
-    } else {
-      it
-    }
-  }
+  // Bold chapter entries via set rules: PDF/UA forbids wrapping the entry link in strong()
+  show outline.entry.where(level: 1): set block(above: 1.2em)
+  show outline.entry.where(level: 1): set text(weight: "bold")
 
   // ── Page layout ────────────────────────────────────────────────────────
   set page(
