@@ -29,14 +29,14 @@ Der erste Besuch findet idealerweise am zweiten oder dritten Tag der IPA statt u
 
 *Besprechung der Evidenzen:*
 Neben den Bewertungskriterien ist es wichtig, mit der Kandidatin oder dem Kandidaten zu besprechen, wie sie oder er die Evidenzen im IPA-Bericht gestalten will:
-- Massenhaft Screenshots in den Bericht zu packen ist nicht immer sinnvolle Evidenz (es gibt Kandidatinnen und Kandidaten, die denken je mehr Bilder, desto besser)
+- Viele Screenshots in den Bericht zu packen ist nicht immer sinnvolle Evidenz (es gibt Kandidatinnen und Kandidaten, die denken je mehr Bilder, desto besser)
 - Wenn keine klare Vorstellung vorhanden ist, wie Evidenzen im Bericht aufgearbeitet werden sollen, kann dies auch darauf hindeuten, dass das Ziel der Aufgabenstellung nicht deutlich verstanden wurde
 
 Als Nebenexpertin oder Nebenexperte kannst du optional und nach Absprache mit der zuständigen Chefexpertin oder dem zuständigen Chefexperten an diesem Besuch teilnehmen, insbesondere wenn du noch wenig Erfahrung hast.
 
 == Zweiter Besuch
 
-Der zweite Besuch sollte zwischen dem siebten und achten Tag der IPA online oder vor Ort stattfinden. Als Hauptexpertin oder Hauptexperte kontrollierst du den Fortschritt der Arbeit und den Stand der Dokumentation. Du prüfst die tägliche Aktualisierung des Lernjournals und der Sicherungen und führst ein kurzes Fachgespräch, um eventuelle Fremdhilfe zu erfassen. Du klärst auch bereits organisatorische Fragen zur Präsentation. Auch hier ist die Teilnahme der Nebenexpertin oder des Nebenexperten optional und muss mit der zuständigen Chefexpertin oder dem zuständigen Chefexperten abgesprochen werden.
+Der zweite Besuch sollte zwischen dem siebten und achten Tag der IPA online oder vor Ort stattfinden. Als Hauptexpertin oder Hauptexperte kontrollierst du den Fortschritt der Arbeit und den Stand der Dokumentation. Du prüfst die tägliche Aktualisierung des Arbeitsjournals und der Sicherungen und führst ein kurzes Fachgespräch, um eventuelle Fremdhilfe zu erfassen. Du klärst auch bereits organisatorische Fragen zur Präsentation. Auch hier ist die Teilnahme der Nebenexpertin oder des Nebenexperten optional und muss mit der zuständigen Chefexpertin oder dem zuständigen Chefexperten abgesprochen werden.
 
 == Abgabetag
 
@@ -88,6 +88,10 @@ Bitte beachte, dass Ton- und Videoaufnahmen ausdrücklich untersagt sind. Nach d
 
 Als Expertin oder Experte bist du zur absoluten Vertraulichkeit verpflichtet. Der Notenvorschlag darf der Kandidatin oder dem Kandidaten nicht mitgeteilt werden, da dieser noch durch die Notenkonferenz bestätigt werden muss. Beachte unbedingt die Ausstandsregeln und melde etwaige Probleme frühzeitig der zuständigen Chefexpertin oder dem zuständigen Chefexperten.
 
+== Verdacht auf nicht deklarierte KI-Nutzung
+
+Prüfe bei jedem Besuch die KI-Vermerke im Arbeitsjournal. Markiere bei der Vorbereitung auffällige Stellen; Fragen zur Entstehung können Teil des Fachgesprächs sein. Kündige im Fachgespräch keine Konsequenzen an. Erhärtet sich der Verdacht, melde ihn der Chefexpertin oder dem Chefexperten und übergib die markierten Stellen und deine Fragen. Begründe die Bewertung pro betroffenem Kriterium.
+
 = Entschädigung
 
 Die Entschädigung erfolgt nach den offiziellen Richtlinien der PK19. Aufwand und Vergütung orientieren sich an Expertinnen und Experten, die mit den Technologien der IPA vertraut sind. Dies ist bei der Auswahl der IPA zwingend zu berücksichtigen. Ein übermässiger Einarbeitungsaufwand kann nicht vergütet werden. Daher sollte sich die Wahl der IPAs nach deinen fachlichen Kompetenzen richten, sodass die Aufwände durch die Pauschale abgedeckt werden können. Wichtig: Zeitüberschreitungen müssen innerhalb der IPA an anderer Stelle kompensiert werden.
@@ -113,7 +117,7 @@ Beispielhafter Zeitaufwand innerhalb der IPA-Pauschale:
   [Dritter Besuch, Bewertung], [3.0],
   [Abschluss, Noteneintrag], [0.5],
   [Korrespondenz, PkOrg Verrechnung, Feedback CEX], [0.5],
-  [#strong[Total Pauschale]], [#strong[11.0]],
+  [#strong[Pauschale insgesamt]], [#strong[11.0]],
 )
 
 == Abrechenbare Zeiten pro IPA für Nebenexpertinnen und Nebenexperten

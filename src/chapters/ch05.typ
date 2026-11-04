@@ -8,4 +8,6 @@ Das Fachgespräch darf nicht mit einer mündlichen Berufskundeprüfung verwechse
 
 Die Hauptexpertin oder der Hauptexperte (HEX) führt das Gespräch mit Fokus auf 6 Themenbereiche. Dabei werden auch die vorgängig von der vorgesetzten Fachkraft (VF) mitgeteilten Fragen berücksichtigt. Das Gespräch soll auch spontane Fragen zulassen, z.B. wenn in der Präsentation etwas unklar geblieben oder ein neuer Aspekt aufgetaucht ist.
 
+Fragen zur Entstehung der Arbeit, auch zu Teilen, die mit KI erstellt wurden, können Teil des Fachgesprächs sein.
+
 Die Gesamtzeit von Präsentation, Demonstration und Fachgespräch darf 60 Minuten nicht überschreiten.
