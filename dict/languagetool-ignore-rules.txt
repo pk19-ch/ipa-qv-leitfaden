@@ -2,6 +2,4 @@
 # For a stricter grammar pass, temporarily remove lines below (or move this file aside).
 
 DE_CASE
-GERMAN_WORD_REPEAT_BEGINNING_RULE
-GERMAN_WORD_REPEAT_RULE
-EINHEIT_LEERZEICHEN
+PFEILE
