@@ -6,6 +6,6 @@ Mit diesem Fachgespräch will das Expertenteam herausfinden, wie kompetent die K
 
 Das Fachgespräch darf nicht mit einer mündlichen Berufskundeprüfung verwechselt werden. Natürlich ist auch Schulwissen gefragt, aber nur sofern dieses im Zusammenhang mit der Facharbeit steht. Das Fachwissen und die Produktkenntnis sind die Grundlagen für ein fachlich korrektes Ausführen der Arbeit.
 
-Die Hauptexpertin oder der Hauptexperte (HEX) führt das Gespräch mit Fokus auf sechs Themenblöcke. Dabei werden auch die vorgängig von der vorgesetzten Fachkraft (VF) mitgeteilten Fragen berücksichtigt. Das Gespräch soll auch spontane Fragen zulassen, z.B. wenn in der Präsentation etwas unklar geblieben oder ein neuer Aspekt aufgetaucht ist.
+Die Hauptexpertin oder der Hauptexperte (HEX) führt das Gespräch mit Fokus auf sechs Themenblöcke. Dabei werden auch die vorgängig von der vorgesetzten Fachkraft (VF) in der PkOrg-History mitgeteilten Fragen berücksichtigt. Das Gespräch soll auch spontane Fragen zulassen, z.B. wenn in der Präsentation etwas unklar geblieben oder ein neuer Aspekt aufgetaucht ist.
 
 Die Gesamtzeit von Präsentation, Demonstration und Fachgespräch darf 60 Minuten nicht überschreiten.

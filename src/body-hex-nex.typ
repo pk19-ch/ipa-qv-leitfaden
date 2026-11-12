@@ -4,23 +4,32 @@
 
 Dieser Leitfaden dient als Ergänzung zum allgemeinen QV-Leitfaden für Informatikerinnen und Informatiker. Er konzentriert sich speziell auf Informationen, Aufgaben und Verantwortlichkeiten der Expertinnen und Experten während der Individuellen Praktischen Arbeit (IPA). Die enthaltenen Informationen sollen die Standardisierung der Prüfungsdurchführung und die Qualitätssicherung der Bewertung gewährleisten.
 
-#hinweis(label: [Wichtig])[Im Falle von Widersprüchen zwischen diesem Leitfaden und dem allgemeinen QV-Leitfaden hat der allgemeine QV-Leitfaden Priorität. Die offiziellen Vorgaben (Bildungsverordnung, Bildungsplan, Ausführungsbestimmungen zum Qualifikationsverfahren und kantonale Vorgaben) gehen beiden Leitfäden und den Angaben in PkOrg vor.]
+#hinweis(label: [Wichtig])[Im Falle von Widersprüchen zwischen diesem Leitfaden und dem allgemeinen QV-Leitfaden hat der allgemeine QV-Leitfaden Priorität. Die offiziellen Vorgaben (Bildungsverordnung, Bildungsplan, Ausführungsbestimmungen zum Qualifikationsverfahren und kantonale Vorgaben) gehen beiden Leitfäden und den Angaben auf PkOrg vor.]
+
+#block(sticky: true)[Dieser Leitfaden beruht auf diesen offiziellen Vorgaben für das Qualifikationsverfahren 2027:]
+
+- Bildungsverordnung (BiVo 2021) vom 19. November 2020, SR 412.101.220.10: #link("https://www.fedlex.admin.ch/eli/oc/2020/941/de")[Fedlex]
+- Bildungsplan zur BiVo 2021 vom 19. November 2020: #link("https://www.becc.admin.ch/becc/public/bvz/beruf/download/10475")[SBFI]
+- Ausführungsbestimmungen zum Qualifikationsverfahren, vom 1. April 2026, gültig ab QV 2027: #link("https://www.ict-berufsbildung.ch/resources/Informatiker-EFZ_Ausfuehrungsbestimmungen_QV_de.pdf")[ICT-Berufsbildung]
+- Kriterienkatalog IPA, Version 1.3, gültig ab 1. November 2025: #link("https://www.ict-berufsbildung.ch/resources/Kriterienkatalog_QV_BiVO2021_DE-20251025.pdf")[ICT-Berufsbildung]
+- Reglement über die Qualifikationsverfahren der beruflichen Grundbildung (RQV BBG) vom 20. Dezember 2013, LS 413.325: #link("https://www.zh.ch/de/politik-staat/gesetze-beschluesse/gesetzessammlung/zhlex-ls/erlass-413_325-2013_12_20-2014_02_01-084.html")[Kanton Zürich]
+- Reglement über die Entschädigung von Mitwirkenden bei Qualifikationsverfahren (ERQV) vom 25. Oktober 2023, in Kraft seit 1. Januar 2024, LS 413.325.1: #link("https://www.zh.ch/de/politik-staat/gesetze-beschluesse/gesetzessammlung/zhlex-ls/erlass-413_325_1-2023_10_25-2024_01_01-123.html")[Kanton Zürich]
 
 = Rollen und Verantwortlichkeiten
 
-== Hauptexpertinnen und Hauptexperten (HEX)
+== Hauptexpertinnen und Hauptexperten
 
-Als Hauptexpertin oder Hauptexperte trägst du die Gesamtverantwortung für die IPA. Bereits in der Validierung prüfst du die Aufgabenstellung und gibst in PkOrg eine Empfehlung zur Freigabe oder Rückweisung ab. Die Validierungsexpertin oder der Validierungsexperte entscheidet. Freigegeben wird nur ein Auftrag aus dem Aufgabenspektrum des Lehrbetriebs, der die Handlungskompetenzbereiche berücksichtigt und so eindeutig beschrieben ist, dass die geprüften Kompetenzen messbar oder beobachtbar sind. Ab der Freigabe bist du verantwortlich für den Ablauf der IPA bis zum Einreichen des Notenvorschlags. Du bist die primäre Ansprechperson für die Kandidatin oder den Kandidaten sowie für die vorgesetzte Fachkraft. In dieser Funktion koordinierst du sämtliche Termine und Besuche. Bei auftretenden Problemen triffst du die notwendigen Entscheidungen in Rücksprache mit der Chefexpertin oder dem Chefexperten. Zusätzlich studierst du den Bericht und lieferst das Protokollblatt, die Präsentation und die Protokolle termingerecht in den Dokumentenpool von PkOrg. Während des Fachgesprächs trägst du die Verantwortung für die Gesprächsführung und arbeitest gemeinsam mit dem Expertenteam den finalen Notenvorschlag aus.
+Als Hauptexpertin oder Hauptexperte (HEX) trägst du die Gesamtverantwortung für die IPA. Bereits in der Validierung prüfst du die Aufgabenstellung und gibst auf PkOrg eine Empfehlung zur Freigabe oder Rückweisung ab. Die Validierungsexpertin oder der Validierungsexperte entscheidet. Freigegeben wird nur ein Auftrag aus dem Aufgabenspektrum des Lehrbetriebs, der die Handlungskompetenzbereiche berücksichtigt und so eindeutig beschrieben ist, dass die geprüften Kompetenzen messbar oder beobachtbar sind. Ab der Freigabe bist du verantwortlich für den Ablauf der IPA bis zum Einreichen des Notenvorschlags. Du bist die primäre Ansprechperson für die Kandidatin oder den Kandidaten sowie für die vorgesetzte Fachkraft. In dieser Funktion koordinierst du sämtliche Termine und Besuche. Bei auftretenden Problemen triffst du die notwendigen Entscheidungen in Rücksprache mit der Chefexpertin oder dem Chefexperten. Zusätzlich studierst du den Bericht und lieferst das Protokollblatt, die Präsentation und die Protokolle termingerecht in den PkOrg-Dokumentenpool. Während des Fachgesprächs trägst du die Verantwortung für die Gesprächsführung und arbeitest gemeinsam mit dem Expertenteam den finalen Notenvorschlag aus.
 
-== Nebenexpertinnen und Nebenexperten (NEX)
+== Nebenexpertinnen und Nebenexperten
 
-Als Nebenexpertin oder Nebenexperte unterstützt du die Hauptexpertin oder den Hauptexperten hauptsächlich bei der Präsentation und dem Fachgespräch. Eine deiner Hauptaufgaben ist das detaillierte Protokollieren während des Besuchs sowie die Dokumentation der Beobachtungen und der Auswertung. Du bringst dich aktiv in die Erarbeitung des Notenvorschlages ein und stellst durch deine unabhängige Sicht eine ausgewogene Beurteilung sicher. Um verschiedene Bewertungsansätze kennenzulernen, solltest du pro Qualifikationsverfahren nur eine IPA mit derselben Hauptexpertin oder demselben Hauptexperten übernehmen.
+Als Nebenexpertin oder Nebenexperte (NEX) unterstützt du die Hauptexpertin oder den Hauptexperten hauptsächlich bei der Präsentation und dem Fachgespräch. Eine deiner Hauptaufgaben ist das detaillierte Protokollieren während des Besuchs sowie die Dokumentation der Beobachtungen und der Auswertung. Du bringst dich aktiv in die Erarbeitung des Notenvorschlags ein und stellst durch deine unabhängige Sicht eine ausgewogene Beurteilung sicher. Um verschiedene Bewertungsansätze kennenzulernen, solltest du pro Qualifikationsverfahren nur eine IPA mit derselben Hauptexpertin oder demselben Hauptexperten übernehmen.
 
 = PkOrg als zentrales System
 
-Sämtliche administrativen Prozesse werden über PkOrg abgewickelt. Hier findest du auch detaillierte Checklisten für deine Rolle als Hauptexpertin oder Hauptexperte oder als Nebenexpertin oder Nebenexperte. Stelle sicher, dass du mit dem System vertraut bist und alle Dokumentationen fristgerecht hochlädst.
+Sämtliche administrativen Prozesse werden über PkOrg abgewickelt. Hier findest du auch detaillierte Checklisten für deine Rolle als Hauptexpertin oder Hauptexperte oder als Nebenexpertin oder Nebenexperte. Stelle sicher, dass du mit dem System vertraut bist und alle Dokumentationen fristgerecht hochlädst. Schriftliche Meldungen, Absprachen und Hinweise müssen in der PkOrg-History erfolgen. Nur so sind sie für alle Beteiligten nachvollziehbar dokumentiert. Beim Eintrag wählst du die Empfängerinnen und Empfänger, ebenso beim Ablegen von Dokumenten im PkOrg-Dokumentenpool die Sichtbarkeit. Sensible Angaben gehen nur an die Beteiligten, die sie kennen dürfen. Die Chefexpertin oder der Chefexperte kann bei Bedarf zusätzlich weitere Kommunikationswege wie E-Mail nutzen.
 
-Die Chefexpertin oder der Chefexperte kann Expertinnen und Experten direkt zuteilen. Für die eigene Wahl von IPAs gibt es in PkOrg ein eigenes Zeitfenster. Du wählst sie im Dashboard über «PAs wählen». Die Daten gibt die Chefexpertin oder der Chefexperte bekannt.
+Die Chefexpertin oder der Chefexperte kann Expertinnen und Experten direkt zuteilen. Für die eigene Wahl von IPAs gibt es auf PkOrg ein eigenes Zeitfenster. Du wählst sie im PkOrg-Dashboard über «PAs wählen». Die Daten gibt die Chefexpertin oder der Chefexperte bekannt.
 
 == Zugang zu PkOrg
 
@@ -30,11 +39,11 @@ Bewahre die Wiederherstellungscodes für die Zwei-Faktor-Authentisierung getrenn
 
 = Besuche und Termine
 
-Als Hauptexpertin oder Hauptexperte erfasst du die Termine in PkOrg, sobald die Aufgabenstellung freigegeben ist. Beim Speichern informiert PkOrg die übrigen Beteiligten.
+Die Daten der Durchführung legt die vorgesetzte Fachkraft mit der Aufgabenstellung fest. Mit der Freigabe sind sie verbindlich. Für die Besuche, die Präsentation und das Fachgespräch schlägst du als Hauptexpertin oder Hauptexperte allen Beteiligten Daten vor, mit einer Terminumfrage auf PkOrg oder nach mündlicher Absprache. Schriftliche Zusagen erfolgen in der PkOrg-History. Danach erfasst du die Termine auf PkOrg. Beim Speichern informiert PkOrg die übrigen Beteiligten.
 
 == Erster Besuch
 
-Der erste Besuch findet idealerweise am zweiten oder dritten Tag der IPA statt, spätestens aber am vierten IPA-Tag, und kann online oder vor Ort durchgeführt werden. Als Hauptexpertin oder Hauptexperte prüfst du dabei die Arbeitsumgebung und stellst sicher, dass alle Voraussetzungen für die erfolgreiche Durchführung der IPA erfüllt sind. Du siehst das Arbeitsprotokoll (Journal) durch, besprichst mit der Kandidatin oder dem Kandidaten den Zeitplan, das Verständnis des Auftrags und allfällige Hilfestellungen und erläuterst die Bewertungskriterien. Ziel ist es, ein gemeinsames Verständnis der Aufgabenstellung zu erreichen.
+Der erste Besuch findet idealerweise am zweiten oder dritten Tag der IPA statt, spätestens aber am vierten IPA-Tag, und kann online oder vor Ort durchgeführt werden. Als Hauptexpertin oder Hauptexperte prüfst du dabei die Arbeitsumgebung und stellst sicher, dass alle Voraussetzungen für die erfolgreiche Durchführung der IPA erfüllt sind. Du siehst das Arbeitsjournal durch, besprichst mit der Kandidatin oder dem Kandidaten den Zeitplan, das Verständnis des Auftrags und allfällige Hilfestellungen und erläuterst die Bewertungskriterien. Ziel ist es, ein gemeinsames Verständnis der Aufgabenstellung zu erreichen.
 
 #block(sticky: true)[*Wichtige Hinweise bei Online-Besuchen*]
 - Ton-, Bild- und Videoaufzeichnungen sowie automatische Transkriptionen (z.B. durch Copilot oder ähnliche Tools) sind nicht erlaubt, auch nicht mit dem Einverständnis der Beteiligten.
@@ -49,25 +58,25 @@ Als Nebenexpertin oder Nebenexperte kannst du optional und nach Absprache mit de
 
 == Zweiter Besuch
 
-Der zweite Besuch sollte am siebten oder achten Tag der IPA online oder vor Ort stattfinden. Als Hauptexpertin oder Hauptexperte kontrollierst du den Fortschritt der Arbeit und den Stand der Dokumentation. Du prüfst die tägliche Aktualisierung des Arbeitsprotokolls (Journal) und der Sicherungen und führst ein kurzes Fachgespräch, um eventuelle Fremdhilfe zu erfassen. Du klärst auch bereits organisatorische Fragen zur Präsentation. Auch hier ist die Teilnahme der Nebenexpertin oder des Nebenexperten optional und muss mit der zuständigen Chefexpertin oder dem zuständigen Chefexperten abgesprochen werden.
+Der zweite Besuch sollte am siebten oder achten Tag der IPA online oder vor Ort stattfinden. Als Hauptexpertin oder Hauptexperte kontrollierst du den Fortschritt der Arbeit und den Stand der Dokumentation. Du prüfst die tägliche Aktualisierung des Arbeitsjournals und der Sicherungen und führst ein kurzes Fachgespräch, um eventuelle Fremdhilfe zu erfassen. Du klärst auch bereits organisatorische Fragen zur Präsentation. Auch hier ist die Teilnahme der Nebenexpertin oder des Nebenexperten optional und muss mit der zuständigen Chefexpertin oder dem zuständigen Chefexperten abgesprochen werden.
 
 == Abgabetag
 
-Versuche, erreichbar zu sein, falls die Kandidatin oder der Kandidat noch offene Fragen hat. In PkOrg siehst du, ob IPA-Bericht und Anhang hochgeladen und signiert sind.
+Versuche, erreichbar zu sein, falls die Kandidatin oder der Kandidat noch offene Fragen hat. Schriftliche Antworten gibst du in der PkOrg-History. Auf PkOrg siehst du, ob IPA-Bericht und Anhang hochgeladen und signiert sind.
 
-#hinweis(label: [Wichtig])[Melde eine verspätete Abgabe der Chefexpertin oder dem Chefexperten schriftlich über PkOrg.]
+#hinweis(label: [Wichtig])[Melde eine verspätete Abgabe der Chefexpertin oder dem Chefexperten schriftlich in der PkOrg-History.]
 
 = Vorbereitung des Prüfungstags
 
-Die Vorbereitung des Prüfungstages ist eine zentrale Aufgabe der Hauptexpertin oder des Hauptexperten. Das Korrigieren des Berichts steht nicht mehr im Vordergrund. Warte, bis die vorgesetzte Fachkraft den Bericht korrigiert und bewertet hat. Dies muss spätestens drei Tage vor dem Prüfungstag geschehen sein. Lies zunächst die Bewertung durch, da diese Hinweise auf mögliche Problemstellen gibt und zeigt, wo du ein besonderes Augenmerk auf die Arbeit richten solltest. Lies anschliessend den Bericht mit Fokus auf mögliche Meinungsverschiedenheiten bezüglich der Bewertung und denke dabei bereits an das Fachgespräch.
+Die Vorbereitung des Prüfungstags ist eine zentrale Aufgabe der Hauptexpertin oder des Hauptexperten. Das Korrigieren des Berichts steht nicht mehr im Vordergrund. Warte, bis die vorgesetzte Fachkraft den Bericht korrigiert und bewertet hat. Dies muss spätestens 3 Tage vor dem Prüfungstag geschehen sein. Lies zunächst die Bewertung durch, da diese Hinweise auf mögliche Problemstellen gibt und zeigt, wo du ein besonderes Augenmerk auf die Arbeit richten solltest. Lies anschliessend den Bericht mit Fokus auf mögliche Meinungsverschiedenheiten bezüglich der Bewertung und denke dabei bereits an das Fachgespräch.
 
-Plausibilisiere die Bewertung der vorgesetzten Fachkraft und bringe deine Änderungen an. Du findest sie im Dokumentenpool von PkOrg als «Bewertungsbogen (verantwortliche Fachkraft)». Ihre Punkte erscheinen dort erst, wenn die vorgesetzte Fachkraft ihre Bewertung signiert hat. In PkOrg bearbeiten Hauptexpertin oder Hauptexperte und Nebenexpertin oder Nebenexperte dasselbe Bewertungsblatt. Bearbeitet es nicht gleichzeitig, sonst werden Eingaben überschrieben. Das Protokollblatt mit deinen Bemerkungen und Fragen legst du vor der Präsentation als PDF im Dokumentenpool von PkOrg ab. Unklarheiten oder offene Fragen können am Präsentationstag besprochen und geklärt werden. Versuche, wo immer nötig einen Konsens mit der vorgesetzten Fachkraft zu finden. Kommt bei Teil 1 oder Teil 2 keine Einigung zustande, entscheidet die Chefexpertin oder der Chefexperte und begründet den Entscheid.
+Plausibilisiere die Bewertung der vorgesetzten Fachkraft und bringe deine Änderungen an. Du findest sie im PkOrg-Dokumentenpool unter «Bewertungsbogen (verantwortliche Fachkraft)», einem PDF, das PkOrg aus ihrer Bewertung erzeugt. Ihre Punkte erscheinen dort erst, wenn die vorgesetzte Fachkraft ihre Bewertung signiert hat. Auf PkOrg bearbeiten Hauptexpertin oder Hauptexperte und Nebenexpertin oder Nebenexperte dieselbe Bewertung. Bearbeitet sie nicht gleichzeitig, sonst werden Eingaben überschrieben. Das Protokollblatt mit deinen Bemerkungen und Fragen legst du vor der Präsentation als PDF im PkOrg-Dokumentenpool ab. Unklarheiten oder offene Fragen können am Präsentationstag besprochen und geklärt werden. Versuche, wo immer nötig einen Konsens mit der vorgesetzten Fachkraft zu finden. Kommt bei Teil 1 oder Teil 2 keine Einigung zustande, entscheidet die Chefexpertin oder der Chefexperte und begründet den Entscheid.
 
-Im Anschluss bereitest du ein Fachgespräch mit sechs Themenblöcken plus Reserve vor. Diese dürfen nicht die Projektmethode hinterfragen und müssen zum Projekt passen. Ein Themenblock beinhaltet mehrere Unterfragen, die je nach Gesprächsverlauf gestellt werden und dem Gespräch Struktur geben. Berücksichtige die Zeitbegrenzung und plane etwa fünf bis sieben Minuten pro Themenblock ein. Hier kannst du auch Vorschläge der vorgesetzten Fachkraft einbeziehen.
+Im Anschluss bereitest du ein Fachgespräch mit sechs Themenblöcken plus Reserve vor. Diese dürfen nicht die Projektmethode hinterfragen und müssen zum Projekt passen. Ein Themenblock beinhaltet mehrere Unterfragen, die je nach Gesprächsverlauf gestellt werden und dem Gespräch Struktur geben. Berücksichtige die Zeitbegrenzung und plane etwa 5 bis 7 Minuten pro Themenblock ein. Hier kannst du auch Vorschläge der vorgesetzten Fachkraft einbeziehen.
 
 = Präsentation, Demonstration und Fachgespräch
 
-Die Durchführung der Präsentation, Demonstration und des Fachgespräches bildet den Abschluss der IPA. Als Expertenteam tragt ihr die Verantwortung für einen professionellen und würdigen Ablauf dieser wichtigen Prüfungsphase.
+Die Durchführung der Präsentation, Demonstration und des Fachgesprächs bildet den Abschluss der IPA. Als Expertenteam tragt ihr die Verantwortung für einen professionellen und würdigen Ablauf dieser wichtigen Prüfungsphase.
 
 *Zeitvorgaben und Rolle der vorgesetzten Fachkraft:* Gemäss dem allgemeinen QV-Leitfaden darf die Gesamtzeit von Präsentation, Demonstration und Fachgespräch 60 Minuten nicht überschreiten. Die vorgesetzte Fachkraft ist nur mit dem Einverständnis der Kandidatin oder des Kandidaten dabei. Sie hat Beobachterstatus und stellt keine Fragen. Ihr könnt sie bitten, ihre Beobachtungen festzuhalten und euch für die Bewertung zur Verfügung zu stellen. Bei Abweichungen von der Prüfungszeit ist die zuständige Chefexpertin oder der zuständige Chefexperte zu konsultieren.
 
@@ -86,7 +95,7 @@ Im Anschluss folgt die praktische Demonstration der erarbeiteten Lösung. Dafür
 - Optional: Berufsbildnerin oder Berufsbildner (nur als stille Beobachtende)
 - Optional: Eine weitere Fachperson (nur nach vorheriger Bewilligung durch die Chefexpertin oder den Chefexperten)
 
-Das Fachgespräch bildet den abschliessenden und oft entscheidenden Teil des Prüfungstages. Es findet im kleineren Kreis statt – ohne Berufsbildnerin oder Berufsbildner oder weitere Personen.
+Das Fachgespräch bildet den abschliessenden und oft entscheidenden Teil des Prüfungstags. Es findet im kleineren Kreis statt – ohne Berufsbildnerin oder Berufsbildner oder weitere Personen.
 
 #block(sticky: true)[Das Fachgespräch dient der Überprüfung:]
 
@@ -95,19 +104,19 @@ Das Fachgespräch bildet den abschliessenden und oft entscheidenden Teil des Pr�
 - der fundierten Begründung von Entscheidungen
 - der Tiefe des fachlichen Verständnisses im Kontext der IPA
 
-Die Nebenexpertin oder der Nebenexperte führt während des Gespräches ein detailliertes Protokoll über die Antworten und deren Qualität. Diese Aufzeichnungen sind sowohl für die Bewertung als auch bei eventuellen Rekursen von Bedeutung.
+Die Nebenexpertin oder der Nebenexperte führt während des Gesprächs ein detailliertes Protokoll über die Antworten und deren Qualität. Diese Aufzeichnungen sind sowohl für die Bewertung als auch bei eventuellen Rekursen von Bedeutung.
 
-Unmittelbar nach dem Fachgespräch bewertet ihr in PkOrg die restlichen Kriterien (Teil 3, Fachgespräch und Präsentation). Teil 1 zählt mit dem Gewicht 0,5, Teil 2 mit 0,2 und Teil 3 mit 0,3. Jedes Kriterium erhält 3, 2, 1 oder 0 Punkte und einen Kommentar. Achtet auf aussagekräftige, rekursfähige Kommentare.
+Unmittelbar nach dem Fachgespräch bewertet ihr auf PkOrg die restlichen Kriterien (Teil 3, Fachgespräch und Präsentation). Teil 1 zählt 50 Prozent, Teil 2 20 Prozent und Teil 3 30 Prozent. Jedes Kriterium erhält 3, 2, 1 oder 0 Punkte und einen Kommentar. Achtet auf aussagekräftige, rekursfähige Kommentare.
 
-Ton-, Bild- und Videoaufzeichnungen sowie automatische Transkriptionen (z.B. durch Copilot oder ähnliche Tools) sind nicht erlaubt, auch nicht mit dem Einverständnis der Beteiligten. Nach der Prüfung lädst du als Hauptexpertin oder Hauptexperte die Präsentation hoch und legst alle Protokolle im Dokumentenpool von PkOrg ab.
+Ton-, Bild- und Videoaufzeichnungen sowie automatische Transkriptionen (z.B. durch Copilot oder ähnliche Tools) sind nicht erlaubt, auch nicht mit dem Einverständnis der Beteiligten. Nach der Prüfung lädst du als Hauptexpertin oder Hauptexperte die Präsentation hoch und legst alle Protokolle im PkOrg-Dokumentenpool ab.
 
 == Vertraulichkeit und besondere Hinweise
 
-Als Expertin oder Experte bist du zur absoluten Vertraulichkeit verpflichtet. Der Notenvorschlag darf der Kandidatin oder dem Kandidaten nicht mitgeteilt werden, da dieser noch durch die Notenkonferenz bestätigt werden muss. Teilnoten und Schlussnote fasst die Chefexpertin oder der Chefexperte zusammen. Beachte unbedingt die Ausstandsregel und melde etwaige Probleme frühzeitig der zuständigen Chefexpertin oder dem zuständigen Chefexperten.
+Als Expertin oder Experte bist du zur absoluten Vertraulichkeit verpflichtet. Der Notenvorschlag darf der Kandidatin oder dem Kandidaten nicht mitgeteilt werden, da dieser noch durch die Notenkonferenz bestätigt werden muss. Wähle für schriftliche Hinweise dazu nur Empfängerinnen und Empfänger ohne die Kandidatin oder den Kandidaten, zum Beispiel «Hinweis Expertenteam» oder «Hinweis Chefexpert:in». Teilnoten und Schlussnote fasst die Chefexpertin oder der Chefexperte zusammen. Beachte unbedingt die Ausstandsregel und melde etwaige Probleme frühzeitig in der PkOrg-History der zuständigen Chefexpertin oder dem zuständigen Chefexperten.
 
 = Entschädigung
 
-Die Entschädigung erfolgt nach den offiziellen Richtlinien der PK19. Aufwand und Vergütung orientieren sich an Expertinnen und Experten, die mit den Technologien der IPA vertraut sind. Dies ist bei der Auswahl der IPA zwingend zu berücksichtigen. Ein übermässiger Einarbeitungsaufwand kann nicht vergütet werden. Daher sollte sich die Wahl der IPAs nach deinen fachlichen Kompetenzen richten, sodass die Aufwände durch die Pauschale abgedeckt werden können.
+Die Entschädigung erfolgt nach dem kantonalen Reglement über die Entschädigung (ERQV) und den Richtlinien der Prüfungskommission 19. Aufwand und Vergütung orientieren sich an Expertinnen und Experten, die mit den Technologien der IPA vertraut sind. Dies ist bei der Auswahl der IPA zwingend zu berücksichtigen. Ein übermässiger Einarbeitungsaufwand kann nicht vergütet werden. Daher sollte sich die Wahl der IPAs nach deinen fachlichen Kompetenzen richten, sodass die Aufwände durch die Pauschale abgedeckt werden können.
 
 #hinweis(label: [Wichtig])[Zeitüberschreitungen müssen innerhalb der IPA an anderer Stelle kompensiert werden.]
 
@@ -126,14 +135,14 @@ Die Entschädigung erfolgt nach den offiziellen Richtlinien der PK19. Aufwand un
   [Tätigkeit], [Zeit (Std.)],
   [Arbeit aussuchen (Ort, Zeitpunkt, Thematik), Planung im Kalender], [0,5],
   [Validierung der Arbeit / Einarbeitung Thema, Technologie], [1,5],
-  [Erster Besuch], [1,0],
-  [Zweiter Besuch], [1,0],
-  [Korrektur, Bewertung, Dokumentieren], [2,0],
-  [Vorbereitung Fachgespräch, Absprache mit der Nebenexpertin oder dem Nebenexperten, Bewertung der vorgesetzten Fachkraft einholen], [1,0],
-  [Dritter Besuch, Bewertung], [3,0],
+  [Erster Besuch], [1],
+  [Zweiter Besuch], [1],
+  [Korrektur, Bewertung, Dokumentieren], [2],
+  [Vorbereitung Fachgespräch, Absprache mit der Nebenexpertin oder dem Nebenexperten, Bewertung der vorgesetzten Fachkraft einholen], [1],
+  [Dritter Besuch, Bewertung], [3],
   [Abschluss, Noteneintrag], [0,5],
-  [Korrespondenz, PkOrg Verrechnung, Feedback CEX], [0,5],
-  [#strong[IPA-Pauschale gesamt]], [#strong[11,0]],
+  [Korrespondenz, PkOrg Verrechnung, Feedback Chefexpertin oder Chefexperte], [0,5],
+  [#strong[IPA-Pauschale gesamt]], [#strong[11]],
 )
 
 == Abrechenbare Zeiten pro IPA für Nebenexpertinnen und Nebenexperten
