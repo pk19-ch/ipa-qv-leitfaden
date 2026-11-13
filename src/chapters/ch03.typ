@@ -30,7 +30,7 @@ Der Bericht muss zwingend enthalten:
 
 - Planung und Realität
 
-#strong[Arbeitsprotokoll (Journal)] (3 bis max. 10 Seiten)
+#strong[Arbeitsjournal] (3 bis max. 10 Seiten)
 
 Tägliche (mit Datum) Notizen zu:
 
@@ -88,15 +88,30 @@ Die Lesenden des Berichtes sollen erkennen, was gemacht wurde und wie das Result
 
 Der IPA-Bericht muss eine Eigenleistung sein und somit selbst in eigenen Worten formuliert werden. Selbstverständlich können Aussagen oder Bilder aus fremden Quellen übernommen werden. Diese sind jedoch geeignet zu kennzeichnen und die Quellen vollständig aufzulisten.
 
-Die Übernahme von Programm-Code aus eigenen Vorgängerprojekten ist zu deklarieren. Sind Teile der IPA nicht selbst erstellt (Codepassagen, Konfigurationen, ...), so ist dies zu kennzeichnen; Hilfestellungen sind zusätzlich im Arbeitsprotokoll zu vermerken.
+Die Übernahme von Programm-Code aus eigenen Vorgängerprojekten ist zu deklarieren. Sind Teile der IPA nicht selbst erstellt (Codepassagen, Konfigurationen, ...), so ist dies zu kennzeichnen; Hilfestellungen sind zusätzlich im Arbeitsjournal zu vermerken.
 
 #strong[Verwendung von KI-Tools] \
-Hilfestellungen von generativen Tools (z.B. ChatGPT) dürfen verwendet werden. Die Benutzung ist im Bericht zu erwähnen. Explizit generierte Abschnitte sind als solche zu kennzeichnen. Der Eigenanteil muss klar erkennbar sein.
+KI-Tools (z.B. ChatGPT, Copilot) dürfen als Hilfsmittel verwendet werden. Die Kandidatin oder der Kandidat bleibt für die ganze Arbeit verantwortlich und muss alle Inhalte verstehen, beurteilen und erklären können.
 
-IPA-Berichte und Arbeiten mit zu hohem Anteil von Fremdleistung – deklariert oder nicht – können nicht bewertet werden, was ein "nicht bestanden" zur Folge hat. Nicht deklarierte Fremdleistung wird als Plagiat betrachtet. Es sollte auf Bilder aus dem Internet verzichtet werden, welche nur dekorativen Charakter haben, und es sollte immer das Copyright beachtet werden.
+- #strong[Offenlegen:] Ein eigener Abschnitt im Bericht nennt pro Tool den Zweck (z.B. Text formulieren, Code erzeugen, Fehler suchen, Inhalte zusammenfassen), die betroffenen Kapitel oder Dateien und wie die Ergebnisse geprüft wurden. Die Nutzung wird zusätzlich im Arbeitsjournal vermerkt.
+- #strong[Verhältnismässig:] Rechtschreib- und Übersetzungshilfen sowie im Betrieb standardmässig eingesetzte Code-Vervollständigung (z.B. in der Entwicklungsumgebung) werden mit einem Sammelhinweis offengelegt; einzelne Zeilen müssen nicht gekennzeichnet werden. Hat die KI wesentliche Teile erstellt (z.B. ganze Kapitel, Kernlogik, Architekturentscheide), sind diese pro Abschnitt oder Modul zu kennzeichnen.
+- #strong[Daten:] Vertrauliche Firmen- und Kundendaten dürfen nur in vom Betrieb freigegebene KI-Tools eingegeben werden.
+
+Auch deklarierte KI-Ergebnisse zählen zur Fremdleistung im Sinne des folgenden Absatzes. Vorbehalten bleiben Kriterien, die den KI-Einsatz selbst bewerten (z.B. C11). Der Eigenanteil muss klar erkennbar sein.
+
+Nicht oder ungenügend deklarierte KI-Nutzung wird in den betroffenen Kriterien berücksichtigt (insbesondere A02 und Doc07). Inhalte, die nicht erklärt werden können, gelten nicht als Eigenleistung und werden in den betroffenen Kriterien entsprechend tiefer bewertet, bis zur Gütestufe 0. Über einen Notenabzug entscheidet die Chefexpertin oder der Chefexperte auf Vorschlag des Expertenteams; über weitergehende Folgen (z.B. Nichtbestehen) die Prüfungskommission.
+
+Bei IPA-Berichten und Arbeiten mit zu hohem Anteil von Fremdleistung – deklariert oder nicht – entscheidet die Prüfungskommission nach Anhörung über die Folgen, bis zum Nichtbestehen. Nicht deklarierte Fremdleistung wird als Plagiat betrachtet. Es sollte auf Bilder aus dem Internet verzichtet werden, welche nur dekorativen Charakter haben, und es sollte immer das Copyright beachtet werden.
 
 #strong[Überprüfung der Eigenleistung und Nachvollziehbarkeit] \
-Das Expertenteam ist berechtigt, im Anschluss an die IPA-Prüfung bei begründetem Verdacht auf nicht deklarierte Fremdleistungen oder eine unzureichende Eigenleistung einzelne Inhalte des IPA-Berichts sowie die dazugehörigen Arbeitsergebnisse näher zu überprüfen. Falls die Kandidatin oder der Kandidat einzelne Textpassagen, Lösungsansätze, Codebestandteile, Konfigurationen oder andere dokumentierte Arbeitsergebnisse nicht nachvollziehbar erklären, fachlich begründen oder deren Entstehung plausibel darlegen kann, kann das Expertenteam die entsprechenden Teile als nicht bewertbar einstufen. Die Beurteilung erfolgt durch das Expertenteam im Rahmen der Gesamtbewertung der IPA. Werden wesentliche Teile der Arbeit als nicht bewertbar eingestuft, kann dies dazu führen, dass die IPA insgesamt als nicht bestanden bewertet wird.
+Das Expertenteam ist berechtigt, im Anschluss an die IPA-Prüfung bei begründetem Verdacht auf nicht deklarierte Fremdleistungen oder eine unzureichende Eigenleistung einzelne Inhalte des IPA-Berichts sowie die dazugehörigen Arbeitsergebnisse näher zu überprüfen. Falls die Kandidatin oder der Kandidat einzelne Textpassagen, Lösungsansätze, Codebestandteile, Konfigurationen oder andere dokumentierte Arbeitsergebnisse nicht nachvollziehbar erklären, fachlich begründen oder deren Entstehung plausibel darlegen kann, bewertet das Expertenteam die entsprechenden Teile nicht als Eigenleistung und in den betroffenen Kriterien entsprechend tiefer. Über weitergehende Folgen entscheidet die Prüfungskommission.
+
+Besteht ein begründeter Verdacht auf nicht deklarierte KI-Nutzung oder Fremdleistung, gilt folgendes Vorgehen:
+- Ein begründeter Verdacht stützt sich auf konkrete Anhaltspunkte (z.B. Widersprüche zum Arbeitsjournal, Inhalte, die nicht erklärt werden können). Das Ergebnis eines KI-Erkennungstools allein genügt nicht.
+- Das Expertenteam meldet den Verdacht mit den betroffenen Stellen der Chefexpertin oder dem Chefexperten.
+- Die Kandidatin oder der Kandidat erhält vorgängig Einsicht in die betroffenen Stellen, wird über die möglichen Folgen informiert und in einem separaten Gespräch angehört. Sie oder er kann Einwände vorbringen und Belege vorlegen (z.B. Versionshistorie, Arbeitsjournal).
+- Die Anhörung wird protokolliert (Stellen, Fragen, Antworten, Einwände).
+- Das Expertenteam macht einen Notenvorschlag; die Chefexpertin oder der Chefexperte entscheidet und begründet den Entscheid.
 
 == Abgabe des IPA-Berichtes
 
