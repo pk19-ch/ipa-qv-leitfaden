@@ -90,7 +90,7 @@ Der IPA-Bericht muss eine Eigenleistung sein und somit selbst in eigenen Worten 
 Die Übernahme von Programmcode aus eigenen Vorgängerprojekten ist zu deklarieren. Sind Teile der IPA nicht selbst erstellt (Codepassagen, Konfigurationen usw.), so ist dies zu kennzeichnen; Hilfestellungen sind zusätzlich im Arbeitsjournal zu vermerken.
 
 #strong[Verwendung von KI-Tools] \
-KI-Tools (z.B. ChatGPT, Copilot) dürfen als Hilfsmittel verwendet werden. Die Kandidatin oder der Kandidat bleibt für die ganze Arbeit verantwortlich und muss alle Inhalte verstehen, beurteilen und erklären können.
+Solche Werkzeuge (z.B. ChatGPT, Copilot) dürfen als Hilfsmittel verwendet werden. Die Kandidatin oder der Kandidat bleibt für die ganze Arbeit verantwortlich und muss alle Inhalte verstehen, beurteilen und erklären können.
 
 - #strong[Offenlegen:] Ein eigener Abschnitt im Bericht nennt pro Tool den Zweck (z.B. Text formulieren, Code erzeugen, Fehler suchen, Inhalte zusammenfassen), die betroffenen Kapitel oder Dateien und wie die Ergebnisse geprüft wurden. Die Nutzung wird zusätzlich im Arbeitsjournal vermerkt.
 - #strong[Verhältnismässig:] Rechtschreib- und Übersetzungshilfen sowie im Betrieb standardmässig eingesetzte Code-Vervollständigung (z.B. in der Entwicklungsumgebung) werden mit einem Sammelhinweis offengelegt; einzelne Zeilen müssen nicht gekennzeichnet werden. Hat die KI wesentliche Teile erstellt (z.B. ganze Kapitel, Kernlogik, Architekturentscheide), sind diese pro Abschnitt oder Modul zu kennzeichnen.
