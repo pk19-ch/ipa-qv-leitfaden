@@ -4,14 +4,16 @@
 
 == IPA-Bericht
 
-Die vorgesetzte Fachkraft (VF) prüft den Bericht auf fachliche Richtigkeit, systematische Gliederung, verständliche Formulierung, saubere Darstellung, Vollständigkeit usw. (vgl. Bewertungskriterien). Sie schreibt einen ausführlichen Kommentar (auch Positives) in das Bemerkungsfeld des entsprechenden Kriteriums unter Angabe der Seitennummer oder in ein separates Dokument, ebenfalls unter Angabe der Seitennummer. Die Dokumente müssen alle als PDF abgegeben werden.
+In der Aufgabenstellung kann die vorgesetzte Fachkraft (VF) festhalten, welche KI-Tools im Betrieb erlaubt oder vorgegeben sind. Bei der Bewertung berücksichtigt sie nur die nachvollziehbare Eigenleistung.
+
+Die vorgesetzte Fachkraft (VF) prüft den Bericht auf fachliche Richtigkeit, systematische Gliederung, verständliche Formulierung, saubere Darstellung, Vollständigkeit, ... (vgl. Bewertungskriterien). Sie oder er schreibt einen ausführlichen Kommentar (auch Positives!) in das Bemerkungsfeld des entsprechenden Kriteriums unter Angabe der Seitennummer oder in ein separates Dokument, ebenfalls unter Angabe der Seitennummer. Die Dokumente müssen alle als PDF abgegeben werden.
 
 Die Hauptexpertin oder der Hauptexperte (HEX) liest die Arbeit mit dem Input der VF-Bewertung und notiert sich unterschiedliche Auffassungen der Bewertung. Dabei ist zu berücksichtigen, dass einige Kriterien erst mit der Präsentation und dem Fachgespräch eindeutig beurteilt werden können. Bemerkungen und die aufgetretenen Fragen (als Grundlage für das Fachgespräch) werden auf einem separaten Protokollblatt notiert. Es wird vor der Präsentation als PDF im PkOrg-Dokumentenpool abgelegt.
 
 == Bewertung der Arbeit
 
-#term_block([Während der IPA])[
-  Sowohl die vorgesetzte Fachkraft (VF) als auch das Expertenteam (HEX/NEX) schreiben während der IPA Beobachtungsprotokolle und legen sie im PkOrg-Dokumentenpool ab.
+#term_block([Während der IPA:])[
+  Sowohl die vorgesetzte Fachkraft (VF) als auch das Expertenteam (HEX/NEX) schreiben während der IPA Beobachtungsprotokolle. Die vorgesetzte Fachkraft (VF) hält dabei beobachtete KI-Nutzung fest und meldet einen begründeten Verdacht auf nicht deklarierte KI-Nutzung der Hauptexpertin oder dem Hauptexperten (HEX), sobald er besteht.
 ]
 
 #term_block([Vor der Präsentation])[

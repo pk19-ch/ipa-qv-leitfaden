@@ -51,7 +51,7 @@ Der erste Besuch findet idealerweise am zweiten oder dritten Tag der IPA statt, 
 
 *Besprechung der Evidenzen*
 Neben den Bewertungskriterien ist es wichtig, mit der Kandidatin oder dem Kandidaten zu besprechen, wie sie oder er die Evidenzen im IPA-Bericht gestalten will:
-- Sehr viele Screenshots im Bericht sind nicht automatisch eine sinnvolle Evidenz (manche Kandidatinnen und Kandidaten denken: je mehr Bilder, desto besser)
+- Viele Screenshots in den Bericht zu packen ist nicht immer sinnvolle Evidenz (es gibt Kandidatinnen und Kandidaten, die denken je mehr Bilder, desto besser)
 - Wenn keine klare Vorstellung vorhanden ist, wie Evidenzen im Bericht aufgearbeitet werden sollen, kann dies auch darauf hindeuten, dass das Ziel der Aufgabenstellung nicht deutlich verstanden wurde
 
 Als Nebenexpertin oder Nebenexperte kannst du optional und nach Absprache mit der zuständigen Chefexpertin oder dem zuständigen Chefexperten an diesem Besuch teilnehmen, insbesondere wenn du noch wenig Erfahrung hast.
@@ -114,6 +114,10 @@ Ton-, Bild- und Videoaufzeichnungen sowie automatische Transkriptionen (z.B. dur
 
 Als Expertin oder Experte bist du zur absoluten Vertraulichkeit verpflichtet. Der Notenvorschlag darf der Kandidatin oder dem Kandidaten nicht mitgeteilt werden, da dieser noch durch die Notenkonferenz bestätigt werden muss. Wähle für schriftliche Hinweise dazu nur Empfängerinnen und Empfänger ohne die Kandidatin oder den Kandidaten, zum Beispiel «Hinweis Expertenteam» oder «Hinweis Chefexpert:in». Teilnoten und Schlussnote fasst die Chefexpertin oder der Chefexperte zusammen. Beachte unbedingt die Ausstandsregel und melde etwaige Probleme frühzeitig in der PkOrg-History der zuständigen Chefexpertin oder dem zuständigen Chefexperten.
 
+== Verdacht auf nicht deklarierte KI-Nutzung
+
+Prüfe bei jedem Besuch die KI-Vermerke im Arbeitsjournal. Markiere bei der Vorbereitung auffällige Stellen; Fragen zur Entstehung können Teil des Fachgesprächs sein. Kündige im Fachgespräch keine Konsequenzen an. Erhärtet sich der Verdacht, melde ihn der Chefexpertin oder dem Chefexperten und übergib die markierten Stellen und deine Fragen. Begründe die Bewertung pro betroffenem Kriterium.
+
 = Entschädigung
 
 Die Entschädigung erfolgt nach dem kantonalen Reglement über die Entschädigung (ERQV) und den Richtlinien der Prüfungskommission 19. Aufwand und Vergütung orientieren sich an Expertinnen und Experten, die mit den Technologien der IPA vertraut sind. Dies ist bei der Auswahl der IPA zwingend zu berücksichtigen. Ein übermässiger Einarbeitungsaufwand kann nicht vergütet werden. Daher sollte sich die Wahl der IPAs nach deinen fachlichen Kompetenzen richten, sodass die Aufwände durch die Pauschale abgedeckt werden können.
@@ -133,16 +137,16 @@ Die Entschädigung erfolgt nach dem kantonalen Reglement über die Entschädigun
   columns: (1fr, 5em),
   align: (left, right),
   [Tätigkeit], [Zeit (Std.)],
-  [Arbeit aussuchen (Ort, Zeitpunkt, Thematik), Planung im Kalender], [0,5],
-  [Validierung der Arbeit / Einarbeitung Thema, Technologie], [1,5],
-  [Erster Besuch], [1],
-  [Zweiter Besuch], [1],
-  [Korrektur, Bewertung, Dokumentieren], [2],
-  [Vorbereitung Fachgespräch, Absprache mit der Nebenexpertin oder dem Nebenexperten, Bewertung der vorgesetzten Fachkraft einholen], [1],
-  [Dritter Besuch, Bewertung], [3],
-  [Abschluss, Noteneintrag], [0,5],
-  [Korrespondenz, PkOrg Verrechnung, Feedback Chefexpertin oder Chefexperte], [0,5],
-  [#strong[IPA-Pauschale gesamt]], [#strong[11]],
+  [Arbeit aussuchen (Ort, Zeitpunkt, Thematik), Planung im Kalender], [0.5],
+  [Validierung der Arbeit / Einarbeitung Thema, Technologie], [1.5],
+  [Erster Besuch], [1.0],
+  [Zweiter Besuch], [1.0],
+  [Korrektur, Bewertung, Dokumentieren], [2.0],
+  [Vorbereitung Fachgespräch / Austausch 2-Experten / Abholen VF], [1.0],
+  [Dritter Besuch, Bewertung], [3.0],
+  [Abschluss, Noteneintrag], [0.5],
+  [Korrespondenz, PkOrg Verrechnung, Feedback CEX], [0.5],
+  [#strong[Pauschale insgesamt]], [#strong[11.0]],
 )
 
 == Abrechenbare Zeiten pro IPA für Nebenexpertinnen und Nebenexperten
